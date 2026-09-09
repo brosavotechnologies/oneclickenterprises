@@ -1,6 +1,14 @@
-import { DoorOpen, Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
-import { useRouter } from '@/components/Router';
-import { officeLocations, supportInfo } from '@/data/locations';
+import {
+  DoorOpen,
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Instagram,
+  Youtube,
+} from "lucide-react";
+import { useRouter } from "@/components/Router";
+import { officeLocations, supportInfo } from "@/data/locations";
 
 export function Footer() {
   const { navigate } = useRouter();
@@ -15,15 +23,17 @@ export function Footer() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center">
                 <DoorOpen className="w-5 h-5 text-white" />
               </div>
-              <span className="text-white font-bold text-lg">One Click Enterprises</span>
+              <span className="text-white font-bold text-lg">
+                One Click Enterprises
+              </span>
             </div>
             <p className="text-sm text-stone-400 leading-relaxed">
-              Your trusted partner for premium doors, tiles, sanitary ware, granite, and
-              building materials across India.
+              Your trusted partner for premium doors, tiles, sanitary ware,
+              granite, and building materials across India.
             </p>
             <div className="flex gap-3 pt-2">
               <a
-                href={officeLocations[1].facebook || '#'}
+                href={officeLocations[1].facebook || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-stone-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
@@ -32,7 +42,7 @@ export function Footer() {
                 <Facebook className="w-4 h-4" />
               </a>
               <a
-                href={officeLocations[1].instagram || '#'}
+                href={officeLocations[1].instagram || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-stone-800 hover:bg-pink-600 flex items-center justify-center transition-colors"
@@ -41,7 +51,7 @@ export function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href={officeLocations[1].youtube || '#'}
+                href={officeLocations[1].youtube || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-stone-800 hover:bg-red-600 flex items-center justify-center transition-colors"
@@ -59,22 +69,34 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <button onClick={() => navigate('/')} className="hover:text-amber-400 transition-colors">
+                <button
+                  onClick={() => navigate("/")}
+                  className="hover:text-amber-400 transition-colors"
+                >
                   Home
                 </button>
               </li>
               <li>
-                <button onClick={() => navigate('/about')} className="hover:text-amber-400 transition-colors">
+                <button
+                  onClick={() => navigate("/about")}
+                  className="hover:text-amber-400 transition-colors"
+                >
                   About Us
                 </button>
               </li>
               <li>
-                <button onClick={() => navigate('/products')} className="hover:text-amber-400 transition-colors">
+                <button
+                  onClick={() => navigate("/products")}
+                  className="hover:text-amber-400 transition-colors"
+                >
                   Products
                 </button>
               </li>
               <li>
-                <button onClick={() => navigate('/contact')} className="hover:text-amber-400 transition-colors">
+                <button
+                  onClick={() => navigate("/contact")}
+                  className="hover:text-amber-400 transition-colors"
+                >
                   Contact Us
                 </button>
               </li>
@@ -102,12 +124,19 @@ export function Footer() {
               Get in Touch
             </h3>
             <div className="space-y-3 text-sm">
-              <a href={`tel:${supportInfo.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-amber-400 transition-colors">
+              <a
+                href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
+                className="flex items-center gap-2 hover:text-amber-400 transition-colors"
+              >
                 <Phone className="w-4 h-4 flex-shrink-0 text-amber-500" />
                 <span>{supportInfo.phone}</span>
               </a>
               <a
-                href={officeLocations[4].email ? `mailto:${officeLocations[4].email}` : '#'}
+                href={
+                  officeLocations[4].email
+                    ? `mailto:${officeLocations[4].email}`
+                    : "#"
+                }
                 className="flex items-center gap-2 hover:text-amber-400 transition-colors"
               >
                 <Mail className="w-4 h-4 flex-shrink-0 text-amber-500" />
@@ -125,8 +154,23 @@ export function Footer() {
       </div>
 
       <div className="border-t border-stone-800 py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-stone-500">
-          &copy; {new Date().getFullYear()} One Click Enterprises. All rights reserved.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-stone-500">
+          <div className="text-center sm:text-left">
+            &copy; {new Date().getFullYear()} One Click Enterprises. All rights
+            reserved.
+          </div>
+
+          <div className="text-center sm:text-right">
+            MADE BY{" "}
+            <a
+              href="https://www.brosavo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-amber-400 hover:text-amber-300 transition-colors"
+            >
+              BROSAVO
+            </a>
+          </div>
         </div>
       </div>
     </footer>
