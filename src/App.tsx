@@ -28,7 +28,7 @@ function App() {
         <Footer />
 
         {/* BROSAVO Watermark */}
-        <div className="fixed bottom-4 right-4 z-50 pointer-events-none select-none">
+        {/* <div className="fixed bottom-4 right-4 z-50 pointer-events-none select-none">
           <div className="rounded-full bg-stone-900/70 backdrop-blur-sm border border-white/10 px-3 py-1.5 shadow-lg">
             <span className="text-[10px] sm:text-xs font-medium tracking-wide text-white/60">
               MADE BY{' '}
@@ -37,7 +37,7 @@ function App() {
               </span>
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </RouterProvider>
   );
