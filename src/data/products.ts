@@ -363,13 +363,25 @@ export const products: Product[] = [
       {
         id: 'decorative-stones',
         name: 'Decorative Stones',
-        image: 'https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        description: 'Decorative stone pieces for mandirs, patam, and architectural accents.',
+        image: '[https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940](https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress\&cs=tinysrgb\&h=650\&w=940)',
+        description: 'Decorative stones available in a range of colors for architectural and interior applications.',
         variants: [
-          { name: 'Mandir' },
-          { name: 'Granite Chokhath' },
-          { name: 'Singale Patam' },
-          { name: 'Double Patam' },
+          { name: 'Black' },
+          { name: 'White' },
+          { name: 'Gray' },
+          { name: 'Yellow' },
+          { name: 'Red' },
+          { name: 'Multi' },
+        ],
+      },
+      {
+        id: 'mandir',
+        name: 'Mandir',
+        sizes: ['All Sizes Available'],
+        image: '[https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940](https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress\&cs=tinysrgb\&h=650\&w=940)',
+        description: 'Beautiful stone mandir products available in multiple sizes and designs.',
+        variants: [
+          { name: 'All' },
         ],
       },
       {
