@@ -154,23 +154,17 @@ export function Footer() {
       </div>
 
       <div className="border-t border-stone-800 py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-stone-500">
-          <div className="text-center sm:text-left">
-            &copy; {new Date().getFullYear()} One Click Enterprises. All rights
-            reserved.
-          </div>
-
-          <div className="text-center sm:text-right">
-            MADE BY{" "}
-            <a
-              href="https://www.brosavo.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-amber-400 hover:text-amber-300 transition-colors"
-            >
-              BROSAVO
-            </a>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left text-xs text-stone-500">
+          &copy; {new Date().getFullYear()} One Click Enterprises. All rights
+          reserved. MADE BY{" "}
+          <a
+            href="https://www.brosavo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-amber-400 hover:text-amber-300 transition-colors"
+          >
+            BROSAVO
+          </a>
         </div>
       </div>
     </footer>
