@@ -114,11 +114,10 @@ export function ProductsPage() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
-                    activeCategory === cat
+                  className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === cat
                       ? 'bg-amber-500 text-stone-900'
                       : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
-                  }`}
+                    }`}
                 >
                   {cat}
                 </button>
@@ -347,6 +346,45 @@ function ProductModal({
             <h2 className="text-2xl font-bold text-stone-900">{product.name}</h2>
           </div>
           <p className="text-stone-600 leading-relaxed">{product.description}</p>
+
+          {/* Product PDF documents */}
+          {product.pdfs && product.pdfs.length > 0 && (
+            <section className="mt-6">
+              <h3 className="text-sm font-semibold text-stone-800 uppercase tracking-wide mb-3">
+                Product Documents
+              </h3>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                {product.pdfs.map((pdf) => (
+                  <a
+                    key={pdf.file}
+                    href={pdf.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center justify-between gap-3 rounded-xl border border-stone-200 bg-stone-50 p-4 transition-colors hover:border-amber-400 hover:bg-amber-50"
+                  >
+                    <div className="flex min-w-0 items-center gap-3">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-xs font-bold text-amber-700">
+                        PDF
+                      </div>
+
+                      <div className="min-w-0">
+                        <p className="truncate text-sm font-semibold text-stone-800">
+                          {pdf.name}
+                        </p>
+
+                        <p className="mt-1 text-xs text-stone-500">
+                          Open document
+                        </p>
+                      </div>
+                    </div>
+
+                    <ArrowRight className="h-4 w-4 shrink-0 text-stone-400 transition-transform group-hover:translate-x-1 group-hover:text-amber-600" />
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Sizes */}
           {product.sizes.length > 0 && (

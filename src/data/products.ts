@@ -1,3 +1,4 @@
+
 import { Product } from '@/data/types';
 
 // ──────────────────────────────────────────────────────────────
@@ -7,18 +8,20 @@ import { Product } from '@/data/types';
 //   Each product has either `variants` (flat list) or `subProducts`
 //   (grouped list — used when a product contains distinct sub-groups).
 //
-//   Example: "Stones" has subProducts: Quartz, Granite, Cobbles, etc.
-//   Each subProduct has its own variants list.
+// PDF DOCUMENTS
+//   Place PDF files in: public/pdfs/{filename}.pdf
 //
-// VARIANT PHOTOS
-//   Place variant photos in:  public/variants/{productId}/{slug}.jpg
-//   For sub-product variants: public/variants/{productId}/{subProductId}/{slug}.jpg
+//   Each product can have multiple PDF attachments.
+//   `name` is the label shown in the UI.
+//   `file` is the public PDF path.
 //
-//   The slug is auto-generated from the variant name (lowercase,
-//   non-alphanumeric → hyphen).  If the file doesn't exist, the
-//   product's fallback `image` is shown instead.
-//
-//   See:  public/variants/README.md  for full details.
+//   Example:
+//   pdfs: [
+//     {
+//       name: 'Product Catalogue',
+//       file: '/pdfs/product-catalogue.pdf',
+//     },
+//   ]
 // ──────────────────────────────────────────────────────────────
 
 export const products: Product[] = [
@@ -29,8 +32,10 @@ export const products: Product[] = [
     icon: 'Bath',
     sizes: ['300x450', '300x300', '300x600'],
     variants: [{ name: 'Ceramic Tiles' }],
-    image: 'https://images.pexels.com/photos/5146920/pexels-photo-5146920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Premium quality ceramic bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.',
+    image:
+      'https://images.pexels.com/photos/5146920/pexels-photo-5146920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Premium quality ceramic bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.',
   },
   {
     id: 'kitchen-tiles',
@@ -39,8 +44,10 @@ export const products: Product[] = [
     icon: 'ChefHat',
     sizes: ['300x450', '300x300', '300x600'],
     variants: [{ name: 'Ceramic Tiles' }],
-    image: 'https://images.pexels.com/photos/7018379/pexels-photo-7018379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Durable and easy-to-clean ceramic kitchen tiles designed to handle heat, stains, and splashes while adding elegance.',
+    image:
+      'https://images.pexels.com/photos/7018379/pexels-photo-7018379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Durable and easy-to-clean ceramic kitchen tiles designed to handle heat, stains, and splashes while adding elegance.',
   },
   {
     id: 'floor-tiles',
@@ -54,8 +61,10 @@ export const products: Product[] = [
       { name: 'PGVT' },
       { name: 'Double Charge' },
     ],
-    image: 'https://images.pexels.com/photos/7566201/pexels-photo-7566201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'High-quality floor tiles available in porcelain, GVT, PGVT, and double charge variants for lasting beauty and strength.',
+    image:
+      'https://images.pexels.com/photos/7566201/pexels-photo-7566201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'High-quality floor tiles available in porcelain, GVT, PGVT, and double charge variants for lasting beauty and strength.',
   },
   {
     id: 'parking-tiles',
@@ -64,8 +73,22 @@ export const products: Product[] = [
     icon: 'Car',
     sizes: ['400x400', '500x500', '600x600', '600x1200'],
     variants: [{ name: 'GVT' }, { name: 'Full Body' }],
-    image: 'https://images.pexels.com/photos/27728635/pexels-photo-27728635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Heavy-duty parking tiles with full-body construction that withstands vehicle weight and weather conditions.',
+    image:
+      'https://images.pexels.com/photos/27728635/pexels-photo-27728635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Heavy-duty parking tiles with full-body construction that withstands vehicle weight and weather conditions.',
+
+    // Multiple PDF attachments for the same product.
+    pdfs: [
+      {
+        name: 'Parking Tiles 1x1',
+        file: '/pdfs/parking-tiles-1x1.pdf',
+      },
+      {
+        name: 'Parking Tiles 16x16',
+        file: '/pdfs/parking-tiles-16x16.pdf',
+      },
+    ],
   },
   {
     id: 'kitchen-slabs',
@@ -74,8 +97,10 @@ export const products: Product[] = [
     icon: 'ChefHat',
     sizes: ['800x2400', '800x3200'],
     variants: [{ name: 'Full Body' }, { name: 'Color Body' }],
-    image: 'https://images.pexels.com/photos/4994652/pexels-photo-4994652.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Large-format kitchen slabs in full body and color body for a seamless, premium countertop and backsplash solution.',
+    image:
+      'https://images.pexels.com/photos/4994652/pexels-photo-4994652.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Large-format kitchen slabs in full body and color body for a seamless, premium countertop and backsplash solution.',
   },
   {
     id: 'cool-roof-tiles',
@@ -84,8 +109,18 @@ export const products: Product[] = [
     icon: 'Home',
     sizes: ['300x300'],
     variants: [],
-    image: 'https://images.pexels.com/photos/16311247/pexels-photo-16311247.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Heat-reflective cool roof tiles that reduce indoor temperatures and energy costs while protecting your rooftop.',
+    image:
+      'https://images.pexels.com/photos/16311247/pexels-photo-16311247.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Heat-reflective cool roof tiles that reduce indoor temperatures and energy costs while protecting your rooftop.',
+
+    // PDF attachment for Cool Roof Tiles.
+    pdfs: [
+      {
+        name: 'Cool Roof Tiles Catalogue',
+        file: '/pdfs/cool-roof-tiles.pdf',
+      },
+    ],
   },
   {
     id: 'wooden-plank-tiles',
@@ -94,8 +129,10 @@ export const products: Product[] = [
     icon: 'TreePine',
     sizes: ['200x900'],
     variants: [],
-    image: 'https://images.pexels.com/photos/39338478/pexels-photo-39338478.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Wood-look plank tiles that combine the warmth of natural wood with the durability of ceramic — perfect for living spaces.',
+    image:
+      'https://images.pexels.com/photos/39338478/pexels-photo-39338478.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Wood-look plank tiles that combine the warmth of natural wood with the durability of ceramic — perfect for living spaces.',
   },
   {
     id: 'high-depth-elevation',
@@ -104,8 +141,10 @@ export const products: Product[] = [
     icon: 'Layers',
     sizes: ['300x450'],
     variants: [],
-    image: 'https://images.pexels.com/photos/20705878/pexels-photo-20705878.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'High-depth elevation tiles for striking building facades and feature walls with bold textures and patterns.',
+    image:
+      'https://images.pexels.com/photos/20705878/pexels-photo-20705878.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'High-depth elevation tiles for striking building facades and feature walls with bold textures and patterns.',
   },
   {
     id: 'swimming-pool-tiles',
@@ -114,8 +153,10 @@ export const products: Product[] = [
     icon: 'Waves',
     sizes: ['300x300'],
     variants: [],
-    image: 'https://images.pexels.com/photos/261393/pexels-photo-261393.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Waterproof, fade-resistant swimming pool tiles designed for underwater beauty and long-lasting performance.',
+    image:
+      'https://images.pexels.com/photos/261393/pexels-photo-261393.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Waterproof, fade-resistant swimming pool tiles designed for underwater beauty and long-lasting performance.',
   },
   {
     id: 'double-charge-tiles',
@@ -135,15 +176,28 @@ export const products: Product[] = [
       { name: 'Ruby' },
       { name: 'Cookie' },
     ],
-    image: 'https://images.pexels.com/photos/37341462/pexels-photo-37341462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Premium double charge tiles with through-body color and patterns for high-traffic areas that need extra durability.',
+    image:
+      'https://images.pexels.com/photos/37341462/pexels-photo-37341462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Premium double charge tiles with through-body color and patterns for high-traffic areas that need extra durability.',
   },
   {
     id: 'terracotta-jali',
     name: 'Terracotta Jali',
     category: 'Terracotta',
     icon: 'Grid2x2',
-    sizes: ['220x220x63', '220x70x30', '220x70x25', '220x70x20', '195x60x50', '240x80x10', '300x80x12', '240x70x10', '230x63x12', '230x80x10'],
+    sizes: [
+      '220x220x63',
+      '220x70x30',
+      '220x70x25',
+      '220x70x20',
+      '195x60x50',
+      '240x80x10',
+      '300x80x12',
+      '240x70x10',
+      '230x63x12',
+      '230x80x10',
+    ],
     variants: [
       { name: 'Nexa Jaali' },
       { name: 'Inigama Jaali' },
@@ -162,8 +216,10 @@ export const products: Product[] = [
       { name: 'Natural Vintage' },
       { name: 'Yellow Vintage' },
     ],
-    image: 'https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Handcrafted terracotta jali and brick designs that bring traditional Indian architecture to modern facades and partitions.',
+    image:
+      'https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Handcrafted terracotta jali and brick designs that bring traditional Indian architecture to modern facades and partitions.',
   },
   {
     id: 'terracotta-tiles',
@@ -172,8 +228,10 @@ export const products: Product[] = [
     icon: 'Grid3x3',
     sizes: ['305x305'],
     variants: [{ name: 'Floor Tile' }],
-    image: 'https://images.pexels.com/photos/5146922/pexels-photo-5146922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Natural terracotta floor tiles offering earthy tones and rustic charm for interiors and outdoor spaces.',
+    image:
+      'https://images.pexels.com/photos/5146922/pexels-photo-5146922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Natural terracotta floor tiles offering earthy tones and rustic charm for interiors and outdoor spaces.',
   },
   {
     id: 'terracotta-adhesive',
@@ -182,8 +240,10 @@ export const products: Product[] = [
     icon: 'Package',
     sizes: ['Approx 40 sq ft per 20 kg Bag'],
     variants: [{ name: 'Terracotta Adhesive' }],
-    image: 'https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Specialized adhesive for terracotta installations, ensuring strong bonding and lasting results. Covers approx 40 sq ft per 20 kg bag.',
+    image:
+      'https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Specialized adhesive for terracotta installations, ensuring strong bonding and lasting results. Covers approx 40 sq ft per 20 kg bag.',
   },
   {
     id: 'sanitary-ware',
@@ -204,15 +264,30 @@ export const products: Product[] = [
       { name: 'Table Tops' },
       { name: 'Smart Sanitary' },
     ],
-    image: 'https://images.pexels.com/photos/7214163/pexels-photo-7214163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Complete sanitary ware collection including wash basins, one-piece suites, rimless toilets, and smart sanitary fixtures.',
+    image:
+      'https://images.pexels.com/photos/7214163/pexels-photo-7214163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Complete sanitary ware collection including wash basins, one-piece suites, rimless toilets, and smart sanitary fixtures.',
   },
   {
     id: 'hilton-doors',
     name: 'Hilton Doors',
     category: 'Doors',
     icon: 'DoorOpen',
-    sizes: ['2050x960x70', '2050x960x50', '2050x1200x70', '2050x1050x70', '2400x960x70', '2400x1500x70', '2050x1250x70', '2400x1200x100', '2050x1560x100', '2400x1800x100', '2050x760x30', '2400x760x30'],
+    sizes: [
+      '2050x960x70',
+      '2050x960x50',
+      '2050x1200x70',
+      '2050x1050x70',
+      '2400x960x70',
+      '2400x1500x70',
+      '2050x1250x70',
+      '2400x1200x100',
+      '2050x1560x100',
+      '2400x1800x100',
+      '2050x760x30',
+      '2400x760x30',
+    ],
     variants: [
       { name: 'Model 00 — Edge Door', detail: '2050x960x70' },
       { name: 'Model 01 — Cube Door', detail: '2050x960x70' },
@@ -239,7 +314,7 @@ export const products: Product[] = [
       { name: 'Model 8115', detail: '2400x1200x100' },
       { name: 'Model 8133', detail: '2400x960x70' },
       { name: 'Model 8134', detail: '2400x1200x70' },
-      { name: 'Model 8147', detail: '2400x1050x100' },
+      { name: 'Model 8147', detail: '2050x1050x100' },
       { name: 'Model 8164', detail: '2400x1200x100' },
       { name: 'Model 8406', detail: '2400x1800x100' },
       { name: 'Model 8416', detail: '2400x1800x100' },
@@ -270,8 +345,10 @@ export const products: Product[] = [
       { name: 'Model 7501', detail: '2050x760x30' },
       { name: 'Model 7511', detail: '2050x760x30' },
     ],
-    image: 'https://images.pexels.com/photos/8134757/pexels-photo-8134757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Premium Hilton designer doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.',
+    image:
+      'https://images.pexels.com/photos/8134757/pexels-photo-8134757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Premium Hilton designer doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.',
   },
   {
     id: 'digital-locks',
@@ -289,11 +366,14 @@ export const products: Product[] = [
       { name: 'Nuclear Smart Lock', detail: 'S006' },
       { name: 'Glass Door Smart Lock', detail: 'S010' },
     ],
-    image: 'https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Advanced digital smart locks for homes, hotels, and offices — featuring AI-powered, palm recognition, and glass door compatible models.',
+    image:
+      'https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Advanced digital smart locks for homes, hotels, and offices — featuring AI-powered, palm recognition, and glass door compatible models.',
   },
+
   // ─────────────────────────────────────────────
-  //  Stones — grouped product with sub-products
+  // Stones — grouped product with sub-products
   // ─────────────────────────────────────────────
   {
     id: 'stones',
@@ -301,14 +381,17 @@ export const products: Product[] = [
     category: 'Stones',
     icon: 'Mountain',
     sizes: ['1200x1200', '1200x1800'],
-    image: 'https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Premium granite, marble, limestone, quartz, decorative stones, cobbles, and more — sourced from the finest quarries.',
+    image:
+      'https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Premium granite, marble, limestone, quartz, decorative stones, cobbles, and more — sourced from the finest quarries.',
     subProducts: [
       {
         id: 'granite',
         name: 'Granite',
         sizes: ['1200x1200', '1200x1800'],
-        image: 'https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image:
+          'https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
         description: 'Premium granite in a variety of colors and finishes.',
         variants: [
           { name: 'Alaska' },
@@ -327,8 +410,10 @@ export const products: Product[] = [
         id: 'marble',
         name: 'Marble',
         sizes: ['All Sizes Available'],
-        image: 'https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        description: 'Natural marble in elegant finishes for floors, walls, and countertops.',
+        image:
+          'https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        description:
+          'Natural marble in elegant finishes for floors, walls, and countertops.',
         variants: [
           { name: 'Katni Marble' },
           { name: 'Makrana Marble' },
@@ -337,8 +422,10 @@ export const products: Product[] = [
       {
         id: 'limestone',
         name: 'Limestone',
-        image: 'https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        description: 'Durable limestone in single and double polished finishes.',
+        image:
+          'https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        description:
+          'Durable limestone in single and double polished finishes.',
         variants: [
           { name: 'Black Limestone — Single Polished' },
           { name: 'Black Limestone — Double Polished' },
@@ -347,8 +434,10 @@ export const products: Product[] = [
       {
         id: 'quartz',
         name: 'Quartz',
-        image: 'https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        description: 'Digital and composite quartz surfaces for countertops and vanities.',
+        image:
+          'https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        description:
+          'Digital and composite quartz surfaces for countertops and vanities.',
         variants: [
           { name: 'Digital Quartz — Plain Black' },
           { name: 'Digital Quartz — Plain White' },
@@ -363,8 +452,10 @@ export const products: Product[] = [
       {
         id: 'decorative-stones',
         name: 'Decorative Stones',
-        image: '[https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940](https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress\&cs=tinysrgb\&h=650\&w=940)',
-        description: 'Decorative stones available in a range of colors for architectural and interior applications.',
+        image:
+          'https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        description:
+          'Decorative stones available in a range of colors for architectural and interior applications.',
         variants: [
           { name: 'Black' },
           { name: 'White' },
@@ -378,18 +469,20 @@ export const products: Product[] = [
         id: 'mandir',
         name: 'Mandir',
         sizes: ['All Sizes Available'],
-        image: '[https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940](https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress\&cs=tinysrgb\&h=650\&w=940)',
-        description: 'Beautiful stone mandir products available in multiple sizes and designs.',
-        variants: [
-          { name: 'All' },
-        ],
+        image:
+          'https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        description:
+          'Beautiful stone mandir products available in multiple sizes and designs.',
+        variants: [{ name: 'All' }],
       },
       {
         id: 'cobbles-stone',
         name: 'Cobbles Stone',
         sizes: ['All Sizes Available'],
-        image: 'https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        description: 'Natural cobblestones in multiple colors for pathways, driveways, and landscaping.',
+        image:
+          'https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        description:
+          'Natural cobblestones in multiple colors for pathways, driveways, and landscaping.',
         variants: [
           { name: 'Black' },
           { name: 'Grey' },
@@ -412,8 +505,10 @@ export const products: Product[] = [
       { name: 'Pencil Mate — Rose Gold' },
       { name: 'Poster Tiles' },
     ],
-    image: 'https://images.pexels.com/photos/7794427/pexels-photo-7794427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Decorative pencil mate and poster tiles in golden, silver, black, and rose gold finishes for borders and accent walls.',
+    image:
+      'https://images.pexels.com/photos/7794427/pexels-photo-7794427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Decorative pencil mate and poster tiles in golden, silver, black, and rose gold finishes for borders and accent walls.',
   },
   {
     id: 'step-riser',
@@ -426,8 +521,10 @@ export const products: Product[] = [
       { name: 'Sugar' },
       { name: 'Carving' },
     ],
-    image: 'https://images.pexels.com/photos/6782340/pexels-photo-6782340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Premium step riser tiles in matt, sugar, and carving finishes for staircase elegance and durability.',
+    image:
+      'https://images.pexels.com/photos/6782340/pexels-photo-6782340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Premium step riser tiles in matt, sugar, and carving finishes for staircase elegance and durability.',
   },
   {
     id: 'tiles-adhesive',
@@ -442,8 +539,10 @@ export const products: Product[] = [
       { name: 'Asian Paints' },
       { name: 'Ultratech' },
     ],
-    image: 'https://images.pexels.com/photos/3926796/pexels-photo-3926796.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'High-quality tile adhesives and grouts from leading brands including JK, Roff, Asian Paints, and Ultratech.',
+    image:
+      'https://images.pexels.com/photos/3926796/pexels-photo-3926796.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'High-quality tile adhesives and grouts from leading brands including JK, Roff, Asian Paints, and Ultratech.',
   },
   {
     id: 'kitchen-sink',
@@ -457,8 +556,10 @@ export const products: Product[] = [
       { name: 'Satin' },
       { name: 'Plain Steel' },
     ],
-    image: 'https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Stainless steel kitchen sinks in handmade, waterfall, satin, and plain finishes. Available in all sizes and colors with double bowl options.',
+    image:
+      'https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Stainless steel kitchen sinks in handmade, waterfall, satin, and plain finishes. Available in all sizes and colors with double bowl options.',
   },
   {
     id: 'vanity',
@@ -470,7 +571,9 @@ export const products: Product[] = [
       { name: 'Wall Hung' },
       { name: 'Floor with Legs' },
     ],
-    image: 'https://images.pexels.com/photos/6934265/pexels-photo-6934265.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    description: 'Elegant vanity units in wall-hung and floor-standing designs, available in 16x20, 18x24, and 18x32 sizes.',
+    image:
+      'https://images.pexels.com/photos/6934265/pexels-photo-6934265.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    description:
+      'Elegant vanity units in wall-hung and floor-standing designs, available in 16x20, 18x24, and 18x32 sizes.',
   },
 ];
