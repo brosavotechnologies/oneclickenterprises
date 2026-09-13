@@ -1,5 +1,5 @@
+
 import {
-  DoorOpen,
   Phone,
   Mail,
   MapPin,
@@ -7,6 +7,7 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
+
 import { useRouter } from "@/components/Router";
 import { officeLocations, supportInfo } from "@/data/locations";
 
@@ -17,20 +18,26 @@ export function Footer() {
     <footer className="bg-stone-900 text-stone-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
           {/* Company */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center">
-                <DoorOpen className="w-5 h-5 text-white" />
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="One Click Enterprises logo"
+                className="w-10 h-10 rounded-full object-cover"
+              />
+
               <span className="text-white font-bold text-lg">
                 One Click Enterprises
               </span>
             </div>
+
             <p className="text-sm text-stone-400 leading-relaxed">
               Your trusted partner for premium doors, tiles, sanitary ware,
               granite, and building materials across India.
             </p>
+
             <div className="flex gap-3 pt-2">
               <a
                 href={officeLocations[1].facebook || "#"}
@@ -41,6 +48,7 @@ export function Footer() {
               >
                 <Facebook className="w-4 h-4" />
               </a>
+
               <a
                 href={officeLocations[1].instagram || "#"}
                 target="_blank"
@@ -50,6 +58,7 @@ export function Footer() {
               >
                 <Instagram className="w-4 h-4" />
               </a>
+
               <a
                 href={officeLocations[1].youtube || "#"}
                 target="_blank"
@@ -67,6 +76,7 @@ export function Footer() {
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
               Quick Links
             </h3>
+
             <ul className="space-y-2 text-sm">
               <li>
                 <button
@@ -76,6 +86,7 @@ export function Footer() {
                   Home
                 </button>
               </li>
+
               <li>
                 <button
                   onClick={() => navigate("/about")}
@@ -84,6 +95,7 @@ export function Footer() {
                   About Us
                 </button>
               </li>
+
               <li>
                 <button
                   onClick={() => navigate("/products")}
@@ -92,6 +104,7 @@ export function Footer() {
                   Products
                 </button>
               </li>
+
               <li>
                 <button
                   onClick={() => navigate("/contact")}
@@ -108,6 +121,7 @@ export function Footer() {
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
               Our Products
             </h3>
+
             <ul className="space-y-2 text-sm text-stone-400">
               <li>Hilton Designer Doors</li>
               <li>Ceramic & Floor Tiles</li>
@@ -123,6 +137,7 @@ export function Footer() {
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
               Get in Touch
             </h3>
+
             <div className="space-y-3 text-sm">
               <a
                 href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
@@ -131,6 +146,7 @@ export function Footer() {
                 <Phone className="w-4 h-4 flex-shrink-0 text-amber-500" />
                 <span>{supportInfo.phone}</span>
               </a>
+
               <a
                 href={
                   officeLocations[4].email
@@ -142,6 +158,7 @@ export function Footer() {
                 <Mail className="w-4 h-4 flex-shrink-0 text-amber-500" />
                 <span>{officeLocations[4].email}</span>
               </a>
+
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 flex-shrink-0 text-amber-500 mt-0.5" />
                 <span className="text-stone-400">
@@ -150,13 +167,16 @@ export function Footer() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
+      {/* Copyright */}
       <div className="border-t border-stone-800 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left text-xs text-stone-500">
           &copy; {new Date().getFullYear()} One Click Enterprises. All rights
           reserved. MADE BY{" "}
+
           <a
             href="https://www.brosavo.com"
             target="_blank"
