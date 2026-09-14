@@ -71,7 +71,7 @@ export function HomePage() {
       <section className="relative bg-stone-900 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/8134757/pexels-photo-8134757.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1920"
+            src="images/hilton-doors.jpg"
             alt="Modern interior with premium doors"
             className="w-full h-full object-cover opacity-40"
           />
