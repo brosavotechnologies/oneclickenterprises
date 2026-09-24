@@ -46,7 +46,7 @@ const featureItems = [
   },
   {
     icon: Truck,
-    title: "Pan-India Delivery",
+    title: "Pan-India & International Delivery",
     desc: "Serving customers across the world with reliable logistics.",
   },
   {

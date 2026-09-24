@@ -147,7 +147,7 @@ export function AboutPage() {
               {[
                 { icon: Building2, label: "Branches", value: "4+" },
                 { icon: Award, label: "Product Types", value: "25+" },
-                { icon: Truck, label: "Cities Served", value: "Pan-India" },
+                { icon: Truck, label: "Cities Served", value: "Pan-India & International" },
                 { icon: Users, label: "Happy Customers", value: "1000+" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
@@ -251,7 +251,7 @@ export function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-stone-900">Our Journey</h2>
             <p className="text-stone-500 mt-3">
-              From a single office to a pan-India presence.
+              From a single office to a Pan-India & International presence.
             </p>
           </div>
           <div className="relative">
