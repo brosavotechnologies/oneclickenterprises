@@ -14,7 +14,7 @@ export interface OfficeLocation {
 
 export const supportInfo = {
   country: 'INDIA & Other Countries — Customer Support',
-  phone: '+91 9303 303 909',
+  phone: '+91 910 910 12 90',
 };
 
 export const officeLocations: OfficeLocation[] = [
