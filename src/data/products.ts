@@ -52,7 +52,7 @@ export const products: Product[] = [
     sizes: ["300x450", "300x300", "300x600"],
     variants: [],
     image:
-      "https://images.pexels.com/photos/7018379/pexels-photo-7018379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/kitchen-images.jpeg",
     description:
       "Durable and easy-to-clean Ceramic and Vitrified kitchen tiles designed to handle heat, stains, and splashes while adding elegance.",
       pdfs: [
@@ -70,9 +70,19 @@ export const products: Product[] = [
     sizes: ["600x600", "600x1200", "800x800", "800x1600", "1200x1800"],
     variants: [],
     image:
-      "https://images.pexels.com/photos/7566201/pexels-photo-7566201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/floor-tiles.jpeg",
     description:
       "High-quality floor tiles available in porcelain, GVT, PGVT, and double charge variants for lasting beauty and strength.",
+    pdfs: [
+        {
+          name: "Floor Tiles Glossy",
+          file: "/pdfs/floor-tiles-glossy.pdf",
+        },
+        {
+          name: "Parking Tiles Spectra",
+          file: "/pdfs/floor-tiles-spectra.pdf",
+        },
+      ],
   },
   {
     id: "parking-tiles",
@@ -82,7 +92,7 @@ export const products: Product[] = [
     sizes: ["400x400", "500x500", "600x600", "600x1200"],
     variants: [],
     image:
-      "https://images.pexels.com/photos/27728635/pexels-photo-27728635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/parking-tiles-image.jpeg",
     description:
       "Heavy-duty parking tiles with full-body construction that withstands vehicle weight and weather conditions.",
 
@@ -106,7 +116,7 @@ export const products: Product[] = [
     sizes: ["800x2400", "800x3200"],
     variants: [],
     image:
-      "https://images.pexels.com/photos/4994652/pexels-photo-4994652.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/kitchen-slabs.jpeg",
     description:
       "Large-format kitchen slabs in full body and color body for a seamless, premium countertop and backsplash solution.",
   },
