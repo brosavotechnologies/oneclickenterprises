@@ -100,7 +100,7 @@ export function ContactPage() {
                   Service Area
                 </p>
                 <p className="text-sm font-semibold text-stone-800">
-                  Pan-India
+                  All over the World
                 </p>
               </div>
             </div>
