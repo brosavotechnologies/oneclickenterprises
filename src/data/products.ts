@@ -32,9 +32,17 @@ export const products: Product[] = [
     sizes: ["300x450", "300x300", "300x600"],
     variants: [{ name: "Ceramic and Vitrified Tiles" }],
     image:
-      "https://images.pexels.com/photos/5146920/pexels-photo-5146920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "./public/images/bathroom-image-01.jpeg",
     description:
       "Premium quality Ceramic and Vitrified bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.",
+
+    // PDF attachment for Cool Roof Tiles.
+    pdfs: [
+      {
+        name: "Bathroom Tiles Catalogue",
+        file: "/pdfs/bathroom-tiles.pdf.pdf",
+      },
+    ],
   },
   {
     id: "kitchen-tiles",

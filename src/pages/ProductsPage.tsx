@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo } from "react";
 import {
   DoorOpen,
   Grid3x3,
@@ -15,14 +15,14 @@ import {
   Phone,
   ArrowRight,
   ImageIcon,
-} from 'lucide-react';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { useRouter } from '@/components/Router';
-import { VariantImage } from '@/components/VariantImage';
-import { products } from '@/data/products';
-import { Product, SubProduct, productCategories } from '@/data/types';
-import { variantImagePath, subVariantImagePath } from '@/data/imageUtils';
-import { supportInfo } from '@/data/locations';
+} from "lucide-react";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { useRouter } from "@/components/Router";
+import { VariantImage } from "@/components/VariantImage";
+import { products } from "@/data/products";
+import { Product, SubProduct, productCategories } from "@/data/types";
+import { variantImagePath, subVariantImagePath } from "@/data/imageUtils";
+import { supportInfo } from "@/data/locations";
 
 const iconMap: Record<string, typeof DoorOpen> = {
   DoorOpen,
@@ -60,37 +60,43 @@ function getVariantList(p: Product): string[] {
 
 export function ProductsPage() {
   const { navigate } = useRouter();
-  const [activeCategory, setActiveCategory] = useState('All');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const filteredProducts = useMemo(() => {
     return products.filter((p) => {
-      const matchesCategory = activeCategory === 'All' || p.category === activeCategory;
+      const matchesCategory =
+        activeCategory === "All" || p.category === activeCategory;
       const variantNames = getVariantList(p);
       const matchesSearch =
-        searchQuery === '' ||
+        searchQuery === "" ||
         p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
         (p.subProducts?.some((sp) =>
-          sp.name.toLowerCase().includes(searchQuery.toLowerCase())
-        ) ?? false) ||
-        variantNames.some((n) => n.toLowerCase().includes(searchQuery.toLowerCase()));
+          sp.name.toLowerCase().includes(searchQuery.toLowerCase()),
+        ) ??
+          false) ||
+        variantNames.some((n) =>
+          n.toLowerCase().includes(searchQuery.toLowerCase()),
+        );
       return matchesCategory && matchesSearch;
     });
   }, [activeCategory, searchQuery]);
 
   return (
     <div className="min-h-screen bg-stone-50">
-      <Breadcrumbs crumbs={[{ label: 'Products' }]} />
+      <Breadcrumbs crumbs={[{ label: "Products" }]} />
 
       {/* Header */}
       <section className="bg-stone-900 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white">Our Products</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold text-white">
+            Our Products
+          </h1>
           <p className="mt-4 text-stone-400 max-w-2xl mx-auto">
-            Explore our comprehensive catalog of premium doors, tiles, sanitary ware, granite,
-            smart locks, and building materials.
+            Explore our comprehensive catalog of premium doors, tiles, sanitary
+            ware, granite, smart locks, and building materials.
           </p>
         </div>
       </section>
@@ -114,10 +120,11 @@ export function ProductsPage() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === cat
-                      ? 'bg-amber-500 text-stone-900'
-                      : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
-                    }`}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
+                    activeCategory === cat
+                      ? "bg-amber-500 text-stone-900"
+                      : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+                  }`}
                 >
                   {cat}
                 </button>
@@ -130,13 +137,16 @@ export function ProductsPage() {
       {/* Products grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-6 text-sm text-stone-500">
-          Showing {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''}
-          {activeCategory !== 'All' && ` in ${activeCategory}`}
+          Showing {filteredProducts.length} product
+          {filteredProducts.length !== 1 ? "s" : ""}
+          {activeCategory !== "All" && ` in ${activeCategory}`}
         </div>
 
         {filteredProducts.length === 0 ? (
           <div className="text-center py-20">
-            <p className="text-stone-400 text-lg">No products found. Try a different search.</p>
+            <p className="text-stone-400 text-lg">
+              No products found. Try a different search.
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -174,7 +184,9 @@ export function ProductsPage() {
                   <div className="p-5">
                     <div className="flex items-center gap-2 mb-2">
                       <Icon className="w-4 h-4 text-amber-600" />
-                      <h3 className="font-semibold text-stone-800">{product.name}</h3>
+                      <h3 className="font-semibold text-stone-800">
+                        {product.name}
+                      </h3>
                     </div>
                     <p className="text-sm text-stone-500 line-clamp-2 leading-relaxed">
                       {product.description}
@@ -232,7 +244,8 @@ export function ProductsPage() {
                     {product.variants && product.variants.length > 0 && (
                       <div className="mt-3">
                         <span className="text-xs font-medium text-stone-400 uppercase tracking-wide">
-                          {variantCount} Variet{variantCount === 1 ? 'y' : 'ies'}
+                          {variantCount} Variet
+                          {variantCount === 1 ? "y" : "ies"}
                         </span>
                         <div className="mt-1.5 flex flex-wrap gap-1.5">
                           {product.variants.slice(0, 3).map((v) => (
@@ -274,7 +287,7 @@ export function ProductsPage() {
           onClose={() => setSelectedProduct(null)}
           onContact={() => {
             setSelectedProduct(null);
-            navigate('/contact');
+            navigate("/contact");
           }}
         />
       )}
@@ -286,10 +299,11 @@ export function ProductsPage() {
             Can't find what you're looking for?
           </h2>
           <p className="text-stone-400 mb-6">
-            We have even more products in-store. Call us for any specific requirements.
+            We have even more products in-store. Call us for any specific
+            requirements.
           </p>
           <a
-            href={`tel:${supportInfo.phone.replace(/\s/g, '')}`}
+            href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors shadow-lg"
           >
             <Phone className="w-4 h-4" />
@@ -328,7 +342,11 @@ function ProductModal({
       >
         {/* Header image */}
         <div className="relative h-56 sm:h-64">
-          <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-full object-cover"
+          />
           <button
             onClick={onClose}
             className="absolute top-4 right-4 w-9 h-9 rounded-full bg-stone-900/60 text-white flex items-center justify-center hover:bg-stone-900 transition-colors"
@@ -343,9 +361,13 @@ function ProductModal({
         <div className="p-6 sm:p-8">
           <div className="flex items-center gap-2 mb-3">
             <Icon className="w-5 h-5 text-amber-600" />
-            <h2 className="text-2xl font-bold text-stone-900">{product.name}</h2>
+            <h2 className="text-2xl font-bold text-stone-900">
+              {product.name}
+            </h2>
           </div>
-          <p className="text-stone-600 leading-relaxed">{product.description}</p>
+          <p className="text-stone-600 leading-relaxed">
+            {product.description}
+          </p>
 
           {/* Product PDF documents */}
           {product.pdfs && product.pdfs.length > 0 && (
@@ -390,7 +412,7 @@ function ProductModal({
           {product.sizes.length > 0 && (
             <div className="mt-6">
               <h3 className="text-sm font-semibold text-stone-800 uppercase tracking-wide mb-3">
-                Available Sizes
+                Available Sizes (in mm)
               </h3>
               <div className="flex flex-wrap gap-2">
                 {product.sizes.map((size) => (
@@ -434,7 +456,7 @@ function ProductModal({
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <a
-              href={`tel:${supportInfo.phone.replace(/\s/g, '')}`}
+              href="tel:9039082647"
               className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors"
             >
               <Phone className="w-4 h-4" />
@@ -467,9 +489,12 @@ function SubProductSection({
     <div>
       <div className="flex items-center gap-2 mb-2">
         <ChevronRight className="w-4 h-4 text-amber-600" />
-        <h4 className="text-lg font-semibold text-stone-800">{subProduct.name}</h4>
+        <h4 className="text-lg font-semibold text-stone-800">
+          {subProduct.name}
+        </h4>
         <span className="text-xs text-stone-400">
-          {subProduct.variants.length} variet{subProduct.variants.length === 1 ? 'y' : 'ies'}
+          {subProduct.variants.length} variet
+          {subProduct.variants.length === 1 ? "y" : "ies"}
         </span>
       </div>
       {subProduct.description && (
@@ -530,14 +555,21 @@ function VariantGallery({
                 alt={v.name}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute bottom-1 right-1 w-5 h-5 rounded-full bg-stone-900/50 flex items-center justify-center" title="Demo photo — replace with actual product photo">
+              <div
+                className="absolute bottom-1 right-1 w-5 h-5 rounded-full bg-stone-900/50 flex items-center justify-center"
+                title="Demo photo — replace with actual product photo"
+              >
                 <ImageIcon className="w-3 h-3 text-white/70" />
               </div>
             </div>
             <div className="p-2">
-              <p className="text-xs font-medium text-stone-700 truncate">{v.name}</p>
+              <p className="text-xs font-medium text-stone-700 truncate">
+                {v.name}
+              </p>
               {v.detail && (
-                <p className="text-[10px] text-stone-400 truncate">{v.detail}</p>
+                <p className="text-[10px] text-stone-400 truncate">
+                  {v.detail}
+                </p>
               )}
             </div>
           </div>
