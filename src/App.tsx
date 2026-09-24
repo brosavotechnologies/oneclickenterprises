@@ -27,17 +27,28 @@ function App() {
 
         <Footer />
 
-        {/* BROSAVO Watermark */}
-        {/* <div className="fixed bottom-4 right-4 z-50 pointer-events-none select-none">
-          <div className="rounded-full bg-stone-900/70 backdrop-blur-sm border border-white/10 px-3 py-1.5 shadow-lg">
-            <span className="text-[10px] sm:text-xs font-medium tracking-wide text-white/60">
-              MADE BY{' '}
-              <span className="font-bold text-amber-400/80">
+        {/* Website Under Construction / Payment Pending Overlay */}
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/20">
+          <div className="pointer-events-none select-none -rotate-12 text-center">
+            <div className="border-4 border-red-600/70 px-10 py-6">
+              <div className="text-5xl sm:text-6xl font-black tracking-widest text-red-600/75">
+                WEBSITE
+              </div>
+
+              <div className="text-4xl sm:text-5xl font-black tracking-widest text-red-600/75">
+                UNDER CONSTRUCTION
+              </div>
+
+              {/* <div className="mt-3 text-xl sm:text-2xl font-bold tracking-wider text-red-600/75">
+                PAYMENT PENDING
+              </div> */}
+
+              <div className="mt-2 text-sm sm:text-base font-medium tracking-wide text-red-600/65">
                 BROSAVO
-              </span>
-            </span>
+              </div>
+            </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </RouterProvider>
   );
