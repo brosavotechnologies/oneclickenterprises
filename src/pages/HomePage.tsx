@@ -89,9 +89,9 @@ export function HomePage() {
             </h1>
             <p className="mt-6 text-lg text-stone-300 leading-relaxed">
               One Click Enterprises brings you an extensive collection of
-              Ceramic and Vitrified Tiles, Granite, Breeze- Block ( Terracotta
-              Jali), Sanitary ware, Hilton designer doors, Smart Locks, and more
-              — all under one roof.
+              Ceramic and Vitrified Tiles, Granite, Breeze- Block
+              ( Terracotta Jali), Sanitary ware, Hilton designer doors, Smart
+              Locks, and more — all under one roof.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <button

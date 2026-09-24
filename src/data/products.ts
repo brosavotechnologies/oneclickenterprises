@@ -30,11 +30,11 @@ export const products: Product[] = [
     category: "Tiles",
     icon: "Bath",
     sizes: ["300x450", "300x300", "300x600"],
-    variants: [{ name: "Ceramic Tiles" }],
+    variants: [{ name: "Ceramic and Vitrified Tiles" }],
     image:
       "https://images.pexels.com/photos/5146920/pexels-photo-5146920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
-      "Premium quality ceramic bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.",
+      "Premium quality Ceramic and Vitrified bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.",
   },
   {
     id: "kitchen-tiles",
@@ -42,11 +42,11 @@ export const products: Product[] = [
     category: "Tiles",
     icon: "ChefHat",
     sizes: ["300x450", "300x300", "300x600"],
-    variants: [{ name: "Ceramic Tiles" }],
+    variants: [{ name: "Ceramic and Vitrified Tiles" }],
     image:
       "https://images.pexels.com/photos/7018379/pexels-photo-7018379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
-      "Durable and easy-to-clean ceramic kitchen tiles designed to handle heat, stains, and splashes while adding elegance.",
+      "Durable and easy-to-clean Ceramic and Vitrified kitchen tiles designed to handle heat, stains, and splashes while adding elegance.",
   },
   {
     id: "floor-tiles",
@@ -131,7 +131,7 @@ export const products: Product[] = [
     image:
       "https://images.pexels.com/photos/39338478/pexels-photo-39338478.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
-      "Wood-look plank tiles that combine the warmth of natural wood with the durability of ceramic — perfect for living spaces.",
+      "Wood-look plank tiles that combine the warmth of natural wood with the durability of Ceramic and Vitrified — perfect for living spaces.",
   },
   {
     id: "high-depth-elevation",

@@ -1,4 +1,3 @@
-
 import {
   Phone,
   Mail,
@@ -18,7 +17,6 @@ export function Footer() {
     <footer className="bg-stone-900 text-stone-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {/* Company */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
@@ -34,8 +32,8 @@ export function Footer() {
             </div>
 
             <p className="text-sm text-stone-400 leading-relaxed">
-              Your trusted partner for premium Tiles, Granite, Sanitary,
-              Doors, and building materials across all over the world.
+              Your trusted partner for premium Tiles, Granite, Sanitary, Doors,
+              and building materials across all over the world.
             </p>
 
             <div className="flex gap-3 pt-2">
@@ -123,7 +121,7 @@ export function Footer() {
             </h3>
 
             <ul className="space-y-2 text-sm text-stone-400">
-              <li>Ceramic & Floor Tiles</li>
+              <li>Ceramic and Vitrified & Floor Tiles</li>
               <li>Terracotta Jali & Bricks</li>
               <li>Sanitary Ware</li>
               <li>Granite & Marble</li>
@@ -167,7 +165,6 @@ export function Footer() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -176,7 +173,6 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left text-xs text-stone-500">
           &copy; {new Date().getFullYear()} One Click Enterprises. All rights
           reserved. MADE BY{" "}
-
           <a
             href="https://www.brosavo.com"
             target="_blank"
