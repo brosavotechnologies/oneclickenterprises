@@ -14,7 +14,7 @@ export interface OfficeLocation {
 
 export const supportInfo = {
   country: 'INDIA & Other Countries — Customer Support',
-  phone: '9 303 303 909',
+  phone: '+91 9303 303 909',
 };
 
 export const officeLocations: OfficeLocation[] = [
@@ -108,4 +108,20 @@ export const officeLocations: OfficeLocation[] = [
     youtube: 'https://youtube.com/@oneclickenterprise?si=hvxOhz382CSLgWRk',
     email: 'rudraksh.k.arya@gmail.com',
   },
+  {
+    city: 'Netherlands',
+    branchType: 'Office',
+    firmName: 'One Click Enterprises',
+    address:
+      '',
+    state: 'Netherlands',
+    mapLink: '',
+    phones: [
+      '',
+    ],
+    facebook: 'https://www.facebook.com/enterprisesoneclick',
+    instagram: 'https://www.instagram.com/one.click.enterprises?igsh=bzg4ZnVkMWV1aHhm',
+    youtube: 'https://youtube.com/@oneclickenterprise?si=hvxOhz382CSLgWRk',
+    email: 'kshitiz22@yahoo.com',
+  }
 ];

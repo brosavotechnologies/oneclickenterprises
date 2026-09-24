@@ -52,9 +52,14 @@ const milestones = [
     desc: "Expanded to Indore with One Click Enterprises Pvt. Ltd.",
   },
   {
+    year: "International",
+    title: "Netherlands Presence",
+    desc: "Expanded our presence internationally with operations and business reach in the Netherlands.",
+  },
+  {
     year: "Today",
-    title: "Pan-India Presence",
-    desc: "Now serving customers across India with offices in Delhi NCR, Jabalpur, Nagpur & Indore.",
+    title: "Pan-India & International Presence",
+    desc: "Serving customers across India with offices in Delhi NCR, Jabalpur, Nagpur & Indore, along with an international presence in the Netherlands.",
   },
 ];
 
