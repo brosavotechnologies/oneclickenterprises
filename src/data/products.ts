@@ -128,7 +128,7 @@ export const products: Product[] = [
     sizes: ["300x300"],
     variants: [],
     image:
-      "https://images.pexels.com/photos/16311247/pexels-photo-16311247.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/cool-roof.jpeg",
     description:
       "Heat-reflective cool roof tiles that reduce indoor temperatures and energy costs while protecting your rooftop.",
 
