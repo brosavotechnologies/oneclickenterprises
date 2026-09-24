@@ -151,6 +151,16 @@ export const products: Product[] = [
       "https://images.pexels.com/photos/39338478/pexels-photo-39338478.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
       "Wood-look plank tiles that combine the warmth of natural wood with the durability of Ceramic and Vitrified — perfect for living spaces.",
+      pdfs: [
+        {
+          name: "Wooden Plank Tiles 01",
+          file: "/pdfs/wooden-planks-8x36-01.pdf",
+        },
+        {
+          name: "Wooden Plank Tiles 02",
+          file: "/pdfs/wooden-planks-8x36-02.pdf",
+        },
+      ],
   },
   {
     id: "high-depth-elevation",
