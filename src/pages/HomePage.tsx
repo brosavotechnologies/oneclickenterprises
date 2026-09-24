@@ -13,10 +13,10 @@ import {
   Award,
   MapPin,
   Phone,
-} from 'lucide-react';
-import { useRouter } from '@/components/Router';
-import { products } from '@/data/products';
-import { officeLocations, supportInfo } from '@/data/locations';
+} from "lucide-react";
+import { useRouter } from "@/components/Router";
+import { products } from "@/data/products";
+import { officeLocations, supportInfo } from "@/data/locations";
 
 const iconMap: Record<string, typeof DoorOpen> = {
   DoorOpen,
@@ -41,23 +41,23 @@ const iconMap: Record<string, typeof DoorOpen> = {
 const featureItems = [
   {
     icon: Award,
-    title: 'Premium Quality',
-    desc: 'Only the finest materials from trusted brands and manufacturers.',
+    title: "Premium Quality",
+    desc: "Only the finest materials from trusted brands and manufacturers.",
   },
   {
     icon: Truck,
-    title: 'Pan-India Delivery',
-    desc: 'Serving customers across the world with reliable logistics.',
+    title: "Pan-India Delivery",
+    desc: "Serving customers across the world with reliable logistics.",
   },
   {
     icon: ShieldCheck,
-    title: 'Trusted Since Years',
-    desc: 'A reputation built on quality products and honest service.',
+    title: "Trusted Since Years",
+    desc: "A reputation built on quality products and honest service.",
   },
   {
     icon: MapPin,
-    title: '5 Branch Offices',
-    desc: 'Delhi NCR, Jabalpur, Nagpur, Indore and Netherlands with warehouses.',
+    title: "5 Branch Offices",
+    desc: "Delhi NCR, Jabalpur, Nagpur, Indore and Netherlands with warehouses.",
   },
 ];
 
@@ -80,27 +80,29 @@ export function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500/20 text-amber-400 text-sm font-medium mb-4">
-            Tiles &middot; Granite &middot; Sanitary &middot; Door &middot; More
+              Tiles &middot; Granite &middot; Sanitary &middot; Door &middot;
+              More
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Premium Building Materials,
               <span className="text-amber-400"> One Click Away</span>
             </h1>
             <p className="mt-6 text-lg text-stone-300 leading-relaxed">
-              One Click Enterprises brings you an extensive collection of Hilton designer doors,
-              ceramic and floor tiles, terracotta jali, sanitary ware, digital smart locks, granite,
-              and more — all under one roof.
+              One Click Enterprises brings you an extensive collection of
+              Ceramic and Vitrified Tiles, Granite, Breeze- Block ( Terracotta
+              Jali), Sanitary ware, Hilton designer doors, Smart Locks, and more
+              — all under one roof.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <button
-                onClick={() => navigate('/products')}
+                onClick={() => navigate("/products")}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors shadow-lg"
               >
                 Explore Products
                 <ArrowRight className="w-4 h-4" />
               </button>
               <button
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate("/contact")}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-stone-600 text-white font-semibold hover:bg-stone-800 transition-colors"
               >
                 Contact Us
@@ -120,8 +122,12 @@ export function HomePage() {
                   <item.icon className="w-5 h-5 text-amber-600" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-stone-800">{item.title}</h3>
-                  <p className="text-xs text-stone-500 mt-1 leading-relaxed">{item.desc}</p>
+                  <h3 className="text-sm font-semibold text-stone-800">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-stone-500 mt-1 leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -139,7 +145,8 @@ export function HomePage() {
             Featured Products
           </h2>
           <p className="text-stone-500 mt-3 max-w-xl mx-auto">
-            A glimpse of our wide range of building materials and home improvement products.
+            A glimpse of our wide range of building materials and home
+            improvement products.
           </p>
         </div>
 
@@ -164,7 +171,9 @@ export function HomePage() {
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
                     <Icon className="w-4 h-4 text-amber-600" />
-                    <h3 className="font-semibold text-stone-800">{product.name}</h3>
+                    <h3 className="font-semibold text-stone-800">
+                      {product.name}
+                    </h3>
                   </div>
                   <p className="text-sm text-stone-500 line-clamp-2 leading-relaxed">
                     {product.description}
@@ -194,7 +203,7 @@ export function HomePage() {
 
         <div className="text-center mt-10">
           <button
-            onClick={() => navigate('/products')}
+            onClick={() => navigate("/products")}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-stone-300 text-stone-700 font-semibold hover:border-amber-500 hover:text-amber-600 transition-colors"
           >
             View All Products
@@ -211,29 +220,56 @@ export function HomePage() {
               Everything for Your Home & Business
             </h2>
             <p className="text-stone-500 mt-3 max-w-xl mx-auto">
-              From doors to tiles to sanitary ware — we are your one-stop destination.
+              From doors to tiles to sanitary ware — we are your one-stop
+              destination.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              { name: 'Hilton Designer Doors', icon: DoorOpen, count: '50+ Models' },
-              { name: 'Floor & Wall Tiles', icon: Grid3x3, count: '100+ Varieties' },
-              { name: 'Terracotta Jali & Bricks', icon: Layers, count: '15+ Designs' },
-              { name: 'Sanitary Ware', icon: Droplets, count: '10+ Types' },
-              { name: 'Digital Smart Locks', icon: Lock, count: '8 Models' },
-              { name: 'Granite & Marble', icon: Mountain, count: '20+ Varieties' },
-              { name: 'Decorative Tiles', icon: Sparkles, count: '5+ Finishes' },
-              { name: 'Kitchen Sinks & Vanity', icon: ChefHat, count: 'Multiple Sizes' },
+              {
+                name: "Hilton Designer Doors",
+                icon: DoorOpen,
+                count: "50+ Models",
+              },
+              {
+                name: "Floor & Wall Tiles",
+                icon: Grid3x3,
+                count: "100+ Varieties",
+              },
+              {
+                name: "Terracotta Jali & Bricks",
+                icon: Layers,
+                count: "15+ Designs",
+              },
+              { name: "Sanitary Ware", icon: Droplets, count: "10+ Types" },
+              { name: "Digital Smart Locks", icon: Lock, count: "8 Models" },
+              {
+                name: "Granite & Marble",
+                icon: Mountain,
+                count: "20+ Varieties",
+              },
+              {
+                name: "Decorative Tiles",
+                icon: Sparkles,
+                count: "5+ Finishes",
+              },
+              {
+                name: "Kitchen Sinks & Vanity",
+                icon: ChefHat,
+                count: "Multiple Sizes",
+              },
             ].map((cat) => (
               <div
                 key={cat.name}
-                onClick={() => navigate('/products')}
+                onClick={() => navigate("/products")}
                 className="bg-white rounded-xl p-5 text-center hover:shadow-lg transition-all cursor-pointer group"
               >
                 <div className="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center mx-auto mb-3 group-hover:bg-amber-100 transition-colors">
                   <cat.icon className="w-6 h-6 text-amber-600" />
                 </div>
-                <h3 className="text-sm font-semibold text-stone-800">{cat.name}</h3>
+                <h3 className="text-sm font-semibold text-stone-800">
+                  {cat.name}
+                </h3>
                 <p className="text-xs text-stone-400 mt-1">{cat.count}</p>
               </div>
             ))}
@@ -248,18 +284,19 @@ export function HomePage() {
             Ready to Transform Your Space?
           </h2>
           <p className="text-stone-400 mt-4 max-w-xl mx-auto">
-            Get in touch with our team for product enquiries, bulk orders, and best prices.
+            Get in touch with our team for product enquiries, bulk orders, and
+            best prices.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href={`tel:${supportInfo.phone.replace(/\s/g, '')}`}
+              href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors shadow-lg"
             >
               <Phone className="w-4 h-4" />
               Call {supportInfo.phone}
             </a>
             <button
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate("/contact")}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-stone-600 text-white font-semibold hover:bg-stone-800 transition-colors"
             >
               Visit Our Offices
@@ -271,7 +308,7 @@ export function HomePage() {
               <span key={idx} className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-amber-500" />
                 {loc.city}
-                {loc.branchType === 'Warehouse' ? ' (Warehouse)' : ''}
+                {loc.branchType === "Warehouse" ? " (Warehouse)" : ""}
               </span>
             ))}
           </div>
