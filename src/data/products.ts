@@ -110,7 +110,7 @@ export const products: Product[] = [
   },
   {
     id: "kitchen-slabs",
-    name: "Kitchen Slabs",
+    name: "Kitchen Quatz",
     category: "Tiles",
     icon: "ChefHat",
     sizes: ["800x2400", "800x3200"],
@@ -118,7 +118,7 @@ export const products: Product[] = [
     image:
       "/images/kitchen-slabs.jpeg",
     description:
-      "Large-format kitchen slabs in full body and color body for a seamless, premium countertop and backsplash solution.",
+      "Large-format kitchen quatz in full body and color body for a seamless, premium countertop and backsplash solution.",
   },
   {
     id: "cool-roof-tiles",
