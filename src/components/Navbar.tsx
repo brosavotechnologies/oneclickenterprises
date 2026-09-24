@@ -44,7 +44,7 @@ export function Navbar() {
               </span>
 
               <span className="block text-amber-400 text-[10px] sm:text-xs leading-tight">
-                Doors · Tiles · Sanitary · More
+                Tiles · Granite · Sanitary · Door · More
               </span>
             </div>
           </button>

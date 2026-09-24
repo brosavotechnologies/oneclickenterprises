@@ -1,36 +1,61 @@
-import { Target, Eye, Users, TrendingUp, Award, Truck, Building2, Heart } from 'lucide-react';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { useRouter } from '@/components/Router';
-import { officeLocations } from '@/data/locations';
+import {
+  Target,
+  Eye,
+  Users,
+  TrendingUp,
+  Award,
+  Truck,
+  Building2,
+  Heart,
+} from "lucide-react";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { useRouter } from "@/components/Router";
+import { officeLocations } from "@/data/locations";
 
 const values = [
   {
     icon: Award,
-    title: 'Quality First',
-    desc: 'We source only from trusted brands and manufacturers, ensuring every product meets our quality standards.',
+    title: "Quality First",
+    desc: "We source only from trusted brands and manufacturers, ensuring every product meets our quality standards.",
   },
   {
     icon: Users,
-    title: 'Customer-Centric',
-    desc: 'Our customers are at the heart of everything we do. We listen, advise, and deliver on our promises.',
+    title: "Customer-Centric",
+    desc: "Our customers are at the heart of everything we do. We listen, advise, and deliver on our promises.",
   },
   {
     icon: TrendingUp,
-    title: 'Continuous Growth',
-    desc: 'From a single office to four branches across India, we keep expanding to serve you better.',
+    title: "Continuous Growth",
+    desc: "From a single office to four branches across the World, we keep expanding to serve you better.",
   },
   {
     icon: Heart,
-    title: 'Honest Service',
-    desc: 'Transparent pricing, genuine products, and after-sales support you can rely on.',
+    title: "Honest Service",
+    desc: "Transparent pricing, genuine products, and after-sales support you can rely on.",
   },
 ];
 
 const milestones = [
-  { year: 'Early Days', title: 'Founded in Jabalpur', desc: 'One Click Enterprises began its journey from Jabalpur, Madhya Pradesh.' },
-  { year: 'Expansion', title: 'Nagpur Branch', desc: 'Opened our Nagpur office to serve the Maharashtra region.' },
-  { year: 'Growth', title: 'Indore Branch', desc: 'Expanded to Indore with One Click Enterprises Pvt. Ltd.' },
-  { year: 'Today', title: 'Pan-India Presence', desc: 'Now serving customers across India with offices in Delhi NCR, Jabalpur, Nagpur & Indore.' },
+  {
+    year: "Early Days",
+    title: "Founded in Jabalpur",
+    desc: "One Click Enterprises began its journey from Jabalpur, Madhya Pradesh.",
+  },
+  {
+    year: "Expansion",
+    title: "Nagpur Branch",
+    desc: "Opened our Nagpur office to serve the Maharashtra region.",
+  },
+  {
+    year: "Growth",
+    title: "Indore Branch",
+    desc: "Expanded to Indore with One Click Enterprises Pvt. Ltd.",
+  },
+  {
+    year: "Today",
+    title: "Pan-India Presence",
+    desc: "Now serving customers across India with offices in Delhi NCR, Jabalpur, Nagpur & Indore.",
+  },
 ];
 
 export function AboutPage() {
@@ -38,7 +63,7 @@ export function AboutPage() {
 
   return (
     <div className="min-h-screen bg-stone-50">
-      <Breadcrumbs crumbs={[{ label: 'About Us' }]} />
+      <Breadcrumbs crumbs={[{ label: "About Us" }]} />
 
       {/* Hero */}
       <section className="relative bg-stone-900 overflow-hidden">
@@ -56,9 +81,16 @@ export function AboutPage() {
               About One Click Enterprises
             </h1>
             <p className="mt-6 text-lg text-stone-300 leading-relaxed">
-              A leading distributor of premium doors, tiles, sanitary ware, granite, and building
-              materials — proudly serving customers across India from our offices in Delhi NCR,
-              Jabalpur, Nagpur, and Indore.
+              One Click Enterprises is a leading distributor and supplier of
+              premium Tiles, Granite, Kota, Stone, Quartz, Sanitaryware, Breeze-
+              Bricks ( Terracotta Jali ), Doors, Smart Locks, and Building
+              Materials, proudly serving customers across India and
+              international markets worldwide.
+              <br /> <br />
+              With offices in Delhi NCR, Nagpur, Jabalpur, Indore, and
+              Netherlands, we are committed to delivering quality products,
+              competitive pricing, and reliable service to our customers across
+              the globe.
             </p>
           </div>
         </div>
@@ -76,36 +108,50 @@ export function AboutPage() {
             </h2>
             <div className="space-y-4 text-stone-600 leading-relaxed">
               <p>
-                One Click Enterprises started as a building materials supplier in Jabalpur,
-                Madhya Pradesh, with a simple mission: make premium quality construction and
-                home improvement products easily accessible to everyone.
+                One Click Enterprises began its journey with a simple vision —
+                to provide premium-quality building and home improvement
+                products with reliability, transparency, and excellent customer
+                service.
               </p>
               <p>
-                Over the years, we have grown from a single outlet to a multi-city network with
-                offices and warehouses in Delhi NCR, Jabalpur, Nagpur, and Indore. Our product
-                range has expanded to include Hilton designer doors with 50+ models, ceramic and
-                floor tiles, terracotta jali and bricks, sanitary ware, digital smart locks,
-                granite, marble, decorative tiles, adhesives, kitchen sinks, and vanity units.
+                Over the years, we have grown from our roots in Jabalpur, Madhya
+                Pradesh into a growing multi-city and international business,
+                with our presence in Delhi NCR, Jabalpur, Nagpur, Indore, and
+                Netherland.
               </p>
               <p>
-                We are proud to be associated with leading brands such as Hilton Doors, and offer
-                products from trusted manufacturers including JK, Roff, Asian Paints, and Ultratech.
-                Our commitment to quality and customer satisfaction has made us a preferred partner
-                for homeowners, builders, architects, and contractors alike.
+                Our product portfolio includes Tiles, Granite, Kota , Stone,
+                Quartz, Breeze- locks ( Terracotta Jali ), Sanitaryware, Doors,
+                Smart Locks, and Building Materials, offering customers a
+                comprehensive range of products for residential, commercial, and
+                construction requirements.
+              </p>
+              <p>
+                At One Click Enterprises, we believe that every product is an
+                opportunity to build a lasting relationship. Our focus remains
+                on quality products, competitive pricing, dependable service,
+                and customer satisfaction.
+              </p>
+              <p>
+                Today, we are expanding our reach across India and international
+                markets worldwide, while continuing to build our business on the
+                foundation that matters most — trust, one product at a time.
               </p>
             </div>
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
               {[
-                { icon: Building2, label: 'Branches', value: '4+' },
-                { icon: Award, label: 'Product Types', value: '25+' },
-                { icon: Truck, label: 'Cities Served', value: 'Pan-India' },
-                { icon: Users, label: 'Happy Customers', value: '1000+' },
+                { icon: Building2, label: "Branches", value: "4+" },
+                { icon: Award, label: "Product Types", value: "25+" },
+                { icon: Truck, label: "Cities Served", value: "Pan-India" },
+                { icon: Users, label: "Happy Customers", value: "1000+" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <div className="w-10 h-10 rounded-lg bg-amber-50 flex items-center justify-center mx-auto mb-2">
                     <stat.icon className="w-5 h-5 text-amber-600" />
                   </div>
-                  <div className="text-xl font-bold text-stone-900">{stat.value}</div>
+                  <div className="text-xl font-bold text-stone-900">
+                    {stat.value}
+                  </div>
                   <div className="text-xs text-stone-500">{stat.label}</div>
                 </div>
               ))}
@@ -134,22 +180,30 @@ export function AboutPage() {
               <div className="w-12 h-12 rounded-xl bg-amber-500 flex items-center justify-center mb-4">
                 <Target className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-stone-900 mb-3">Our Mission</h3>
+              <h3 className="text-xl font-bold text-stone-900 mb-3">
+                Our Mission
+              </h3>
               <p className="text-stone-600 leading-relaxed">
-                To provide our customers with the finest quality building materials and home
-                improvement products at competitive prices, backed by excellent service and
-                expert guidance — making construction and renovation simple and stress-free.
+                To provide our customers with the finest quality building
+                materials and home improvement products at competitive prices,
+                backed by excellent service and expert guidance — making
+                construction and renovation simple and stress-free.
               </p>
             </div>
             <div className="bg-gradient-to-br from-stone-100 to-stone-50 rounded-2xl p-8 border border-stone-200">
               <div className="w-12 h-12 rounded-xl bg-stone-700 flex items-center justify-center mb-4">
                 <Eye className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-stone-900 mb-3">Our Vision</h3>
+              <h3 className="text-xl font-bold text-stone-900 mb-3">
+                Our Vision
+              </h3>
               <p className="text-stone-600 leading-relaxed">
-                To become India's most trusted and comprehensive building materials supplier,
-                recognized for product quality, customer service, and innovation — expanding our
-                reach to every corner of the country.
+                To become India’s and the World’s most trusted building
+                materials supplier, known for quality, service, and innovation.
+                <br />
+                To expand our reach across India and International markets,
+                building lasting customer relationships through trust and
+                excellence.
               </p>
             </div>
           </div>
@@ -162,7 +216,9 @@ export function AboutPage() {
           <span className="text-amber-600 text-sm font-semibold uppercase tracking-wider">
             What We Stand For
           </span>
-          <h2 className="text-3xl font-bold text-stone-900 mt-2">Our Core Values</h2>
+          <h2 className="text-3xl font-bold text-stone-900 mt-2">
+            Our Core Values
+          </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value) => (
@@ -173,8 +229,12 @@ export function AboutPage() {
               <div className="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center mb-4">
                 <value.icon className="w-6 h-6 text-amber-600" />
               </div>
-              <h3 className="font-semibold text-stone-800 mb-2">{value.title}</h3>
-              <p className="text-sm text-stone-500 leading-relaxed">{value.desc}</p>
+              <h3 className="font-semibold text-stone-800 mb-2">
+                {value.title}
+              </h3>
+              <p className="text-sm text-stone-500 leading-relaxed">
+                {value.desc}
+              </p>
             </div>
           ))}
         </div>
@@ -185,7 +245,9 @@ export function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-stone-900">Our Journey</h2>
-            <p className="text-stone-500 mt-3">From a single office to a pan-India presence.</p>
+            <p className="text-stone-500 mt-3">
+              From a single office to a pan-India presence.
+            </p>
           </div>
           <div className="relative">
             <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-0.5 bg-amber-200 sm:-translate-x-1/2" />
@@ -193,7 +255,7 @@ export function AboutPage() {
               <div
                 key={idx}
                 className={`relative flex items-start gap-6 mb-8 ${
-                  idx % 2 === 0 ? 'sm:flex-row-reverse sm:text-right' : ''
+                  idx % 2 === 0 ? "sm:flex-row-reverse sm:text-right" : ""
                 }`}
               >
                 <div className="absolute left-4 sm:left-1/2 w-3 h-3 rounded-full bg-amber-500 ring-4 ring-amber-100 sm:-translate-x-1/2 mt-2" />
@@ -203,7 +265,9 @@ export function AboutPage() {
                     <span className="text-amber-600 text-xs font-semibold uppercase tracking-wider">
                       {m.year}
                     </span>
-                    <h3 className="font-semibold text-stone-800 mt-1">{m.title}</h3>
+                    <h3 className="font-semibold text-stone-800 mt-1">
+                      {m.title}
+                    </h3>
                     <p className="text-sm text-stone-500 mt-1">{m.desc}</p>
                   </div>
                 </div>
@@ -216,23 +280,27 @@ export function AboutPage() {
       {/* Locations strip */}
       <section className="bg-stone-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Where to Find Us</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Where to Find Us
+          </h2>
           <p className="text-stone-400 mb-8 max-w-xl mx-auto">
             We have offices and warehouses across India to serve you better.
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {officeLocations
-              .filter((l) => l.branchType === 'Office')
+              .filter((l) => l.branchType === "Office")
               .map((loc, idx) => (
                 <div key={idx} className="bg-stone-800 rounded-xl p-5">
                   <Building2 className="w-6 h-6 text-amber-500 mx-auto mb-2" />
-                  <h3 className="text-white font-semibold text-sm">{loc.city}</h3>
+                  <h3 className="text-white font-semibold text-sm">
+                    {loc.city}
+                  </h3>
                   <p className="text-stone-400 text-xs mt-1">{loc.state}</p>
                 </div>
               ))}
           </div>
           <button
-            onClick={() => navigate('/contact')}
+            onClick={() => navigate("/contact")}
             className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors shadow-lg"
           >
             View All Locations

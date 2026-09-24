@@ -47,7 +47,7 @@ const featureItems = [
   {
     icon: Truck,
     title: 'Pan-India Delivery',
-    desc: 'Serving customers across India with reliable logistics from 4 cities.',
+    desc: 'Serving customers across the world with reliable logistics.',
   },
   {
     icon: ShieldCheck,
@@ -56,8 +56,8 @@ const featureItems = [
   },
   {
     icon: MapPin,
-    title: '4 Branch Offices',
-    desc: 'Delhi NCR, Jabalpur, Nagpur & Indore with warehouses.',
+    title: '5 Branch Offices',
+    desc: 'Delhi NCR, Jabalpur, Nagpur, Indore and Netherlands with warehouses.',
   },
 ];
 
