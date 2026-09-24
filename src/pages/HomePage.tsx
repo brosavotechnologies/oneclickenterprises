@@ -80,7 +80,7 @@ export function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500/20 text-amber-400 text-sm font-medium mb-4">
-              Doors &middot; Tiles &middot; Sanitary &middot; Granite &middot; More
+            Tiles &middot; Granite &middot; Sanitary &middot; Door &middot; More
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Premium Building Materials,
