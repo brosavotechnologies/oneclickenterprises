@@ -32,7 +32,7 @@ export const products: Product[] = [
     sizes: ["300x450", "300x300", "300x600"],
     variants: [],
     image:
-      "../public/images/bathroom-image-01.jpeg",
+      "/images/bathroom-image-01.jpeg",
     description:
       "Premium quality Ceramic and Vitrified bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.",
 
