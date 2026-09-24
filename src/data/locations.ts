@@ -37,13 +37,12 @@ export const officeLocations: OfficeLocation[] = [
     address:
       '1405/C, Behind Sangam Book Depot, In Front Of Kotak Madindra Bank, Gorakhapur, Jabalpur, Madhya Pradesh-482001',
     state: 'Madhya Pradesh',
-    mapLink: 'https://maps.app.goo.gl/wprnYgVp9yFFNp1f8',
+    mapLink: 'https://share.google/ZPFdihzNwAcCPnThz',
     phones: [
-      '910 910 12 90',
-      '910 910 12 91',
-      '910 910 12 92',
+      '89 89 89 99 19',
       '910 910 12 93',
       '910 910 12 94',
+      '910 910 12 95',
     ],
     facebook: 'https://www.facebook.com/enterprisesoneclick',
     instagram: 'https://www.instagram.com/one.click.enterprises?igsh=bzg4ZnVkMWV1aHhm',
@@ -60,9 +59,6 @@ export const officeLocations: OfficeLocation[] = [
     mapLink: 'https://maps.app.goo.gl/WYaAFuUYnAQmmhyR8',
     phones: [
       '903 908 26 42',
-      '903 908 26 43',
-      '903 908 26 47',
-      '903 908 26 49',
     ],
   },
   {
@@ -86,7 +82,7 @@ export const officeLocations: OfficeLocation[] = [
     address:
       'In Front of 5 No Naka Bhandewadi, Beside Anshul Trading Company, Bhandara, Nagpur- 440008',
     state: 'Maharashtra',
-    mapLink: 'https://maps.app.goo.gl/KHpP6VyKwX7arP6A',
+    mapLink: '',
     phones: [],
   },
   {
@@ -115,13 +111,13 @@ export const officeLocations: OfficeLocation[] = [
     address:
       '',
     state: 'Netherlands',
-    mapLink: '',
+    mapLink: 'https://share.google/R8l8TdpvDB8PRYVSC',
     phones: [
-      '',
+      '+31 6 38289421',
     ],
     facebook: 'https://www.facebook.com/enterprisesoneclick',
     instagram: 'https://www.instagram.com/one.click.enterprises?igsh=bzg4ZnVkMWV1aHhm',
     youtube: 'https://youtube.com/@oneclickenterprise?si=hvxOhz382CSLgWRk',
-    email: 'kshitiz22@yahoo.com',
+    email: 'Satwik.Chaudhary@gmail.com',
   }
 ];

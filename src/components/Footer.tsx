@@ -34,8 +34,8 @@ export function Footer() {
             </div>
 
             <p className="text-sm text-stone-400 leading-relaxed">
-              Your trusted partner for premium doors, tiles, sanitary ware,
-              granite, and building materials across India.
+              Your trusted partner for premium Tiles, Granite, Sanitary,
+              Doors, and building materials across all over the world.
             </p>
 
             <div className="flex gap-3 pt-2">
@@ -123,12 +123,12 @@ export function Footer() {
             </h3>
 
             <ul className="space-y-2 text-sm text-stone-400">
-              <li>Hilton Designer Doors</li>
               <li>Ceramic & Floor Tiles</li>
               <li>Terracotta Jali & Bricks</li>
               <li>Sanitary Ware</li>
-              <li>Digital Smart Locks</li>
               <li>Granite & Marble</li>
+              <li>Hilton Designer Doors</li>
+              <li>Digital Smart Locks</li>
             </ul>
           </div>
 
