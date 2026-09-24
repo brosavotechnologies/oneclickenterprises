@@ -456,7 +456,7 @@ function ProductModal({
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <a
-              href="tel:9039082647"
+              href="tel:+919039082647"
               className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors"
             >
               <Phone className="w-4 h-4" />

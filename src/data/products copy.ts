@@ -30,7 +30,7 @@ export const products: Product[] = [
     category: "Tiles",
     icon: "Bath",
     sizes: ["300x450", "300x300", "300x600"],
-    variants: [],
+    variants: [{ name: "Ceramic and Vitrified Tiles" }],
     image:
       "../public/images/bathroom-image-01.jpeg",
     description:
@@ -50,17 +50,11 @@ export const products: Product[] = [
     category: "Tiles",
     icon: "ChefHat",
     sizes: ["300x450", "300x300", "300x600"],
-    variants: [],
+    variants: [{ name: "Ceramic and Vitrified Tiles" }],
     image:
       "https://images.pexels.com/photos/7018379/pexels-photo-7018379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
       "Durable and easy-to-clean Ceramic and Vitrified kitchen tiles designed to handle heat, stains, and splashes while adding elegance.",
-      pdfs: [
-        {
-          name: "Kitchen Tiles Catalogue",
-          file: "/pdfs/kitchen-tiles.pdf",
-        },
-      ],
   },
   {
     id: "floor-tiles",
@@ -68,7 +62,12 @@ export const products: Product[] = [
     category: "Tiles",
     icon: "Grid3x3",
     sizes: ["600x600", "600x1200", "800x800", "800x1600", "1200x1800"],
-    variants: [],
+    variants: [
+      { name: "Porcelain" },
+      { name: "GVT" },
+      { name: "PGVT" },
+      { name: "Double Charge" },
+    ],
     image:
       "https://images.pexels.com/photos/7566201/pexels-photo-7566201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -80,7 +79,7 @@ export const products: Product[] = [
     category: "Tiles",
     icon: "Car",
     sizes: ["400x400", "500x500", "600x600", "600x1200"],
-    variants: [],
+    variants: [{ name: "GVT" }, { name: "Full Body" }],
     image:
       "https://images.pexels.com/photos/27728635/pexels-photo-27728635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -104,7 +103,7 @@ export const products: Product[] = [
     category: "Tiles",
     icon: "ChefHat",
     sizes: ["800x2400", "800x3200"],
-    variants: [],
+    variants: [{ name: "Full Body" }, { name: "Color Body" }],
     image:
       "https://images.pexels.com/photos/4994652/pexels-photo-4994652.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -172,7 +171,18 @@ export const products: Product[] = [
     category: "Tiles",
     icon: "Layers",
     sizes: ["600x600"],
-    variants: [],
+    variants: [
+      { name: "Matrix White" },
+      { name: "Matrix Silver" },
+      { name: "Matrix Gold" },
+      { name: "Tropicana White" },
+      { name: "Pista" },
+      { name: "Decia White" },
+      { name: "Smoke" },
+      { name: "Sandy Beige" },
+      { name: "Ruby" },
+      { name: "Cookie" },
+    ],
     image:
       "https://images.pexels.com/photos/37341462/pexels-photo-37341462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -195,7 +205,24 @@ export const products: Product[] = [
       "230x63x12",
       "230x80x10",
     ],
-    variants: [],
+    variants: [
+      { name: "Nexa Jaali" },
+      { name: "Inigama Jaali" },
+      { name: "Kite Jaali" },
+      { name: "Tulip Jaali" },
+      { name: "Zebra Jaali" },
+      { name: "Flower Jaali" },
+      { name: "Panama Jaali" },
+      { name: "Jaipur Pink" },
+      { name: "Roman Retro" },
+      { name: "Rough Soft Pink" },
+      { name: "Two Hole Round" },
+      { name: "Antique Bricks" },
+      { name: "Plain Long Bricks" },
+      { name: "Oskino Bricks" },
+      { name: "Natural Vintage" },
+      { name: "Yellow Vintage" },
+    ],
     image:
       "https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -213,7 +240,7 @@ export const products: Product[] = [
     category: "Terracotta",
     icon: "Grid3x3",
     sizes: ["305x305"],
-    variants: [],
+    variants: [{ name: "Floor Tile" }],
     image:
       "https://images.pexels.com/photos/5146922/pexels-photo-5146922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -225,7 +252,7 @@ export const products: Product[] = [
     category: "Terracotta",
     icon: "Package",
     sizes: ["Approx 40 sq ft per 20 kg Bag"],
-    variants: [],
+    variants: [{ name: "Terracotta Adhesive" }],
     image:
       "https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -237,7 +264,19 @@ export const products: Product[] = [
     category: "Sanitary",
     icon: "Droplets",
     sizes: ["All Sizes Available"],
-    variants: [],
+    variants: [
+      { name: "White Wash Basin" },
+      { name: "Colour Wash Basin" },
+      { name: "White Table Top" },
+      { name: "Square Wash Basin" },
+      { name: "Designer Damru" },
+      { name: "Heritage" },
+      { name: "One Piece Suites" },
+      { name: "Water Fall" },
+      { name: "Rimless" },
+      { name: "Table Tops" },
+      { name: "Smart Sanitary" },
+    ],
     image:
       "https://images.pexels.com/photos/7214163/pexels-photo-7214163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -262,7 +301,63 @@ export const products: Product[] = [
       "2050x760x30",
       "2400x760x30",
     ],
-    variants: [],
+    variants: [
+      { name: "Model 00 — Edge Door", detail: "2050x960x70" },
+      { name: "Model 01 — Cube Door", detail: "2050x960x70" },
+      { name: "Model 02 — Hiltz Door 702A", detail: "2050x960x50" },
+      { name: "Model 7023", detail: "2050x960x70" },
+      { name: "Model 7024", detail: "2050x1200x70" },
+      { name: "Model 7027", detail: "2050x1050x70" },
+      { name: "Model 7034", detail: "2050x1200x70" },
+      { name: "Model 7037", detail: "2050x1050x100" },
+      { name: "Model 7040", detail: "2050x1200x71" },
+      { name: "Model 7044", detail: "2050x1200x70" },
+      { name: "Model 7047", detail: "2050x1250x70" },
+      { name: "Model 7043", detail: "2050x960x70" },
+      { name: "Model 8023", detail: "2400x960x70" },
+      { name: "Model 8025", detail: "2400x1500x70" },
+      { name: "Model 8034", detail: "2400x1200x100" },
+      { name: "Model 8036", detail: "2400x1800x100" },
+      { name: "Model 8047", detail: "2400x1050x70" },
+      { name: "Model 8053", detail: "2400x960x70" },
+      { name: "Model 8064", detail: "2400x1200x70" },
+      { name: "Model 8094", detail: "2400x1200x100" },
+      { name: "Model 8104", detail: "2400x1200x70" },
+      { name: "Model 8107", detail: "2400x1050x70" },
+      { name: "Model 8115", detail: "2400x1200x100" },
+      { name: "Model 8133", detail: "2400x960x70" },
+      { name: "Model 8134", detail: "2400x1200x70" },
+      { name: "Model 8147", detail: "2050x1050x100" },
+      { name: "Model 8164", detail: "2400x1200x100" },
+      { name: "Model 8406", detail: "2400x1800x100" },
+      { name: "Model 8416", detail: "2400x1800x100" },
+      { name: "Model 8426", detail: "2400x1800x100" },
+      { name: "Model 8501", detail: "2400x760x30" },
+      { name: "Model 8511", detail: "2400x760x30" },
+      { name: "Model 7053", detail: "2050x960x70" },
+      { name: "Model 7057", detail: "2050x1050x70" },
+      { name: "Model 7064", detail: "2050x1200x70" },
+      { name: "Model 7067", detail: "2050x1050x70" },
+      { name: "Model 7074", detail: "2050x1200x100" },
+      { name: "Model 7077", detail: "2050x1050x70" },
+      { name: "Model 7087", detail: "2050x1050x70" },
+      { name: "Model 7097", detail: "2050x1050x100" },
+      { name: "Model 7104", detail: "2010x1200x70" },
+      { name: "Model 7107", detail: "2050x1050x70" },
+      { name: "Model 7114", detail: "2050x1200x70" },
+      { name: "Model 7115", detail: "2050x1500x100" },
+      { name: "Model 7117", detail: "2050x1050x100" },
+      { name: "Model 7128", detail: "2050x1180x100" },
+      { name: "Model 7133", detail: "2050x960x70" },
+      { name: "Model 7134", detail: "2050x1200x70" },
+      { name: "Model 7147", detail: "2050x1050x100" },
+      { name: "Model 7154", detail: "2050x1200x70" },
+      { name: "Model 7157", detail: "2050x1050x70" },
+      { name: "Model 7164", detail: "2050x1200x100" },
+      { name: "Model 7174", detail: "2050x1200x100" },
+      { name: "Model 7501", detail: "2050x760x30" },
+      { name: "Model 7511", detail: "2050x760x30" },
+    ],
     image: "/images/hilton-doors.jpg",
     description:
       "Premium Hilton designer doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.",
@@ -273,7 +368,16 @@ export const products: Product[] = [
     category: "Digital Locks",
     icon: "Lock",
     sizes: [],
-    variants: [],
+    variants: [
+      { name: "Hotel Smart Lock", detail: "S000" },
+      { name: "Basic Smart Lock", detail: "S001" },
+      { name: "Advance Smart Lock", detail: "S002" },
+      { name: "AI Smart Lock", detail: "S003" },
+      { name: "German Smart Lock", detail: "S004" },
+      { name: "Palm Smart Lock", detail: "S005" },
+      { name: "Nuclear Smart Lock", detail: "S006" },
+      { name: "Glass Door Smart Lock", detail: "S010" },
+    ],
     image:
       "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -301,7 +405,18 @@ export const products: Product[] = [
         image:
           "https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description: "Premium granite in a variety of colors and finishes.",
-        variants: [],
+        variants: [
+          { name: "Alaska" },
+          { name: "Absolute Black" },
+          { name: "Black Galaxy" },
+          { name: "Black Pearl" },
+          { name: "Black Forest" },
+          { name: "Steel Grey" },
+          { name: "Alaska Gold" },
+          { name: "Tan Brown" },
+          { name: "Tropical Green" },
+          { name: "Red Stone" },
+        ],
       },
       {
         id: "marble",
@@ -311,7 +426,7 @@ export const products: Product[] = [
           "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
           "Natural marble in elegant finishes for floors, walls, and countertops.",
-        variants: [],
+        variants: [{ name: "Katni Marble" }, { name: "Makrana Marble" }],
       },
       {
         id: "limestone",
@@ -320,7 +435,10 @@ export const products: Product[] = [
           "https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
           "Durable limestone in single and double polished finishes.",
-        variants: [],
+        variants: [
+          { name: "Black Limestone — Single Polished" },
+          { name: "Black Limestone — Double Polished" },
+        ],
       },
       {
         id: "quartz",
@@ -329,7 +447,16 @@ export const products: Product[] = [
           "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
           "Digital and composite quartz surfaces for countertops and vanities.",
-        variants: [],
+        variants: [
+          { name: "Digital Quartz — Plain Black" },
+          { name: "Digital Quartz — Plain White" },
+          { name: "Digital Quartz — Plain Brown" },
+          { name: "Digital Quartz — Sataurio" },
+          { name: "Composite Quartz — Red Galaxy" },
+          { name: "Composite Quartz — White Galaxy" },
+          { name: "Composite Quartz — Yellow Galaxy" },
+          { name: "Composite Quartz — Blue Galaxy" },
+        ],
       },
       {
         id: "decorative-stones",
@@ -338,7 +465,14 @@ export const products: Product[] = [
           "https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
           "Decorative stones available in a range of colors for architectural and interior applications.",
-        variants: [],
+        variants: [
+          { name: "Black" },
+          { name: "White" },
+          { name: "Gray" },
+          { name: "Yellow" },
+          { name: "Red" },
+          { name: "Multi" },
+        ],
       },
       {
         id: "mandir",
@@ -348,7 +482,7 @@ export const products: Product[] = [
           "https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
           "Beautiful stone mandir products available in multiple sizes and designs.",
-        variants: [],
+        variants: [{ name: "All" }],
       },
       {
         id: "cobbles-stone",
@@ -358,7 +492,12 @@ export const products: Product[] = [
           "https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
           "Natural cobblestones in multiple colors for pathways, driveways, and landscaping.",
-        variants: [],
+        variants: [
+          { name: "Black" },
+          { name: "Grey" },
+          { name: "Yellow" },
+          { name: "Red" },
+        ],
       },
     ],
   },
@@ -368,7 +507,13 @@ export const products: Product[] = [
     category: "Decorative",
     icon: "Sparkles",
     sizes: ["600x600"],
-    variants: [],
+    variants: [
+      { name: "Pencil Mate — Golden" },
+      { name: "Pencil Mate — Silver" },
+      { name: "Pencil Mate — Black" },
+      { name: "Pencil Mate — Rose Gold" },
+      { name: "Poster Tiles" },
+    ],
     image:
       "https://images.pexels.com/photos/7794427/pexels-photo-7794427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -380,7 +525,7 @@ export const products: Product[] = [
     category: "Decorative",
     icon: "Stairs",
     sizes: ["300x900", "300x1000", "300x1200"],
-    variants: [],
+    variants: [{ name: "Matt Finish" }, { name: "Sugar" }, { name: "Carving" }],
     image:
       "https://images.pexels.com/photos/6782340/pexels-photo-6782340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -398,7 +543,13 @@ export const products: Product[] = [
     category: "Adhesive",
     icon: "Package",
     sizes: [],
-    variants: [],
+    variants: [
+      { name: "JK Wall Magic" },
+      { name: "Antique" },
+      { name: "Roff" },
+      { name: "Asian Paints" },
+      { name: "Ultratech" },
+    ],
     image: "images/tiles-adhesive.jpg",
     description:
       "High-quality tile adhesives and grouts from leading brands including JK, Roff, Asian Paints, and Ultratech.",
@@ -409,7 +560,12 @@ export const products: Product[] = [
     category: "Kitchen",
     icon: "ChefHat",
     sizes: ["All Sizes / All Colors / Double Bowl"],
-    variants: [],
+    variants: [
+      { name: "Hand Made" },
+      { name: "Water Fall" },
+      { name: "Satin" },
+      { name: "Plain Steel" },
+    ],
     image:
       "https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
@@ -421,7 +577,7 @@ export const products: Product[] = [
     category: "Bathroom",
     icon: "Bath",
     sizes: ["16x20", "18x24", "18x32"],
-    variants: [],
+    variants: [{ name: "Wall Hung" }, { name: "Floor with Legs" }],
     image:
       "https://images.pexels.com/photos/6934265/pexels-photo-6934265.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:

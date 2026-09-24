@@ -1,6 +1,5 @@
 import {
   Phone,
-  Mail,
   MapPin,
   Facebook,
   Instagram,
