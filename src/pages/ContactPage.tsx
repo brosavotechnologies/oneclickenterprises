@@ -76,7 +76,7 @@ export function ContactPage() {
               </div>
             </a>
             <a
-              href="mailto:oneclickenterprisesofficial@gmail.com"
+              href="mailto:oneclickenterprises80@gmail.com"
               className="flex items-center gap-3 group"
             >
               <div className="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center flex-shrink-0">
@@ -87,7 +87,7 @@ export function ContactPage() {
                   Email Us
                 </p>
                 <p className="text-sm font-semibold text-stone-800 group-hover:text-amber-600 transition-colors">
-                  oneclickenterprisesofficial@gmail.com
+                  oneclickenterprises80@gmail.com
                 </p>
               </div>
             </a>

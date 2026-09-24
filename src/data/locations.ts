@@ -73,7 +73,7 @@ export const officeLocations: OfficeLocation[] = [
     facebook: 'https://www.facebook.com/profile.php?id=61576801516516',
     instagram: 'https://www.instagram.com/one_click_tiles_nagpur?igsh=MTdocTN3endwZ3Fvag==',
     youtube: 'https://www.youtube.com/@oneclickenterprisesofficial',
-    email: 'oneclickenterprisesofficial@gmail.com',
+    email: 'oneclickenterprises80@gmail.com',
   },
   {
     city: 'Nagpur',
