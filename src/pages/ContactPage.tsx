@@ -60,7 +60,7 @@ export function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <a
-              href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
+              href="tel:+919303303909"
               className="flex items-center gap-3 group"
             >
               <div className="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center flex-shrink-0">
@@ -71,7 +71,7 @@ export function ContactPage() {
                   Call Us
                 </p>
                 <p className="text-sm font-semibold text-stone-800 group-hover:text-amber-600 transition-colors">
-                  {supportInfo.phone}
+                  +91 93 03 30 909
                 </p>
               </div>
             </a>

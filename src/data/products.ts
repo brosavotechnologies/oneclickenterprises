@@ -31,8 +31,7 @@ export const products: Product[] = [
     icon: "Bath",
     sizes: ["300x450", "300x300", "300x600"],
     variants: [],
-    image:
-      "/images/bathroom-image-01.jpeg",
+    image: "/images/bathroom-image-01.jpeg",
     description:
       "Premium quality Ceramic and Vitrified bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.",
 
@@ -51,16 +50,15 @@ export const products: Product[] = [
     icon: "ChefHat",
     sizes: ["300x450", "300x300", "300x600"],
     variants: [],
-    image:
-      "/images/kitchen-images.jpeg",
+    image: "/images/kitchen-images.jpeg",
     description:
       "Durable and easy-to-clean Ceramic and Vitrified kitchen tiles designed to handle heat, stains, and splashes while adding elegance.",
-      pdfs: [
-        {
-          name: "Kitchen Tiles Catalogue",
-          file: "/pdfs/kitchen-tiles.pdf",
-        },
-      ],
+    pdfs: [
+      {
+        name: "Kitchen Tiles Catalogue",
+        file: "/pdfs/kitchen-tiles.pdf",
+      },
+    ],
   },
   {
     id: "floor-tiles",
@@ -69,20 +67,19 @@ export const products: Product[] = [
     icon: "Grid3x3",
     sizes: ["600x600", "600x1200", "800x800", "800x1600", "1200x1800"],
     variants: [],
-    image:
-      "/images/floor-tiles.jpeg",
+    image: "/images/floor-tiles.jpeg",
     description:
       "High-quality floor tiles available in porcelain, GVT, PGVT, and double charge variants for lasting beauty and strength.",
     pdfs: [
-        {
-          name: "Floor Tiles Glossy",
-          file: "/pdfs/floor-tiles-glossy.pdf",
-        },
-        {
-          name: "Parking Tiles Spectra",
-          file: "/pdfs/floor-tiles-spectra.pdf",
-        },
-      ],
+      {
+        name: "Floor Tiles Glossy",
+        file: "/pdfs/floor-tiles-glossy.pdf",
+      },
+      {
+        name: "Parking Tiles Spectra",
+        file: "/pdfs/floor-tiles-spectra.pdf",
+      },
+    ],
   },
   {
     id: "parking-tiles",
@@ -91,8 +88,7 @@ export const products: Product[] = [
     icon: "Car",
     sizes: ["400x400", "500x500", "600x600", "600x1200"],
     variants: [],
-    image:
-      "/images/parking-tiles-image.jpeg",
+    image: "/images/parking-tiles-image.jpeg",
     description:
       "Heavy-duty parking tiles with full-body construction that withstands vehicle weight and weather conditions.",
 
@@ -115,8 +111,7 @@ export const products: Product[] = [
     icon: "ChefHat",
     sizes: ["800x2400", "800x3200"],
     variants: [],
-    image:
-      "/images/kitchen-slabs.jpeg",
+    image: "/images/kitchen-slabs.jpeg",
     description:
       "Large-format kitchen quatz in full body and color body for a seamless, premium countertop and backsplash solution.",
   },
@@ -127,8 +122,7 @@ export const products: Product[] = [
     icon: "Home",
     sizes: ["300x300"],
     variants: [],
-    image:
-      "/images/cool-roof.jpeg",
+    image: "/images/cool-roof.jpeg",
     description:
       "Heat-reflective cool roof tiles that reduce indoor temperatures and energy costs while protecting your rooftop.",
 
@@ -147,20 +141,19 @@ export const products: Product[] = [
     icon: "TreePine",
     sizes: ["200x900"],
     variants: [],
-    image:
-      "https://images.pexels.com/photos/39338478/pexels-photo-39338478.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    image: "/images/wooden-planks.jpeg",
     description:
       "Wood-look plank tiles that combine the warmth of natural wood with the durability of Ceramic and Vitrified — perfect for living spaces.",
-      pdfs: [
-        {
-          name: "Wooden Plank Tiles 01",
-          file: "/pdfs/wooden-planks-8x36-01.pdf",
-        },
-        {
-          name: "Wooden Plank Tiles 02",
-          file: "/pdfs/wooden-planks-8x36-02.pdf",
-        },
-      ],
+    pdfs: [
+      {
+        name: "Wooden Plank Tiles 01",
+        file: "/pdfs/wooden-planks-8x36-01.pdf",
+      },
+      {
+        name: "Wooden Plank Tiles 02",
+        file: "/pdfs/wooden-planks-8x36-02.pdf",
+      },
+    ],
   },
   {
     id: "high-depth-elevation",
@@ -169,10 +162,15 @@ export const products: Product[] = [
     icon: "Layers",
     sizes: ["300x450"],
     variants: [],
-    image:
-      "https://images.pexels.com/photos/20705878/pexels-photo-20705878.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    image: "/images/elevation.jpeg",
     description:
       "High-depth elevation tiles for striking building facades and feature walls with bold textures and patterns.",
+    pdfs: [
+      {
+        name: "Elevation",
+        file: "/pdfs/elevation.pdf",
+      },
+    ],
   },
   {
     id: "swimming-pool-tiles",
@@ -181,75 +179,88 @@ export const products: Product[] = [
     icon: "Waves",
     sizes: ["300x300"],
     variants: [],
-    image:
-      "https://images.pexels.com/photos/261393/pexels-photo-261393.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    image: "/images/swimmingpool.jpeg",
     description:
       "Waterproof, fade-resistant swimming pool tiles designed for underwater beauty and long-lasting performance.",
-  },
-  {
-    id: "double-charge-tiles",
-    name: "Double Charge Tiles",
-    category: "Tiles",
-    icon: "Layers",
-    sizes: ["600x600"],
-    variants: [],
-    image:
-      "https://images.pexels.com/photos/37341462/pexels-photo-37341462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-    description:
-      "Premium double charge tiles with through-body color and patterns for high-traffic areas that need extra durability.",
-  },
-  {
-    id: "terracotta-jali",
-    name: "Terracotta Jali",
-    category: "Terracotta",
-    icon: "Grid2x2",
-    sizes: [
-      "220x220x63",
-      "220x70x30",
-      "220x70x25",
-      "220x70x20",
-      "195x60x50",
-      "240x80x10",
-      "300x80x12",
-      "240x70x10",
-      "230x63x12",
-      "230x80x10",
-    ],
-    variants: [],
-    image:
-      "https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-    description:
-      "Handcrafted terracotta jali and brick designs that bring traditional Indian architecture to modern facades and partitions.",
     pdfs: [
       {
-        name: "Terracotta Catalogue",
-        file: "/pdfs/terracotta.pdf",
+        name: "Elevation",
+        file: "/pdfs/SWIMMING-POOL-300X300MM.pdf",
       },
     ],
   },
+  // {
+  //   id: "double-charge-tiles",
+  //   name: "Double Charge Tiles",
+  //   category: "Tiles",
+  //   icon: "Layers",
+  //   sizes: ["600x600"],
+  //   variants: [],
+  //   image:
+  //     "https://images.pexels.com/photos/37341462/pexels-photo-37341462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  //   description:
+  //     "Premium double charge tiles with through-body color and patterns for high-traffic areas that need extra durability.",
+  // },
   {
-    id: "terracotta-tiles",
-    name: "Terracotta Floor Tiles",
+    id: "terracotta",
+    name: "Breeze Block (Terracotta)",
     category: "Terracotta",
-    icon: "Grid3x3",
-    sizes: ["305x305"],
-    variants: [],
-    image:
-      "https://images.pexels.com/photos/5146922/pexels-photo-5146922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    icon: "Grid2x2",
+    sizes: [],
+    image: "/images/breezeblock.jpeg",
     description:
-      "Natural terracotta floor tiles offering earthy tones and rustic charm for interiors and outdoor spaces.",
-  },
-  {
-    id: "terracotta-adhesive",
-    name: "Terracotta Adhesive",
-    category: "Terracotta",
-    icon: "Package",
-    sizes: ["Approx 40 sq ft per 20 kg Bag"],
-    variants: [],
-    image:
-      "https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-    description:
-      "Specialized adhesive for terracotta installations, ensuring strong bonding and lasting results. Covers approx 40 sq ft per 20 kg bag.",
+      "Complete terracotta collection including handcrafted jali, terracotta floor tiles, and specialized terracotta adhesive for architectural, interior, and outdoor applications.",
+      pdfs: [
+        {
+          name: "Breeze Block",
+          file: "/pdfs/terracotta.pdf",
+        },
+      ],
+    subProducts: [
+      {
+        id: "terracotta-jali",
+        name: "Terracotta Jali",
+        sizes: [
+          "220x220x63",
+          "220x70x30",
+          "220x70x25",
+          "220x70x20",
+          "195x60x50",
+          "240x80x10",
+          "300x80x12",
+          "240x70x10",
+          "230x63x12",
+          "230x80x10",
+        ],
+        image:
+          "https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        description:
+          "Handcrafted terracotta jali and brick designs that bring traditional Indian architecture to modern facades and partitions.",
+        variants: [],
+      },
+
+      {
+        id: "terracotta-tiles",
+        name: "Terracotta Floor Tiles",
+        sizes: ["305x305"],
+        image:
+          "https://images.pexels.com/photos/5146922/pexels-photo-5146922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        description:
+          "Natural terracotta floor tiles offering earthy tones and rustic charm for interiors and outdoor spaces.",
+        variants: [],
+      },
+
+      {
+        id: "terracotta-adhesive",
+        name: "Terracotta Adhesive",
+        sizes: ["Approx 40 sq ft per 20 kg Bag"],
+        image:
+          "https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        description:
+          "Specialized adhesive for terracotta installations, ensuring strong bonding and lasting results. Covers approx 40 sq ft per 20 kg bag.",
+        variants: [],
+      },
+    ],
   },
   {
     id: "sanitary-ware",
@@ -300,6 +311,24 @@ export const products: Product[] = [
       "Advanced digital smart locks for homes, hotels, and offices — featuring AI-powered, palm recognition, and glass door compatible models.",
   },
 
+  {
+    id: "granite",
+    name: "Granite",
+    category: "Granite",
+    icon: "Gem",
+    sizes: ["1200x1200", "1200x1800"],
+    variants: [],
+    image: "/images/granite.jpeg",
+    description:
+      "Premium granite in a variety of colors and finishes for floors, walls, countertops, and other architectural applications.",
+    pdfs: [
+      {
+        name: "Granite",
+        file: "/pdfs/granite-products.pdf",
+      },
+    ],
+  },
+
   // ─────────────────────────────────────────────
   // Stones — grouped product with sub-products
   // ─────────────────────────────────────────────
@@ -310,29 +339,29 @@ export const products: Product[] = [
     icon: "Mountain",
     sizes: ["1200x1200", "1200x1800"],
     image:
-      "https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/stone.jpeg",
     description:
       "Premium granite, marble, limestone, quartz, decorative stones, cobbles, and more — sourced from the finest quarries.",
     subProducts: [
-      {
-        id: "granite",
-        name: "Granite",
-        sizes: ["1200x1200", "1200x1800"],
-        image:
-          "https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        description: "Premium granite in a variety of colors and finishes.",
-        variants: [],
-      },
-      {
-        id: "marble",
-        name: "Marble",
-        sizes: ["All Sizes Available"],
-        image:
-          "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        description:
-          "Natural marble in elegant finishes for floors, walls, and countertops.",
-        variants: [],
-      },
+      // {
+      //   id: "granite",
+      //   name: "Granite",
+      //   sizes: ["1200x1200", "1200x1800"],
+      //   image:
+      //     "https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      //   description: "Premium granite in a variety of colors and finishes.",
+      //   variants: [],
+      // },
+      // {
+      //   id: "marble",
+      //   name: "Marble",
+      //   sizes: ["All Sizes Available"],
+      //   image:
+      //     "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      //   description:
+      //     "Natural marble in elegant finishes for floors, walls, and countertops.",
+      //   variants: [],
+      // },
       {
         id: "limestone",
         name: "Limestone",
@@ -402,7 +431,7 @@ export const products: Product[] = [
     sizes: ["300x900", "300x1000", "300x1200"],
     variants: [],
     image:
-      "https://images.pexels.com/photos/6782340/pexels-photo-6782340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/step-riser.jpeg",
     description:
       "Premium step riser tiles in matt, sugar, and carving finishes for staircase elegance and durability.",
     pdfs: [
@@ -431,7 +460,7 @@ export const products: Product[] = [
     sizes: ["All Sizes / All Colors / Double Bowl"],
     variants: [],
     image:
-      "https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/sink.jpeg",
     description:
       "Stainless steel kitchen sinks in handmade, waterfall, satin, and plain finishes. Available in all sizes and colors with double bowl options.",
   },

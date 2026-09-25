@@ -85,6 +85,7 @@ export interface Product {
 export const productCategories = [
   'All',
   'Tiles',
+  'Granite',
   'Terracotta',
   'Sanitary',
   'Doors',

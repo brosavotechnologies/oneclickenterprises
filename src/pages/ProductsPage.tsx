@@ -95,8 +95,8 @@ export function ProductsPage() {
             Our Products
           </h1>
           <p className="mt-4 text-stone-400 max-w-2xl mx-auto">
-            Explore our comprehensive catalog of premium doors, tiles, sanitary
-            ware, granite, smart locks, and building materials.
+            Explore se premium tak sahi h premium ke bad Tiles, Granite,
+            Sanitary ware, Doors , Smart Lock, and building materials.
           </p>
         </div>
       </section>

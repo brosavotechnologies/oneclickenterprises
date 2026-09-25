@@ -1,13 +1,8 @@
-import {
-  Phone,
-  MapPin,
-  Facebook,
-  Instagram,
-  Youtube,
-} from "lucide-react";
+import { Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 
 import { useRouter } from "@/components/Router";
-import { officeLocations, supportInfo } from "@/data/locations";
+import { officeLocations } from "@/data/locations";
+// import { officeLocations, supportInfo } from "@/data/locations";
 
 export function Footer() {
   const { navigate } = useRouter();
@@ -137,11 +132,11 @@ export function Footer() {
 
             <div className="space-y-3 text-sm">
               <a
-                href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
+                href="tel:+919303303909"
                 className="flex items-center gap-2 hover:text-amber-400 transition-colors"
               >
                 <Phone className="w-4 h-4 flex-shrink-0 text-amber-500" />
-                <span>{supportInfo.phone}</span>
+                <span>+919303303909</span>
               </a>
 
               {/* <a
