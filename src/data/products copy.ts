@@ -31,8 +31,7 @@ export const products: Product[] = [
     icon: "Bath",
     sizes: ["300x450", "300x300", "300x600"],
     variants: [{ name: "Ceramic and Vitrified Tiles" }],
-    image:
-      "../public/images/bathroom-image-01.jpeg",
+    image: "../public/images/bathroom-image-01.jpeg",
     description:
       "Premium quality Ceramic and Vitrified bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.",
 
@@ -75,7 +74,7 @@ export const products: Product[] = [
   },
   {
     id: "parking-tiles",
-    name: "Parking Tiles",
+    name: "Floor Tiles",
     category: "Tiles",
     icon: "Car",
     sizes: ["400x400", "500x500", "600x600", "600x1200"],
@@ -83,16 +82,16 @@ export const products: Product[] = [
     image:
       "https://images.pexels.com/photos/27728635/pexels-photo-27728635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
-      "Heavy-duty parking tiles with full-body construction that withstands vehicle weight and weather conditions.",
+      "Heavy-duty Floor Tiles with full-body construction that withstands vehicle weight and weather conditions.",
 
     // Multiple PDF attachments for the same product.
     pdfs: [
       {
-        name: "Parking Tiles 1x1",
+        name: "Floor Tiles 1x1",
         file: "/pdfs/parking-tiles-1x1.pdf",
       },
       {
-        name: "Parking Tiles 16x16",
+        name: "Floor Tiles 16x16",
         file: "/pdfs/parking-tiles-16x16.pdf",
       },
     ],
@@ -360,7 +359,7 @@ export const products: Product[] = [
     ],
     image: "/images/hilton-doors.jpg",
     description:
-      "Premium Hilton designer doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.",
+      "Premium Hilton Steel Doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.",
   },
   {
     id: "digital-locks",

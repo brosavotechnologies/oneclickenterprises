@@ -31,7 +31,7 @@ export const products: Product[] = [
     icon: "Bath",
     sizes: ["300x450", "300x300", "300x600"],
     variants: [],
-    image: "/images/bathroom-image-01.jpeg",
+    image: "/images/bathroom-tiles.jpeg",
     description:
       "Premium quality Ceramic and Vitrified bathroom tiles in multiple sizes and finishes for a stylish and water-resistant bathroom space.",
 
@@ -50,7 +50,7 @@ export const products: Product[] = [
     icon: "ChefHat",
     sizes: ["300x450", "300x300", "300x600"],
     variants: [],
-    image: "/images/kitchen-images.jpeg",
+    image: "/images/kitchen-tiles.jpeg",
     description:
       "Durable and easy-to-clean Ceramic and Vitrified kitchen tiles designed to handle heat, stains, and splashes while adding elegance.",
     pdfs: [
@@ -76,30 +76,30 @@ export const products: Product[] = [
         file: "/pdfs/floor-tiles-glossy.pdf",
       },
       {
-        name: "Parking Tiles Spectra",
+        name: "Floor Tiles Spectra",
         file: "/pdfs/floor-tiles-spectra.pdf",
       },
     ],
   },
   {
     id: "parking-tiles",
-    name: "Parking Tiles",
+    name: "Floor Tiles",
     category: "Tiles",
     icon: "Car",
     sizes: ["400x400", "500x500", "600x600", "600x1200"],
     variants: [],
     image: "/images/parking-tiles-image.jpeg",
     description:
-      "Heavy-duty parking tiles with full-body construction that withstands vehicle weight and weather conditions.",
+      "Heavy-duty Floor Tiles with full-body construction that withstands vehicle weight and weather conditions.",
 
     // Multiple PDF attachments for the same product.
     pdfs: [
       {
-        name: "Parking Tiles 1x1",
+        name: "Floor Tiles 1x1",
         file: "/pdfs/parking-tiles-1x1.pdf",
       },
       {
-        name: "Parking Tiles 16x16",
+        name: "Floor Tiles 16x16",
         file: "/pdfs/parking-tiles-16x16.pdf",
       },
     ],
@@ -184,8 +184,8 @@ export const products: Product[] = [
       "Waterproof, fade-resistant swimming pool tiles designed for underwater beauty and long-lasting performance.",
     pdfs: [
       {
-        name: "Elevation",
-        file: "/pdfs/SWIMMING-POOL-300X300MM.pdf",
+        name: "Swimming Pool Tiles",
+        file: "/pdfs/swimming-pool.pdf",
       },
     ],
   },
@@ -210,12 +210,12 @@ export const products: Product[] = [
     image: "/images/breezeblock.jpeg",
     description:
       "Complete terracotta collection including handcrafted jali, terracotta floor tiles, and specialized terracotta adhesive for architectural, interior, and outdoor applications.",
-      pdfs: [
-        {
-          name: "Breeze Block",
-          file: "/pdfs/terracotta.pdf",
-        },
-      ],
+    pdfs: [
+      {
+        name: "Breeze Block",
+        file: "/pdfs/terracotta.pdf",
+      },
+    ],
     subProducts: [
       {
         id: "terracotta-jali",
@@ -269,8 +269,7 @@ export const products: Product[] = [
     icon: "Droplets",
     sizes: ["All Sizes Available"],
     variants: [],
-    image:
-      "https://images.pexels.com/photos/7214163/pexels-photo-7214163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    image: "/images/sanitary.jpeg",
     description:
       "Complete sanitary ware collection including wash basins, one-piece suites, rimless toilets, and smart sanitary fixtures.",
   },
@@ -296,7 +295,7 @@ export const products: Product[] = [
     variants: [],
     image: "/images/hilton-doors.jpg",
     description:
-      "Premium Hilton designer doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.",
+      "Premium Hilton Steel Doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.",
   },
   {
     id: "digital-locks",
@@ -324,7 +323,7 @@ export const products: Product[] = [
     pdfs: [
       {
         name: "Granite",
-        file: "/pdfs/granite-products.pdf",
+        file: "/pdfs/granite.pdf",
       },
     ],
   },
@@ -338,10 +337,15 @@ export const products: Product[] = [
     category: "Stones",
     icon: "Mountain",
     sizes: ["1200x1200", "1200x1800"],
-    image:
-      "/images/stone.jpeg",
+    image: "/images/stone.jpeg",
     description:
       "Premium granite, marble, limestone, quartz, decorative stones, cobbles, and more — sourced from the finest quarries.",
+    pdfs: [
+      {
+        name: "Quartz",
+        file: "/pdfs/quartz.pdf",
+      },
+    ],
     subProducts: [
       // {
       //   id: "granite",
@@ -430,8 +434,7 @@ export const products: Product[] = [
     icon: "Stairs",
     sizes: ["300x900", "300x1000", "300x1200"],
     variants: [],
-    image:
-      "/images/step-riser.jpeg",
+    image: "/images/step-riser.jpeg",
     description:
       "Premium step riser tiles in matt, sugar, and carving finishes for staircase elegance and durability.",
     pdfs: [
@@ -459,8 +462,7 @@ export const products: Product[] = [
     icon: "ChefHat",
     sizes: ["All Sizes / All Colors / Double Bowl"],
     variants: [],
-    image:
-      "/images/sink.jpeg",
+    image: "/images/sink.jpeg",
     description:
       "Stainless steel kitchen sinks in handmade, waterfall, satin, and plain finishes. Available in all sizes and colors with double bowl options.",
   },

@@ -4,7 +4,7 @@
 
 ## Overview
 
-One Click Enterprises is a leading distributor of building materials and home improvement products, serving customers across India from offices in Delhi NCR, Jabalpur, Nagpur, and Indore. The company offers an extensive catalog including Hilton designer doors (50+ models), Ceramic and Vitrified and floor tiles, terracotta jali and bricks, sanitary ware, digital smart locks, granite and marble, decorative tiles, adhesives, kitchen sinks, and vanity units.
+One Click Enterprises is a leading distributor of building materials and home improvement products, serving customers across India from offices in Delhi NCR, Jabalpur, Nagpur, and Indore. The company offers an extensive catalog including Hilton Steel Doors (50+ models), Ceramic and Vitrified and floor tiles, terracotta jali and bricks, sanitary ware, digital smart locks, granite and marble, decorative tiles, adhesives, kitchen sinks, and vanity units.
 
 ## Pages
 
@@ -18,7 +18,7 @@ One Click Enterprises is a leading distributor of building materials and home im
 1. **Tiles** — Bathroom, kitchen, floor, parking, slabs, cool roof, wooden plank, elevation, swimming pool, double charge
 2. **Terracotta** — Jali, floor tiles, adhesive
 3. **Sanitary** — Wash basins, one-piece suites, rimless toilets, smart sanitary
-4. **Doors** — Hilton designer doors (50+ models in edge, cube, and hiltz styles)
+4. **Doors** — Hilton Steel Doors (50+ models in edge, cube, and hiltz styles)
 5. **Digital Locks** — Hotel, basic, advance, AI, German, palm, nuclear, glass door smart locks
 6. **Stones** — Granite, marble, limestone, quartz, decorative stones, cobbles
 7. **Decorative** — Pencil mate tiles, poster tiles, step riser tiles

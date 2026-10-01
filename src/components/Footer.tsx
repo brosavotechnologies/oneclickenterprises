@@ -119,7 +119,7 @@ export function Footer() {
               <li>Terracotta Jali & Bricks</li>
               <li>Sanitary Ware</li>
               <li>Granite & Marble</li>
-              <li>Hilton Designer Doors</li>
+              <li>Hilton Steel Doors</li>
               <li>Digital Smart Locks</li>
             </ul>
           </div>

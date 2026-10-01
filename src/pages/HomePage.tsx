@@ -89,9 +89,9 @@ export function HomePage() {
             </h1>
             <p className="mt-6 text-lg text-stone-300 leading-relaxed">
               One Click Enterprises brings you an extensive collection of
-              Ceramic and Vitrified Tiles, Granite, Breeze- Block
-              ( Terracotta Jali), Sanitary ware, Hilton designer doors, Smart
-              Locks, and more — all under one roof.
+              Ceramic and Vitrified Tiles, Granite, Breeze- Block ( Terracotta
+              Jali), Sanitary ware, Hilton Steel Doors, Smart Locks, and more —
+              all under one roof.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <button
@@ -227,7 +227,7 @@ export function HomePage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
               {
-                name: "Hilton Designer Doors",
+                name: "Hilton Steel Doors",
                 icon: DoorOpen,
                 count: "50+ Models",
               },
@@ -289,11 +289,11 @@ export function HomePage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
+              href="tel:+919303303909"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors shadow-lg"
             >
               <Phone className="w-4 h-4" />
-              Call {supportInfo.phone}
+              Call +91 930 330 3909
             </a>
             <button
               onClick={() => navigate("/contact")}
