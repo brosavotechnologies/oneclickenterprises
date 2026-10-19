@@ -393,7 +393,7 @@ export const products: Product[] = [
     name: "Stones",
     category: "Stones",
     icon: "Mountain",
-    sizes: ["1200x1200", "1200x1800"],
+    sizes: [],
     image: "/images/stone.jpeg",
     description:
       "Premium pebble stones, cobbles, and more — sourced from the finest quarries.",
@@ -489,7 +489,7 @@ export const products: Product[] = [
       {
         id: "red-stone",
         name: "Red Stone",
-        sizes: ["All Sizes Available"],
+        sizes: ["2050x1050"],
         image:
           "https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
