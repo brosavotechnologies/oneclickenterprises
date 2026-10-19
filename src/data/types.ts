@@ -95,4 +95,5 @@ export const productCategories = [
   'Adhesive',
   'Kitchen',
   'Bathroom',
+  'Furniture',
 ];

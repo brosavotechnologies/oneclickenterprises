@@ -202,7 +202,7 @@ export const products: Product[] = [
   {
     id: "step-riser",
     name: "Step Riser Tiles",
-    category: "Decorative",
+    category: "Tiles",
     icon: "Stairs",
     sizes: ["300x900", "300x1000", "300x1200"],
     variants: [],
@@ -216,18 +216,23 @@ export const products: Product[] = [
       },
     ],
   },
-  // {
-  //   id: "double-charge-tiles",
-  //   name: "Double Charge Tiles",
-  //   category: "Tiles",
-  //   icon: "Layers",
-  //   sizes: ["600x600"],
-  //   variants: [],
-  //   image:
-  //     "https://images.pexels.com/photos/37341462/pexels-photo-37341462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-  //   description:
-  //     "Premium double charge tiles with through-body color and patterns for high-traffic areas that need extra durability.",
-  // },
+  {
+    id: "double-charge-tiles",
+    name: "Double Charge Tiles",
+    category: "Tiles",
+    icon: "Layers",
+    sizes: ["600x600", "800x800"],
+    variants: [],
+    image: "/images/double-charge-tiles.jpeg",
+    description:
+      "Premium double charge vitrified tiles featuring enhanced surface thickness, rich patterns, and excellent durability for high-traffic residential and commercial spaces.",
+    pdfs: [
+      {
+        name: "Double Charge Tiles Catalogue",
+        file: "/pdfs/double-charge-tiles-catalog.pdf",
+      },
+    ],
+  },
   {
     id: "terracotta",
     name: "Breeze Block (Terracotta)",
@@ -495,12 +500,11 @@ export const products: Product[] = [
     name: "Decorative Items",
     category: "Decorative",
     icon: "Sparkles",
-    sizes: ["600x600"],
+    sizes: [],
     variants: [],
-    image:
-      "https://images.pexels.com/photos/7794427/pexels-photo-7794427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    image: "/images/decorative-item.jpeg",
     description:
-      "Decorative Ceramic Pencil Border Tile, Tiles Skirting, God's Poster Tiles and Carpet Tiles.",
+      "Explore our decorative collection featuring ceramic pencil border tiles, tile skirting, God poster tiles, and carpet tiles.",
     pdfs: [
       {
         name: "God Poster 600x1200",
@@ -511,16 +515,50 @@ export const products: Product[] = [
         file: "/pdfs/gods-poster-catalog-full.pdf",
       },
       {
-        name: "Gods Poster Collection 18",
-        file: "/pdfs/gods-poster-collection-18.pdf",
+        name: "Gods Poster Collection",
+        file: "/pdfs/gods-poster-collection.pdf",
       },
       {
-        name: "Complete Carpet Tiles Catalog",
-        file: "/pdfs/complete-carpet-tiles-catalog.pdf",
+        name: "Carpet Tiles Catalog",
+        file: "/pdfs/carpet-tiles-catalog.pdf",
+      },
+    ],
+    subProducts: [
+      {
+        id: "pencil-border-tiles",
+        name: "Ceramic Pencil Border Tiles",
+        sizes: ["Multiple Designs Available"],
+        image: "/images/pencil-border-tiles.jpeg",
+        description:
+          "Decorative ceramic pencil border tiles that add elegant detailing and a refined finish to walls and tiled surfaces.",
+        variants: [],
       },
       {
-        name: "Double Charge Tiles Catalog",
-        file: "/pdfs/double-charge-tiles-catalog.pdf",
+        id: "tiles-skirting",
+        name: "Tiles Skirting",
+        sizes: ["Multiple Sizes Available"],
+        image: "/images/tiles-skirting.jpeg",
+        description:
+          "Decorative tile skirting designed to create a neat transition between floors and walls while enhancing the overall finish.",
+        variants: [],
+      },
+      {
+        id: "god-poster-tiles",
+        name: "God's Poster Tiles",
+        sizes: ["600x600 mm", "300x450 mm", "600x1200 mm"],
+        image: "/images/god-poster-tiles.jpeg",
+        description:
+          "Beautiful religious poster tiles featuring devotional artwork, available in 600×600 mm, 300×450 mm, and 600×1200 mm sizes. Ideal for home temples, prayer rooms, and other sacred spaces.",
+        variants: [],
+      },
+      {
+        id: "carpet-tiles",
+        name: "Carpet Tiles",
+        sizes: ["Multiple Sizes Available"],
+        image: "/images/carpet-tiles.jpeg",
+        description:
+          "Stylish carpet tiles offering a decorative flooring solution for offices, commercial spaces, and modern interiors.",
+        variants: [],
       },
     ],
   },
@@ -540,7 +578,6 @@ export const products: Product[] = [
         name: "Tiles Adhesive and Grout Catalog",
         file: "/pdfs/adhesive-and-grout-catalog.pdf",
       },
-      
     ],
   },
   {
@@ -558,26 +595,44 @@ export const products: Product[] = [
         name: "Kitchen Sinks Catalogue",
         file: "/pdfs/kitchen-sink.pdf",
       },
-      
-    ],  },
+    ],
+  },
   {
     id: "vanity",
     name: "Bathroom Fixtures & Fitting",
     category: "Bathroom",
     icon: "Bath",
-    sizes: ["16x20", "18x24", "18x32"],
+    sizes: [],
+    // sizes: ["16x20", "18x24", "18x32"],
     variants: [],
-    image:
-      "/images/vanity.jpeg",
+    image: "/images/vanity.jpeg",
     description:
-      "Elegant Bathroom Fixtures & Fitting in wall-hung and floor-standing designs, available in 16x20, 18x24, and 18x32 sizes.",
+      "Elegant Vanity Fixtures & Fitting in wall-hung and floor-standing designs, available in 16x20, 18x24, and 18x32 sizes.",
     pdfs: [
       {
-        name: "Bathroom Fixtures & Fitting Catalogue",
+        name: "Vanity Catalogue",
         file: "/pdfs/bathroom-fixtures-and-fitting.pdf",
-      },{
+      },
+      {
         name: "Shower Panels Catalogue",
         file: "/pdfs/shower-panels-catalog.pdf",
+      },
+    ],
+  },
+  {
+    id: "quartz-table-top",
+    name: "Quartz Table Top",
+    category: "Furniture",
+    icon: "Gem",
+    sizes: ["Custom Sizes Available"],
+    variants: [],
+    image: "/images/quartz-table-top.jpeg",
+    description:
+      "Our Quartz Table Top collection is where modern design meets everlasting durability. Each set includes 2 nesting tables that save space and add a designer touch to any corner of your home. Unlike ordinary marble or wooden tops, our engineered quartz tops are 100% non-porous, scratch-resistant, heat-resistant, and easy to maintain. No stains, no tension - just wipe and it shines like new.",
+    pdfs: [
+      {
+        name: "Quartz Table Top Catalogue",
+        file: "/pdfs/quartz-table-top-catalog.pdf",
       },
     ],
   },
