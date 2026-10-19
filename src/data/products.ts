@@ -396,12 +396,12 @@ export const products: Product[] = [
     sizes: ["1200x1200", "1200x1800"],
     image: "/images/stone.jpeg",
     description:
-      "Premium quartz, pebble stones, cobbles, and more — sourced from the finest quarries.",
+      "Premium pebble stones, cobbles, and more — sourced from the finest quarries.",
     pdfs: [
-      {
-        name: "Quartz",
-        file: "/pdfs/quartz.pdf",
-      },
+      // {
+      //   name: "Quartz",
+      //   file: "/pdfs/quartz.pdf",
+      // },
       {
         name: "Pebble Stones",
         file: "/pdfs/pebble-stones.pdf",
