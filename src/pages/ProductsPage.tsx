@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import {
   DoorOpen,
   Grid3x3,
@@ -58,11 +58,68 @@ function getVariantList(p: Product): string[] {
   return p.variants?.map((v) => v.name) ?? [];
 }
 
+// ── Hash-based URL query helpers ────────────────────────────────
+// Works with hash routing (e.g. "#/products?product=granite").
+function getHashQuery(): URLSearchParams {
+  const hash = window.location.hash;
+  const qIndex = hash.indexOf("?");
+  return new URLSearchParams(qIndex >= 0 ? hash.slice(qIndex + 1) : "");
+}
+
+function setHashQuery(params: URLSearchParams) {
+  const hash = window.location.hash;
+  const path = hash.split("?")[0] || "#/products";
+  const qs = params.toString();
+  window.history.replaceState(
+    null,
+    "",
+    `${window.location.pathname}${window.location.search}${path}${
+      qs ? `?${qs}` : ""
+    }`,
+  );
+}
+
 export function ProductsPage() {
   const { navigate } = useRouter();
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+
+  // On mount: read ?product= and ?category= from the URL
+  useEffect(() => {
+    const params = getHashQuery();
+
+    const category = params.get("category");
+    if (
+      category &&
+      (productCategories as readonly string[]).includes(category)
+    ) {
+      setActiveCategory(category);
+    }
+
+    const productId = params.get("product");
+    if (productId) {
+      const match = products.find((p) => p.id === productId);
+      if (match) setSelectedProduct(match);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Open a product + reflect it in the URL
+  const openProduct = (product: Product) => {
+    setSelectedProduct(product);
+    const params = getHashQuery();
+    params.set("product", product.id);
+    setHashQuery(params);
+  };
+
+  // Close modal + strip ?product= from the URL
+  const closeProduct = () => {
+    setSelectedProduct(null);
+    const params = getHashQuery();
+    params.delete("product");
+    setHashQuery(params);
+  };
 
   const filteredProducts = useMemo(() => {
     return products.filter((p) => {
@@ -160,7 +217,7 @@ export function ProductsPage() {
                 >
                   <div
                     className="relative h-56 overflow-hidden cursor-pointer"
-                    onClick={() => setSelectedProduct(product)}
+                    onClick={() => openProduct(product)}
                   >
                     <img
                       src={product.image}
@@ -266,7 +323,7 @@ export function ProductsPage() {
                     )}
 
                     <button
-                      onClick={() => setSelectedProduct(product)}
+                      onClick={() => openProduct(product)}
                       className="mt-4 w-full py-2 rounded-lg border border-stone-300 text-stone-700 text-sm font-medium hover:bg-stone-50 transition-colors flex items-center justify-center gap-1.5"
                     >
                       View Details
@@ -284,9 +341,9 @@ export function ProductsPage() {
       {selectedProduct && (
         <ProductModal
           product={selectedProduct}
-          onClose={() => setSelectedProduct(null)}
+          onClose={closeProduct}
           onContact={() => {
-            setSelectedProduct(null);
+            closeProduct();
             navigate("/contact");
           }}
         />
@@ -317,8 +374,6 @@ export function ProductsPage() {
 
 // ─────────────────────────────────────────────
 //  Product detail modal
-//  Shows variant photos (with fallback) or
-//  sub-product variant photos for grouped items.
 // ─────────────────────────────────────────────
 function ProductModal({
   product,
@@ -524,7 +579,6 @@ function SubProductSection({
 
 // ─────────────────────────────────────────────
 //  Variant gallery — shows a card per variant
-//  with its own photo (or fallback image).
 // ─────────────────────────────────────────────
 function VariantGallery({
   productId,

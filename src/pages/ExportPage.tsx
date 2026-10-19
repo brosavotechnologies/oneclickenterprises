@@ -10,28 +10,39 @@ import {
   ClipboardCheck,
   Truck,
   Phone,
-  //   Mail,
   Send,
   Boxes,
   FileText,
 } from "lucide-react";
 
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-// import { officeLocations, supportInfo } from "@/data/locations";
 
-const products = [
-  "Tiles",
-  "Granite",
-  "Kota Stone",
-  "Quartz Stone",
-  "Breeze-Block",
-  "Sanitary Ware",
-  "Bathroom Fixtures & Fittings",
-  "Steel Doors",
-  "Smart Locks",
-  "Decorative Items",
-  "Other Products",
+// ─────────────────────────────────────────────────────────────
+// Product cards → each maps to a product ID on the Products page
+// (or to a category filter when there is no single product match)
+// ─────────────────────────────────────────────────────────────
+type ProductCard = {
+  label: string;
+  productId?: string;
+  category?: string;
+};
+
+const productCards: ProductCard[] = [
+  { label: "Tiles", category: "Tiles" },
+  { label: "Granite", productId: "granite" },
+  { label: "Kota Stone", productId: "stones" },
+  { label: "Quartz Stone", productId: "kitchen-slabs" },
+  { label: "Breeze-Block", productId: "terracotta" },
+  { label: "Sanitary Ware", productId: "sanitary-ware" },
+  { label: "Bathroom Fixtures & Fittings", productId: "vanity" },
+  { label: "Steel Doors", productId: "hilton-doors" },
+  { label: "Smart Locks", productId: "digital-locks" },
+  { label: "Decorative Items", productId: "decorative-tiles" },
+  // { label: "Other Products" },
 ];
+
+// Used by the enquiry form dropdown (same labels)
+const products = productCards.map((p) => p.label);
 
 const exportBenefits = [
   {
@@ -176,6 +187,16 @@ export function ExportPage() {
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
+  // Navigate to the Products page, optionally opening a product modal
+  // or applying a category filter via URL query params.
+  const openProductPage = (card: ProductCard) => {
+    const params = new URLSearchParams();
+    if (card.productId) params.set("product", card.productId);
+    if (card.category) params.set("category", card.category);
+    const qs = params.toString();
+    window.location.hash = `#/products${qs ? `?${qs}` : ""}`;
+  };
+
   return (
     <div className="min-h-screen bg-stone-50">
       <Breadcrumbs crumbs={[{ label: "Export Enquiries" }]} />
@@ -227,14 +248,6 @@ export function ExportPage() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              {/* <a
-                href="#/contact"
-                className="inline-flex items-center gap-2 rounded-lg bg-amber-500 px-6 py-3.5 font-semibold text-stone-900 shadow-md transition hover:bg-amber-400"
-              >
-                Get an Export Quote
-                <ArrowRight className="h-5 w-5" />
-              </a> */}
-
               <a
                 href="#/products"
                 className="inline-flex items-center gap-2 rounded-lg border border-stone-600 px-6 py-3.5 font-semibold text-white transition hover:border-amber-500 hover:text-amber-400"
@@ -330,28 +343,23 @@ export function ExportPage() {
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {products.map((product) => (
-              <a
-                key={product}
-                // href="#export-enquiry"
-                // onClick={() =>
-                //   setForm((previous) => ({
-                //     ...previous,
-                //     product,
-                //   }))
-                // }
-                className="group flex items-center justify-between gap-4 rounded-xl border border-stone-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-amber-300 hover:shadow-md"
+            {productCards.map((card) => (
+              <button
+                key={card.label}
+                type="button"
+                onClick={() => openProductPage(card)}
+                className="group flex items-center justify-between gap-4 rounded-xl border border-stone-200 bg-white p-5 text-left shadow-sm transition hover:-translate-y-1 hover:border-amber-300 hover:shadow-md"
               >
                 <div className="flex items-center gap-4">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-50 text-amber-600 transition group-hover:bg-amber-500 group-hover:text-stone-900">
                     <PackageCheck className="h-5 w-5" />
                   </div>
                   <span className="font-semibold text-stone-800">
-                    {product}
+                    {card.label}
                   </span>
                 </div>
                 <ArrowRight className="h-5 w-5 shrink-0 text-stone-400 transition group-hover:translate-x-1 group-hover:text-amber-600" />
-              </a>
+              </button>
             ))}
           </div>
         </div>
@@ -425,7 +433,6 @@ export function ExportPage() {
                 key={certification.file}
                 className="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-lg"
               >
-                {/* Actual PDF preview image */}
                 <a
                   href={certification.file}
                   target="_blank"
@@ -566,8 +573,6 @@ export function ExportPage() {
                 </div>
               ))}
             </div>
-
-            {/* Customer Support - India */}
 
             {/* Contact Our Team */}
             <div className="mt-8 rounded-2xl border border-stone-200 bg-white p-6 shadow-sm sm:p-8">
