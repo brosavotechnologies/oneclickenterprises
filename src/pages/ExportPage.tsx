@@ -11,13 +11,13 @@ import {
   Truck,
   Phone,
   Mail,
-  MapPin,
+//   MapPin,
   Send,
   Boxes,
 } from "lucide-react";
 
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { officeLocations, supportInfo } from "@/data/locations";
+// import { officeLocations, supportInfo } from "@/data/locations";
 
 const products = [
   "Tiles",
@@ -471,7 +471,7 @@ export function ExportPage() {
 
             {/* Reuse existing project contact data */}
             <div className="mt-9 rounded-2xl bg-stone-900 p-6 text-white sm:p-8">
-              <h3 className="text-xl font-bold">Contact Our Team</h3>
+              <h3 className="text-xl font-bold">Contact Our Team - Customer Support</h3>
               <p className="mt-2 text-sm leading-6 text-stone-400">
                 {/* {supportInfo.country} */}
                 Netherlands
