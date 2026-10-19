@@ -97,6 +97,18 @@ export function AboutPage() {
               competitive pricing, and reliable service to our customers across
               the globe.
             </p>
+
+            <div className="mt-8 inline-flex items-center gap-4 rounded-xl border border-amber-500/30 bg-stone-800/80 px-5 py-4 shadow-lg">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500/15 text-amber-400">
+                <Award className="h-7 w-7" />
+              </div>
+              <div>
+                <p className="text-2xl font-bold text-amber-400">5+ Years</p>
+                <p className="text-sm font-medium text-stone-200">
+                  Serving Customers with Trust
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -147,7 +159,11 @@ export function AboutPage() {
               {[
                 { icon: Building2, label: "Branches", value: "4+" },
                 { icon: Award, label: "Product Types", value: "25+" },
-                { icon: Truck, label: "Cities Served", value: "Pan-India & International" },
+                {
+                  icon: Truck,
+                  label: "Cities Served",
+                  value: "Pan-India & International",
+                },
                 { icon: Users, label: "Happy Customers", value: "1000+" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
