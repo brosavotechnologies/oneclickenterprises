@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { useRouter } from "@/components/Router";
 import { products } from "@/data/products";
-import { officeLocations, supportInfo } from "@/data/locations";
+import { officeLocations } from "@/data/locations";
 
 const iconMap: Record<string, typeof DoorOpen> = {
   DoorOpen,
@@ -57,7 +57,7 @@ const featureItems = [
   {
     icon: MapPin,
     title: "5 Branch Offices",
-    desc: "Delhi NCR, Jabalpur, Nagpur, Indore and Netherlands with warehouses.",
+    desc: "Delhi NCR, Jabalpur, Nagpur, Indore and Netherlands.",
   },
 ];
 
@@ -289,11 +289,11 @@ export function HomePage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="tel:+919303303909"
+              href="tel:+919039082647"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors shadow-lg"
             >
               <Phone className="w-4 h-4" />
-              Call +91 930 330 3909
+              Call +91 903 908 2647
             </a>
             <button
               onClick={() => navigate("/contact")}

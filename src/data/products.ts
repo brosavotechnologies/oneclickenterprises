@@ -83,19 +83,19 @@ export const products: Product[] = [
   },
   {
     id: "parking-tiles",
-    name: "Floor Tiles",
+    name: "Parking Tiles",
     category: "Tiles",
     icon: "Car",
     sizes: ["400x400", "500x500", "600x600", "600x1200"],
     variants: [],
     image: "/images/parking-tiles-image.jpeg",
     description:
-      "Heavy-duty Floor Tiles with full-body construction that withstands vehicle weight and weather conditions.",
+      "Heavy-duty Parking Tiles with full-body construction that withstands vehicle weight and weather conditions.",
 
     // Multiple PDF attachments for the same product.
     pdfs: [
       {
-        name: "Floor Tiles 1x1",
+        name: "Parking Tiles 1x1",
         file: "/pdfs/parking-tiles-1x1.pdf",
       },
       {
@@ -103,7 +103,7 @@ export const products: Product[] = [
         file: "/pdfs/parking-tiles-glossy.pdf",
       },
       {
-        name: "Floor Tiles 16x16",
+        name: "Parking Tiles 16x16",
         file: "/pdfs/parking-tiles-16x16.pdf",
       },
     ],
@@ -335,7 +335,7 @@ export const products: Product[] = [
       "2400x760x30",
     ],
     variants: [],
-    image: "/images/hilton-doors.jpeg",
+    image: "/images/hilton-doors.jpg",
     description:
       "Premium Hilton Steel Doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.",
     pdfs: [
@@ -373,7 +373,7 @@ export const products: Product[] = [
     variants: [],
     image: "/images/granite.jpeg",
     description:
-      "Premium granite in a variety of colors and finishes for floors, walls, countertops, and other architectural applications.",
+      "Premium granite in a variety of colors and finishes for floors, walls, countertops, door frames and other architectural applications.",
     pdfs: [
       {
         name: "Granite",
