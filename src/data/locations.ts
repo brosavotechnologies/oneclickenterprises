@@ -13,8 +13,8 @@ export interface OfficeLocation {
 }
 
 export const supportInfo = {
-  country: 'INDIA & Other Countries — Customer Support',
-  phone: '+91 910 910 12 90',
+  country: 'INDIA — Customer Support',
+  phone: '+91 9039082647',
 };
 
 export const officeLocations: OfficeLocation[] = [

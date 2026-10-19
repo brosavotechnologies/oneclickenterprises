@@ -48,6 +48,11 @@ const milestones = [
   },
   {
     year: "Growth",
+    title: "Delhi Branch",
+    desc: "Expanded to Delhi with One Click Enterprises Pvt. Ltd.",
+  },
+  {
+    year: "Growth",
     title: "Indore Branch",
     desc: "Expanded to Indore with One Click Enterprises Pvt. Ltd.",
   },
@@ -180,12 +185,12 @@ export function AboutPage() {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/8134755/pexels-photo-8134755.jpeg?auto=compress&cs=tinysrgb&h=700&w=900"
+              src="/images/hilton-doors.jpeg"
               alt="Modern interior with wooden doors"
               className="rounded-2xl shadow-xl w-full"
             />
             <img
-              src="https://images.pexels.com/photos/7166941/pexels-photo-7166941.jpeg?auto=compress&cs=tinysrgb&h=400&w=500"
+              src="/images/hilton-doors.jpg"
               alt="Elegant hallway"
               className="rounded-2xl shadow-xl absolute -bottom-8 -left-8 w-2/5 hidden sm:block border-4 border-white"
             />
