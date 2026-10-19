@@ -9,7 +9,7 @@ import { HomePage } from "@/pages/HomePage";
 import { AboutPage } from "@/pages/AboutPage";
 
 import { ProductsPage } from "@/pages/ProductsPage";
-
+import { ExportPage } from "@/pages/ExportPage";
 import { ContactPage } from "@/pages/ContactPage";
 
 function PageRenderer() {
@@ -18,7 +18,7 @@ function PageRenderer() {
   if (path.startsWith("/about")) return <AboutPage />;
 
   if (path.startsWith("/products")) return <ProductsPage />;
-
+  if (path.startsWith("/export")) return <ExportPage />;
   if (path.startsWith("/contact")) return <ContactPage />;
 
   return <HomePage />;

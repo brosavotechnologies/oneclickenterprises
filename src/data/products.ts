@@ -310,7 +310,7 @@ export const products: Product[] = [
         file: "/pdfs/sanitary-ware-catalog-final.pdf",
       },
       {
-        name: "Sanitary Ware Catalogue 2",
+        name: "Wash basin",
         file: "/pdfs/sanitary-ware-catalogue-updated.pdf",
       },
     ],
@@ -335,7 +335,7 @@ export const products: Product[] = [
       "2400x760x30",
     ],
     variants: [],
-    image: "/images/hilton-doors.jpg",
+    image: "/images/hilton-doors.jpeg",
     description:
       "Premium Hilton Steel Doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.",
     pdfs: [
@@ -378,6 +378,9 @@ export const products: Product[] = [
       {
         name: "Granite",
         file: "/pdfs/oce-granite.pdf",
+      },{
+        name: "Granite Door Frames Catalog",
+        file: "/pdfs/granite-door-frames-catalog.pdf",
       },
     ],
   },
