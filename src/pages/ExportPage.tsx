@@ -10,10 +10,10 @@ import {
   ClipboardCheck,
   Truck,
   Phone,
-  Mail,
-//   MapPin,
+  //   Mail,
   Send,
   Boxes,
+  FileText,
 } from "lucide-react";
 
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -88,11 +88,42 @@ const orderSteps = [
 ];
 
 const certifications = [
-  "ISO Certified",
-  "CE Marking",
-  "Import-Export Certificate",
-  "FIEO Certificate",
-  "CAPEXIL Certificate",
+  {
+    title: "ISO 9001:2015 Certificate",
+    description: "Quality Management System",
+    file: "/pdfs/iso-certificate.pdf",
+    preview: "/pdfs/previews/iso-certificate.webp",
+  },
+  {
+    title: "CE Marking Certificate",
+    description: "Construction Products Compliance",
+    file: "/pdfs/ce-marking-certificate.pdf",
+    preview: "/pdfs/previews/ce-marking-certificate.webp",
+  },
+  {
+    title: "GST Registration Certificate",
+    description: "Government of India — GST Registration",
+    file: "/pdfs/gst-registration-certificate.pdf",
+    preview: "/pdfs/previews/gst-registration-certificate.webp",
+  },
+  {
+    title: "Importer-Exporter Code (IEC)",
+    description: "Directorate General of Foreign Trade",
+    file: "/pdfs/iec-certificate.pdf",
+    preview: "/pdfs/previews/iec-certificate.webp",
+  },
+  {
+    title: "FIEO Certificate",
+    description: "Registration-cum-Membership Certificate",
+    file: "/pdfs/fieo-certificate.pdf",
+    preview: "/pdfs/previews/fieo-certificate.webp",
+  },
+  {
+    title: "CAPEXIL Certificate",
+    description: "Registration-cum-Membership Certificate",
+    file: "/pdfs/capexil-certificate.pdf",
+    preview: "/pdfs/previews/capexil-certificate.webp",
+  },
 ];
 
 const inputClass =
@@ -150,7 +181,16 @@ export function ExportPage() {
       <Breadcrumbs crumbs={[{ label: "Export Enquiries" }]} />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-stone-900 py-16 sm:py-20 lg:py-24">
+      <section
+        className="relative overflow-hidden bg-stone-900 py-16 sm:py-20 lg:py-24"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(28, 25, 23, 0.78), rgba(28, 25, 23, 0.85)), url('/images/one-globe.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-amber-500/10 blur-3xl" />
         <div className="absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-amber-600/10 blur-3xl" />
 
@@ -178,9 +218,9 @@ export function ExportPage() {
             <p className="mt-4 leading-8 text-stone-300">
               From{" "}
               <strong className="text-white">
-                tiles, granite, Kota Stone, quartz stone, breeze-block, sanitary
-                ware, bathroom fixtures and fittings, steel doors and smart
-                locks
+                Tiles, Granite, Kota Stone, Quartz Stone, Breeze-Block, Sanitary
+                Ware, Bathroom Fixtures and Fittings, Steel Doors and Smart
+                Locks
               </strong>
               , we bring together products from trusted manufacturers, focusing
               on consistent quality, competitive pricing and dependable service.
@@ -359,31 +399,89 @@ export function ExportPage() {
       </section>
 
       {/* Certifications */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <div className="mx-auto max-w-7xl rounded-2xl border border-stone-200 bg-white p-6 shadow-sm sm:p-10">
+      <section
+        id="certifications"
+        className="px-4 py-16 sm:px-6 lg:px-8 lg:py-20"
+      >
+        <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-50 text-amber-600">
               <ShieldCheck className="h-7 w-7" />
             </div>
+
             <h2 className="mt-4 text-3xl font-bold text-stone-900">
               Certifications & Export Credentials
             </h2>
+
             <p className="mx-auto mt-4 max-w-2xl leading-7 text-stone-600">
-              The following credentials are listed in our company information.
-              Please confirm which apply before publishing them as verified
-              business certifications.
+              Explore our company registrations, quality certificates and export
+              credentials. Select any certificate to view the full PDF.
             </p>
           </div>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {certifications.map((certification) => (
-              <div
-                key={certification}
-                className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-stone-50 px-4 py-3 text-sm font-semibold text-stone-700"
+              <article
+                key={certification.file}
+                className="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-lg"
               >
-                <CheckCircle className="h-4 w-4 shrink-0 text-amber-600" />
-                {certification}
-              </div>
+                {/* Actual PDF preview image */}
+                <a
+                  href={certification.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${certification.title}`}
+                  className="block overflow-hidden bg-stone-100"
+                >
+                  <img
+                    src={certification.preview}
+                    alt={`${certification.title} preview`}
+                    loading="lazy"
+                    className="h-72 w-full object-contain p-3 transition-transform duration-300 group-hover:scale-[1.02]"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
+                  />
+                </a>
+
+                <div className="p-5">
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-amber-600">
+                      <FileText className="h-5 w-5" />
+                    </div>
+
+                    <div className="min-w-0">
+                      <h3 className="font-bold leading-6 text-stone-900">
+                        {certification.title}
+                      </h3>
+
+                      <p className="mt-1 text-sm leading-6 text-stone-500">
+                        {certification.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 flex flex-wrap items-center gap-4 border-t border-stone-100 pt-4">
+                    <a
+                      href={certification.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-amber-700 hover:text-amber-800"
+                    >
+                      View Certificate
+                      <ArrowRight className="h-4 w-4" />
+                    </a>
+
+                    <a
+                      href={certification.file}
+                      download
+                      className="inline-flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-stone-900"
+                    >
+                      Download PDF
+                    </a>
+                  </div>
+                </div>
+              </article>
             ))}
           </div>
         </div>
@@ -469,56 +567,90 @@ export function ExportPage() {
               ))}
             </div>
 
-            {/* Reuse existing project contact data */}
-            <div className="mt-9 rounded-2xl bg-stone-900 p-6 text-white sm:p-8">
-              <h3 className="text-xl font-bold">Contact Our Team - Customer Support</h3>
-              <p className="mt-2 text-sm leading-6 text-stone-400">
-                {/* {supportInfo.country} */}
-                Netherlands
-              </p>
+            {/* Customer Support - India */}
 
-              <a
-                href="tel:+31683395481"
-                className="mt-5 flex items-center gap-3 font-semibold text-amber-400 transition hover:text-amber-300"
-              >
-                <Phone className="h-5 w-5" />
-                +31 6 83395481
-              </a>
-
-              <a
-                href="mailto:oneclickenterprises80@gmail.com"
-                className="mt-4 flex items-start gap-3 break-all text-sm text-stone-300 transition hover:text-amber-400"
-              >
-                <Mail className="mt-0.5 h-5 w-5 shrink-0" />
-                oneclickenterprises80@gmail.com
-              </a>
-
-              {/* <div className="mt-6 border-t border-stone-700 pt-5">
-                <p className="mb-3 text-sm font-semibold text-stone-300">
-                  Our offices
+            {/* Contact Our Team */}
+            <div className="mt-8 rounded-2xl border border-stone-200 bg-white p-6 shadow-sm sm:p-8">
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-stone-900">
+                  Contact Our Team
+                </h3>
+                <p className="mt-1 text-sm leading-6 text-stone-500">
+                  Choose the right team for your enquiry.
                 </p>
+              </div>
 
-                <div className="space-y-3">
-                  {officeLocations
-                    .filter((location) => location.branchType === "Office")
-                    .map((location) => (
-                      <div
-                        key={`${location.city}-${location.state}`}
-                        className="flex items-start gap-3"
-                      >
-                        <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-amber-400" />
-                        <div>
-                          <p className="text-sm font-semibold">
-                            {location.city}
-                          </p>
-                          <p className="text-xs text-stone-400">
-                            {location.state}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
+              <div className="space-y-4">
+                {/* India Customer Support */}
+                <div className="rounded-xl border border-stone-200 bg-stone-50 p-5">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-700">
+                      <Phone className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-stone-900">
+                        Customer Support
+                      </h4>
+                      <p className="text-sm text-stone-500">
+                        India · Product enquiries and order assistance
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <a
+                      href="tel:+919109101290"
+                      className="font-bold text-stone-900 hover:text-amber-700"
+                    >
+                      +91 910 910 12 90
+                    </a>
+                    <a
+                      href="https://wa.me/919109101290"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-green-700"
+                    >
+                      <Send className="h-4 w-4" />
+                      WhatsApp India
+                    </a>
+                  </div>
                 </div>
-              </div> */}
+
+                {/* Netherlands Export Enquiries */}
+                <div className="rounded-xl border border-stone-200 bg-stone-50 p-5">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-700">
+                      <Globe2 className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-stone-900">
+                        Netherlands Export Enquiries
+                      </h4>
+                      <p className="text-sm text-stone-500">
+                        International sales, shipping and quotations
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <a
+                      href="tel:+31683395481"
+                      className="font-bold text-stone-900 hover:text-amber-700"
+                    >
+                      +31 6 83395481
+                    </a>
+                    <a
+                      href="https://wa.me/31683395481"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-green-700"
+                    >
+                      <Send className="h-4 w-4" />
+                      WhatsApp Netherlands
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
