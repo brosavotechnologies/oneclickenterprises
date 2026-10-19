@@ -479,13 +479,13 @@ export function ExportPage() {
                       <ArrowRight className="h-4 w-4" />
                     </a>
 
-                    <a
+                    {/* <a
                       href={certification.file}
                       download
                       className="inline-flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-stone-900"
                     >
                       Download PDF
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </article>
@@ -597,7 +597,7 @@ export function ExportPage() {
                         Customer Support
                       </h4>
                       <p className="text-sm text-stone-500">
-                        India · Product enquiries and order assistance
+                        Product enquiries and order assistance
                       </p>
                     </div>
                   </div>

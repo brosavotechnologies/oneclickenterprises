@@ -514,11 +514,11 @@ export const products: Product[] = [
         file: "/pdfs/god-poster-600x1200-with-g816.pdf",
       },
       {
-        name: "Gods Poster Catalog Full",
+        name: "Gods Poster Catalog 300x450",
         file: "/pdfs/gods-poster-catalog-full.pdf",
       },
       {
-        name: "Gods Poster Collection",
+        name: "Gods Poster 600x600",
         file: "/pdfs/gods-poster-collection.pdf",
       },
       {
@@ -557,7 +557,7 @@ export const products: Product[] = [
       {
         id: "carpet-tiles",
         name: "Carpet Tiles",
-        sizes: ["Multiple Sizes Available"],
+        sizes: ["1200*1200", "600*600", "1200*1800"],
         image: "/images/carpet-tiles.jpeg",
         description:
           "Stylish carpet tiles offering a decorative flooring solution for offices, commercial spaces, and modern interiors.",
