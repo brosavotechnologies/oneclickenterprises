@@ -1,4 +1,3 @@
-
 import { useState, type FormEvent, type ChangeEvent } from "react";
 import {
   Globe2,
@@ -104,7 +103,7 @@ export function ExportPage() {
     name: "",
     email: "",
     phone: "",
-    country: "",
+    country: "Netherlands",
     product: "",
     quantity: "",
     message: "",
@@ -125,30 +124,25 @@ export function ExportPage() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const subject = encodeURIComponent(
-      `Export Enquiry - ${form.product}`,
-    );
+    const message = [
+      "Hello One Click Enterprises! I have an export enquiry.",
+      "",
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Phone: ${form.phone}`,
+      `Destination Country: ${form.country}`,
+      `Product Interest: ${form.product}`,
+      `Required Quantity: ${form.quantity || "Not specified"}`,
+      "",
+      "Project Details:",
+      form.message,
+    ].join("\n");
 
-    const body = encodeURIComponent(
-      [
-        "One Click Enterprises - Export Enquiry",
-        "",
-        `Name: ${form.name}`,
-        `Email: ${form.email}`,
-        `Phone: ${form.phone}`,
-        `Destination Country: ${form.country}`,
-        `Product Interest: ${form.product}`,
-        `Required Quantity: ${form.quantity || "Not specified"}`,
-        "",
-        "Project Details:",
-        form.message,
-      ].join("\n"),
-    );
+    const whatsappUrl = `https://wa.me/31683395481?text=${encodeURIComponent(
+      message,
+    )}`;
 
-    window.location.href =
-      `mailto:oneclickenterprises80@gmail.com?subject=${subject}&body=${body}`;
-
-    setSubmitted(true);
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -184,23 +178,22 @@ export function ExportPage() {
             <p className="mt-4 leading-8 text-stone-300">
               From{" "}
               <strong className="text-white">
-                tiles, granite, Kota Stone, quartz stone, breeze-block,
-                sanitary ware, bathroom fixtures and fittings, steel doors
-                and smart locks
+                tiles, granite, Kota Stone, quartz stone, breeze-block, sanitary
+                ware, bathroom fixtures and fittings, steel doors and smart
+                locks
               </strong>
-              , we bring together products from trusted manufacturers,
-              focusing on consistent quality, competitive pricing and
-              dependable service.
+              , we bring together products from trusted manufacturers, focusing
+              on consistent quality, competitive pricing and dependable service.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
+              {/* <a
                 href="#/contact"
                 className="inline-flex items-center gap-2 rounded-lg bg-amber-500 px-6 py-3.5 font-semibold text-stone-900 shadow-md transition hover:bg-amber-400"
               >
                 Get an Export Quote
                 <ArrowRight className="h-5 w-5" />
-              </a>
+              </a> */}
 
               <a
                 href="#/products"
@@ -211,8 +204,8 @@ export function ExportPage() {
             </div>
 
             <p className="mt-7 text-sm font-medium leading-6 text-stone-400">
-              One trusted partner. Multiple product categories.
-              Global sourcing made simple.
+              One trusted partner. Multiple product categories. Global sourcing
+              made simple.
             </p>
           </div>
 
@@ -223,9 +216,7 @@ export function ExportPage() {
                 <Globe2 className="h-7 w-7" />
               </div>
               <div>
-                <p className="text-sm text-stone-400">
-                  One sourcing partner
-                </p>
+                <p className="text-sm text-stone-400">One sourcing partner</p>
                 <h2 className="text-2xl font-bold text-white">
                   Built for Global Trade
                 </h2>
@@ -266,9 +257,7 @@ export function ExportPage() {
                       <Icon className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-white">
-                        {item.title}
-                      </h3>
+                      <h3 className="font-semibold text-white">{item.title}</h3>
                       <p className="mt-1 text-sm leading-6 text-stone-400">
                         {item.text}
                       </p>
@@ -295,8 +284,8 @@ export function ExportPage() {
               Building & Interior Products
             </h2>
             <p className="mt-4 leading-7 text-stone-600">
-              Explore our product categories and tell us what your business
-              or project requires.
+              Explore our product categories and tell us what your business or
+              project requires.
             </p>
           </div>
 
@@ -304,13 +293,13 @@ export function ExportPage() {
             {products.map((product) => (
               <a
                 key={product}
-                href="#export-enquiry"
-                onClick={() =>
-                  setForm((previous) => ({
-                    ...previous,
-                    product,
-                  }))
-                }
+                // href="#export-enquiry"
+                // onClick={() =>
+                //   setForm((previous) => ({
+                //     ...previous,
+                //     product,
+                //   }))
+                // }
                 className="group flex items-center justify-between gap-4 rounded-xl border border-stone-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-amber-300 hover:shadow-md"
               >
                 <div className="flex items-center gap-4">
@@ -339,8 +328,8 @@ export function ExportPage() {
               Your Partner for Export Enquiries
             </h2>
             <p className="mt-4 leading-7 text-stone-600">
-              A multi-category sourcing approach with support throughout
-              the product enquiry and order coordination process.
+              A multi-category sourcing approach with support throughout the
+              product enquiry and order coordination process.
             </p>
           </div>
 
@@ -380,9 +369,9 @@ export function ExportPage() {
               Certifications & Export Credentials
             </h2>
             <p className="mx-auto mt-4 max-w-2xl leading-7 text-stone-600">
-              The following credentials are listed in our company
-              information. Please confirm which apply before publishing
-              them as verified business certifications.
+              The following credentials are listed in our company information.
+              Please confirm which apply before publishing them as verified
+              business certifications.
             </p>
           </div>
 
@@ -411,8 +400,8 @@ export function ExportPage() {
               How to Order from One Click Enterprises
             </h2>
             <p className="mx-auto mt-4 max-w-2xl leading-7 text-stone-400">
-              From selecting your products to coordinating your order,
-              start by sharing your requirements with our team.
+              From selecting your products to coordinating your order, start by
+              sharing your requirements with our team.
             </p>
           </div>
 
@@ -461,8 +450,8 @@ export function ExportPage() {
             </h2>
             <p className="mt-5 leading-8 text-stone-600">
               Tell us about your project, destination country and product
-              requirements. Our team can then review your enquiry and
-              discuss product options, pricing and availability.
+              requirements. Our team can then review your enquiry and discuss
+              product options, pricing and availability.
             </p>
 
             <div className="mt-8 space-y-5">
@@ -475,9 +464,7 @@ export function ExportPage() {
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" />
-                  <p className="text-sm leading-6 text-stone-700">
-                    {item}
-                  </p>
+                  <p className="text-sm leading-6 text-stone-700">{item}</p>
                 </div>
               ))}
             </div>
@@ -486,15 +473,16 @@ export function ExportPage() {
             <div className="mt-9 rounded-2xl bg-stone-900 p-6 text-white sm:p-8">
               <h3 className="text-xl font-bold">Contact Our Team</h3>
               <p className="mt-2 text-sm leading-6 text-stone-400">
-                {supportInfo.country}
+                {/* {supportInfo.country} */}
+                Netherlands
               </p>
 
               <a
-                href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
+                href="tel:+31683395481"
                 className="mt-5 flex items-center gap-3 font-semibold text-amber-400 transition hover:text-amber-300"
               >
                 <Phone className="h-5 w-5" />
-                {supportInfo.phone}
+                +31 6 83395481
               </a>
 
               <a
@@ -505,7 +493,7 @@ export function ExportPage() {
                 oneclickenterprises80@gmail.com
               </a>
 
-              <div className="mt-6 border-t border-stone-700 pt-5">
+              {/* <div className="mt-6 border-t border-stone-700 pt-5">
                 <p className="mb-3 text-sm font-semibold text-stone-300">
                   Our offices
                 </p>
@@ -530,7 +518,7 @@ export function ExportPage() {
                       </div>
                     ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -698,16 +686,15 @@ export function ExportPage() {
 
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-amber-500 px-6 py-3.5 font-semibold text-stone-900 shadow-md transition hover:bg-amber-400"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-green-600 px-6 py-3.5 font-semibold text-white shadow-md transition hover:bg-green-700"
               >
                 <Send className="h-4 w-4" />
-                Prepare Export Enquiry
+                Send Enquiry via WhatsApp
               </button>
 
               <p className="text-xs leading-5 text-stone-500">
-                This form opens your default email application. The enquiry
-                is not stored or submitted directly to a server by this
-                component.
+                Your enquiry details will be prepared in WhatsApp. Please review
+                and send the message to submit your enquiry.
               </p>
             </form>
           </div>
@@ -717,8 +704,8 @@ export function ExportPage() {
       {/* Footer note */}
       <section className="bg-stone-900 px-4 py-8 text-center text-sm text-stone-400">
         <p>
-          One Click Enterprises — Your trusted partner for building and
-          interior products.
+          One Click Enterprises — Your trusted partner for building and interior
+          products.
         </p>
       </section>
     </div>
