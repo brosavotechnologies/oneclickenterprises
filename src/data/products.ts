@@ -71,10 +71,10 @@ export const products: Product[] = [
     description:
       "High-quality floor tiles available in porcelain, GVT, PGVT, and double charge variants for lasting beauty and strength.",
     pdfs: [
-      {
-        name: "Floor Tiles Glossy",
-        file: "/pdfs/floor-tiles-glossy.pdf",
-      },
+      // {
+      //   name: "Floor Tiles Glossy",
+      //   file: "/pdfs/floor-tiles-glossy.pdf",
+      // },
       {
         name: "Floor Tiles Spectra",
         file: "/pdfs/floor-tiles-spectra.pdf",
@@ -99,6 +99,10 @@ export const products: Product[] = [
         file: "/pdfs/parking-tiles-1x1.pdf",
       },
       {
+        name: "Parking Tiles Glossy",
+        file: "/pdfs/parking-tiles-glossy.pdf",
+      },
+      {
         name: "Floor Tiles 16x16",
         file: "/pdfs/parking-tiles-16x16.pdf",
       },
@@ -106,14 +110,20 @@ export const products: Product[] = [
   },
   {
     id: "kitchen-slabs",
-    name: "Kitchen Quatz",
+    name: "Kitchen Quartz",
     category: "Tiles",
     icon: "ChefHat",
     sizes: ["800x2400", "800x3200"],
     variants: [],
     image: "/images/kitchen-slabs.jpeg",
     description:
-      "Large-format kitchen quatz in full body and color body for a seamless, premium countertop and backsplash solution.",
+      "Large-format kitchen quartz in full body and color body for a seamless, premium countertop and backsplash solution.",
+    pdfs: [
+      {
+        name: "Kitchen Quartz Catalogue",
+        file: "/pdfs/kitchen-quartz.pdf",
+      },
+    ],
   },
   {
     id: "cool-roof-tiles",
@@ -267,11 +277,21 @@ export const products: Product[] = [
     name: "Sanitary Ware",
     category: "Sanitary",
     icon: "Droplets",
-    sizes: ["All Sizes Available"],
+    sizes: ["All Types of Sanitary Ware Available"],
     variants: [],
     image: "/images/sanitary.jpeg",
     description:
       "Complete sanitary ware collection including wash basins, one-piece suites, rimless toilets, and smart sanitary fixtures.",
+    pdfs: [
+      {
+        name: "Sanitary Ware Catalogue 1",
+        file: "/pdfs/sanitary-ware-catalog-final.pdf",
+      },
+      {
+        name: "Sanitary Ware Catalogue 2",
+        file: "/pdfs/sanitary-ware-catalogue-updated.pdf",
+      },
+    ],
   },
   {
     id: "hilton-doors",
@@ -296,10 +316,16 @@ export const products: Product[] = [
     image: "/images/hilton-doors.jpg",
     description:
       "Premium Hilton Steel Doors with 50+ models in edge, cube, and hiltz styles. Available in multiple sizes for residential and commercial applications.",
+    pdfs: [
+      {
+        name: "Hilton Door Catalogue",
+        file: "/pdfs/hilton-door-catalogue.pdf",
+      },
+    ],
   },
   {
     id: "digital-locks",
-    name: "Hi Digital Locks",
+    name: "Hi Smart Locks",
     category: "Digital Locks",
     icon: "Lock",
     sizes: [],
@@ -308,8 +334,13 @@ export const products: Product[] = [
       "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
       "Advanced digital smart locks for homes, hotels, and offices — featuring AI-powered, palm recognition, and glass door compatible models.",
+  pdfs: [
+      {
+        name: "Hilton Smart Locks Catalogue",
+        file: "/pdfs/hi-smart-locks-catalog.pdf",
+      },
+    ],
   },
-
   {
     id: "granite",
     name: "Granite",

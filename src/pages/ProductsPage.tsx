@@ -412,7 +412,7 @@ function ProductModal({
           {product.sizes.length > 0 && (
             <div className="mt-6">
               <h3 className="text-sm font-semibold text-stone-800 uppercase tracking-wide mb-3">
-                Available Sizes (in mm)
+                Available Sizes
               </h3>
               <div className="flex flex-wrap gap-2">
                 {product.sizes.map((size) => (
