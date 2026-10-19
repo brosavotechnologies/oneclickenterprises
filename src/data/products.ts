@@ -396,7 +396,7 @@ export const products: Product[] = [
     sizes: ["1200x1200", "1200x1800"],
     image: "/images/stone.jpeg",
     description:
-      "Premium granite, marble, limestone, quartz, decorative stones, cobbles, and more — sourced from the finest quarries.",
+      "Premium quartz, pebble stones, cobbles, and more — sourced from the finest quarries.",
     pdfs: [
       {
         name: "Quartz",
