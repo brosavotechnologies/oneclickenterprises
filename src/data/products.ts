@@ -199,6 +199,23 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: "step-riser",
+    name: "Step Riser Tiles",
+    category: "Decorative",
+    icon: "Stairs",
+    sizes: ["300x900", "300x1000", "300x1200"],
+    variants: [],
+    image: "/images/step-riser.jpeg",
+    description:
+      "Premium step riser tiles in matt, sugar, and carving finishes for staircase elegance and durability.",
+    pdfs: [
+      {
+        name: "Step Riser Tiles Catalogue",
+        file: "/pdfs/step-riser-tiles.pdf",
+      },
+    ],
+  },
   // {
   //   id: "double-charge-tiles",
   //   name: "Double Charge Tiles",
@@ -334,7 +351,7 @@ export const products: Product[] = [
       "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
       "Advanced digital smart locks for homes, hotels, and offices — featuring AI-powered, palm recognition, and glass door compatible models.",
-  pdfs: [
+    pdfs: [
       {
         name: "Hilton Smart Locks Catalogue",
         file: "/pdfs/hi-smart-locks-catalog.pdf",
@@ -346,7 +363,8 @@ export const products: Product[] = [
     name: "Granite",
     category: "Granite",
     icon: "Gem",
-    sizes: ["1200x1200", "1200x1800"],
+    sizes: [],
+    // sizes: ["1200x1200", "1200x1800"],
     variants: [],
     image: "/images/granite.jpeg",
     description:
@@ -354,7 +372,7 @@ export const products: Product[] = [
     pdfs: [
       {
         name: "Granite",
-        file: "/pdfs/granite.pdf",
+        file: "/pdfs/oce-granite.pdf",
       },
     ],
   },
@@ -375,6 +393,22 @@ export const products: Product[] = [
       {
         name: "Quartz",
         file: "/pdfs/quartz.pdf",
+      },
+      {
+        name: "Pebble Stones",
+        file: "/pdfs/pebble-stones.pdf",
+      },
+      {
+        name: "Temple",
+        file: "/pdfs/mandir.pdf",
+      },
+      {
+        name: "Cobbles Stone",
+        file: "/pdfs/cobbles-stone.pdf",
+      },
+      {
+        name: "Red Stone",
+        file: "/pdfs/red-stone.pdf",
       },
     ],
     subProducts: [
@@ -406,18 +440,18 @@ export const products: Product[] = [
           "Durable limestone in single and double polished finishes.",
         variants: [],
       },
-      {
-        id: "quartz",
-        name: "Quartz",
-        image:
-          "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        description:
-          "Digital and composite quartz surfaces for countertops and vanities.",
-        variants: [],
-      },
+      // {
+      //   id: "quartz",
+      //   name: "Quartz",
+      //   image:
+      //     "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      //   description:
+      //     "Digital and composite quartz surfaces for countertops and vanities.",
+      //   variants: [],
+      // },
       {
         id: "decorative-stones",
-        name: "Decorative Stones",
+        name: "Pebble Stones",
         image:
           "https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
@@ -426,7 +460,7 @@ export const products: Product[] = [
       },
       {
         id: "mandir",
-        name: "Mandir",
+        name: "Temple",
         sizes: ["All Sizes Available"],
         image:
           "https://images.pexels.com/photos/35466647/pexels-photo-35466647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
@@ -444,11 +478,21 @@ export const products: Product[] = [
           "Natural cobblestones in multiple colors for pathways, driveways, and landscaping.",
         variants: [],
       },
+      {
+        id: "red-stone",
+        name: "Red Stone",
+        sizes: ["All Sizes Available"],
+        image:
+          "https://images.pexels.com/photos/29301863/pexels-photo-29301863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        description:
+          "Our Red Sandstone Door Frames, crafted from authentic Dholpur Red Sandstone, offer the perfect blend of natural elegance, strength, and affordability. A superior and long-lasting alternative to traditional wooden frames, they bring a timeless, earthy charm to any space.",
+        variants: [],
+      },
     ],
   },
   {
     id: "decorative-tiles",
-    name: "Decorative Tiles",
+    name: "Decorative Items",
     category: "Decorative",
     icon: "Sparkles",
     sizes: ["600x600"],
@@ -456,25 +500,31 @@ export const products: Product[] = [
     image:
       "https://images.pexels.com/photos/7794427/pexels-photo-7794427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     description:
-      "Decorative pencil mate and poster tiles in golden, silver, black, and rose gold finishes for borders and accent walls.",
-  },
-  {
-    id: "step-riser",
-    name: "Step Riser Tiles",
-    category: "Decorative",
-    icon: "Stairs",
-    sizes: ["300x900", "300x1000", "300x1200"],
-    variants: [],
-    image: "/images/step-riser.jpeg",
-    description:
-      "Premium step riser tiles in matt, sugar, and carving finishes for staircase elegance and durability.",
+      "Decorative Ceramic Pencil Border Tile, Tiles Skirting, God's Poster Tiles and Carpet Tiles.",
     pdfs: [
       {
-        name: "Step Riser Tiles Catalogue",
-        file: "/pdfs/step-riser-tiles.pdf",
+        name: "God Poster 600x1200",
+        file: "/pdfs/god-poster-600x1200-with-g816.pdf",
+      },
+      {
+        name: "Gods Poster Catalog Full",
+        file: "/pdfs/gods-poster-catalog-full.pdf",
+      },
+      {
+        name: "Gods Poster Collection 18",
+        file: "/pdfs/gods-poster-collection-18.pdf",
+      },
+      {
+        name: "Complete Carpet Tiles Catalog",
+        file: "/pdfs/complete-carpet-tiles-catalog.pdf",
+      },
+      {
+        name: "Double Charge Tiles Catalog",
+        file: "/pdfs/double-charge-tiles-catalog.pdf",
       },
     ],
   },
+
   {
     id: "tiles-adhesive",
     name: "Tiles Adhesive & Grout",
@@ -482,9 +532,16 @@ export const products: Product[] = [
     icon: "Package",
     sizes: [],
     variants: [],
-    image: "images/tiles-adhesive.jpg",
+    image: "/images/tiles-adhesive.jpeg",
     description:
-      "High-quality tile adhesives and grouts from leading brands including JK, Roff, Asian Paints, and Ultratech.",
+      "High-quality tile adhesives and grouts from leading brands including JK, Roff and Ultratech.",
+    pdfs: [
+      {
+        name: "Tiles Adhesive and Grout Catalog",
+        file: "/pdfs/adhesive-and-grout-catalog.pdf",
+      },
+      
+    ],
   },
   {
     id: "kitchen-sink",
@@ -496,22 +553,31 @@ export const products: Product[] = [
     image: "/images/sink.jpeg",
     description:
       "Stainless steel kitchen sinks in handmade, waterfall, satin, and plain finishes. Available in all sizes and colors with double bowl options.",
-  },
+    pdfs: [
+      {
+        name: "Kitchen Sinks Catalogue",
+        file: "/pdfs/kitchen-sink.pdf",
+      },
+      
+    ],  },
   {
     id: "vanity",
-    name: "Vanity Units",
+    name: "Bathroom Fixtures & Fitting",
     category: "Bathroom",
     icon: "Bath",
     sizes: ["16x20", "18x24", "18x32"],
     variants: [],
     image:
-      "https://images.pexels.com/photos/6934265/pexels-photo-6934265.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "/images/vanity.jpeg",
     description:
-      "Elegant vanity units in wall-hung and floor-standing designs, available in 16x20, 18x24, and 18x32 sizes.",
+      "Elegant Bathroom Fixtures & Fitting in wall-hung and floor-standing designs, available in 16x20, 18x24, and 18x32 sizes.",
     pdfs: [
       {
-        name: "Vanity Units Catalogue",
-        file: "/pdfs/vanity-units.pdf",
+        name: "Bathroom Fixtures & Fitting Catalogue",
+        file: "/pdfs/bathroom-fixtures-and-fitting.pdf",
+      },{
+        name: "Shower Panels Catalogue",
+        file: "/pdfs/shower-panels-catalog.pdf",
       },
     ],
   },
