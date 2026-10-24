@@ -145,7 +145,7 @@ export function ExportPage() {
     name: "",
     email: "",
     phone: "",
-    country: "Netherlands",
+    country: "",
     product: "",
     quantity: "",
     message: "",
@@ -594,7 +594,7 @@ export function ExportPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-stone-900">
-                        Customer Support
+                        International Customer Support
                       </h4>
                       <p className="text-sm text-stone-500">
                         Product enquiries and order assistance
@@ -616,7 +616,7 @@ export function ExportPage() {
                       className="inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-green-700"
                     >
                       <Send className="h-4 w-4" />
-                      WhatsApp India
+                      WhatsApp
                     </a>
                   </div>
                 </div>

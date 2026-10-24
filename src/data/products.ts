@@ -71,10 +71,10 @@ export const products: Product[] = [
     description:
       "High-quality floor tiles available in porcelain, GVT, PGVT, and double charge variants for lasting beauty and strength.",
     pdfs: [
-      // {
-      //   name: "Floor Tiles Glossy",
-      //   file: "/pdfs/floor-tiles-glossy.pdf",
-      // },
+      {
+        name: "Floor Tiles Glossy",
+        file: "/pdfs/floor-tiles-glossy.pdf",
+      },
       {
         name: "Floor Tiles Spectra",
         file: "/pdfs/floor-tiles-spectra.pdf",
@@ -274,7 +274,7 @@ export const products: Product[] = [
       {
         id: "terracotta-tiles",
         name: "Terracotta Floor Tiles",
-        sizes: ["305x305"],
+        sizes: ["300x300"],
         image:
           "https://images.pexels.com/photos/5146922/pexels-photo-5146922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:

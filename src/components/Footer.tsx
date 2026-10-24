@@ -136,7 +136,7 @@ export function Footer() {
                 className="flex items-center gap-2 hover:text-amber-400 transition-colors"
               >
                 <Phone className="w-4 h-4 flex-shrink-0 text-amber-500" />
-                <span>+91 9039082647</span>
+                <span>+91 903 908 2647</span>
               </a>
 
               {/* <a

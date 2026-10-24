@@ -23,13 +23,28 @@ export function ContactPage() {
     subject: "",
     message: "",
   });
-  const [submitted, setSubmitted] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setForm({ name: "", email: "", phone: "", subject: "", message: "" });
-    setTimeout(() => setSubmitted(false), 5000);
+
+    const message = [
+      "Hello One Click Enterprises! I have a new enquiry.",
+      "",
+      `Name: ${form.name}`,
+      `Phone: ${form.phone}`,
+      `Email: ${form.email || "Not provided"}`,
+      `Subject: ${form.subject || "Not specified"}`,
+      "",
+      "Message:",
+      form.message,
+    ].join("\n");
+
+    const whatsappUrl = `https://wa.me/919039082642?text=${encodeURIComponent(
+      message,
+    )}`;
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
   const handleChange = (
@@ -117,11 +132,11 @@ export function ContactPage() {
               Send Us a Message
             </h2>
             <p className="text-stone-500 text-sm mb-6">
-              Fill out the form below and we'll get back to you as soon as
-              possible.
+              Fill out the form below to send your enquiry directly through
+              WhatsApp.
             </p>
 
-            {submitted && (
+            {/* {submitted && (
               <div className="mb-6 p-4 rounded-lg bg-green-50 border border-green-200 flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                 <p className="text-sm text-green-800">
@@ -129,7 +144,7 @@ export function ContactPage() {
                   soon.
                 </p>
               </div>
-            )}
+            )} */}
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -220,11 +235,11 @@ export function ContactPage() {
                 {supportInfo.country}
               </p>
               <a
-                href={`tel:${supportInfo.phone.replace(/\s/g, "")}`}
+                href="tel:+919039082647"
                 className="flex items-center gap-3 text-lg font-semibold text-amber-400 hover:text-amber-300 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                {supportInfo.phone}
+                +91 903 908 2647
               </a>
               <div className="mt-6 pt-6 border-t border-stone-700">
                 <p className="text-stone-400 text-sm mb-3">
