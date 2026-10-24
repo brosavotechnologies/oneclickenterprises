@@ -10,7 +10,7 @@ import {
   Warehouse,
   Navigation,
   Send,
-  CheckCircle,
+  // CheckCircle,
 } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { officeLocations, supportInfo } from "@/data/locations";
