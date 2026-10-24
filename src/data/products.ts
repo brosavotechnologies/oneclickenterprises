@@ -98,10 +98,10 @@ export const products: Product[] = [
         name: "Parking Tiles 1x1",
         file: "/pdfs/parking-tiles-1x1.pdf",
       },
-      {
-        name: "Parking Tiles Glossy",
-        file: "/pdfs/parking-tiles-glossy.pdf",
-      },
+      // {
+      //   name: "Parking Tiles Glossy",
+      //   file: "/pdfs/parking-tiles-glossy.pdf",
+      // },
       {
         name: "Parking Tiles 16x16",
         file: "/pdfs/parking-tiles-16x16.pdf",
