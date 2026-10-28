@@ -513,7 +513,7 @@ export const products: Product[] = [
     icon: "Sparkles",
     sizes: [],
     variants: [],
-    image: "/images/decorative-item.jpeg",
+    image: "/images/decorative.jpeg",
     description:
       "Explore our decorative collection featuring ceramic pencil border tiles, tile skirting, God poster tiles, and carpet tiles.",
     pdfs: [
@@ -637,7 +637,7 @@ export const products: Product[] = [
         file: "/pdfs/shower-panels-catalog.pdf",
       },
       {
-        name: "Bathroom Catalogue",
+        name: "Fixtures & Fitting",
         file: "/pdfs/bathroom-catalogue.pdf",
       },
     ],

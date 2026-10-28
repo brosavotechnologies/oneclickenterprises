@@ -289,11 +289,11 @@ export function HomePage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="tel:+919039082647"
+              href="tel:+9190390826 47"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-stone-900 font-semibold hover:bg-amber-400 transition-colors shadow-lg"
             >
               <Phone className="w-4 h-4" />
-              Call +91 903 908 2647
+              Call +91 903 908 26 47
             </a>
             <button
               onClick={() => navigate("/contact")}

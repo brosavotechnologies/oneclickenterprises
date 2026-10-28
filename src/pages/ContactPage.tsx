@@ -75,7 +75,7 @@ export function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <a
-              href="tel:+919039082647"
+              href="tel:+9190390826 47"
               className="flex items-center gap-3 group"
             >
               <div className="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center flex-shrink-0">
@@ -86,7 +86,7 @@ export function ContactPage() {
                   Call Us
                 </p>
                 <p className="text-sm font-semibold text-stone-800 group-hover:text-amber-600 transition-colors">
-                  +91 903 908 2647
+                  +91 903 908 26 47
                 </p>
               </div>
             </a>
@@ -235,11 +235,11 @@ export function ContactPage() {
                 {supportInfo.country}
               </p>
               <a
-                href="tel:+919039082647"
+                href="tel:+9190390826 47"
                 className="flex items-center gap-3 text-lg font-semibold text-amber-400 hover:text-amber-300 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                +91 903 908 2647
+                +91 903 908 26 47
               </a>
               <div className="mt-6 pt-6 border-t border-stone-700">
                 <p className="text-stone-400 text-sm mb-3">

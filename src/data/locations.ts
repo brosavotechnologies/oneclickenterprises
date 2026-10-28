@@ -1,3 +1,4 @@
+
 export interface OfficeLocation {
   city: string;
   branchType: string;
@@ -14,7 +15,7 @@ export interface OfficeLocation {
 
 export const supportInfo = {
   country: "INDIA — Customer Support",
-  phone: "+91 903 908 2647",
+  phone: "+91 903 908 26 47",
 };
 
 export const officeLocations: OfficeLocation[] = [
@@ -26,7 +27,7 @@ export const officeLocations: OfficeLocation[] = [
       "Flyover, Loni Ghaziabad Rd, Near IOC Plant, Opp. Hdfc Atm, Dharoti Khurd, Banthla, Ghaziabad, UP- 201005",
     state: "Uttar Pradesh",
     mapLink: "https://maps.app.goo.gl/WVbzvJ9SA2puXuWw6",
-    phones: ["+91 886 080 9198", "+91 879 691 9020", "+91 730 346 9198"],
+    phones: ["+91 886 080 91 98", "+91 879 691 90 20", "+91 730 346 91 98"],
     facebook: "https://www.facebook.com/share/199Zx7BiJh/",
     instagram:
       "https://www.instagram.com/hiltondoorsindia?igsh=c25remlzY3F4ZnFz",
@@ -40,10 +41,10 @@ export const officeLocations: OfficeLocation[] = [
     state: "Madhya Pradesh",
     mapLink: "https://share.google/ZPFdihzNwAcCPnThz",
     phones: [
-      "+91 898 989 9919",
-      "+91 910 910 1293",
-      "+91 910 910 1294",
-      "+91 910 910 1295",
+      "+91 898 989 99 19",
+      "+91 910 910 12 93",
+      "+91 910 910 12 94",
+      "+91 910 910 12 95",
     ],
     facebook: "https://www.facebook.com/enterprisesoneclick",
     instagram:
@@ -59,7 +60,7 @@ export const officeLocations: OfficeLocation[] = [
       "Boulevard Tower 434, Awadhpuri Colony, Gwarighat, Jabalpur, Madhya Pradesh 482008",
     state: "Madhya Pradesh",
     mapLink: "https://maps.app.goo.gl/E28f195Ni6tYayAx9?g_st=aw",
-    phones: ["+91 940 700 5197"],
+    phones: ["+91 940 700 51 97"],
   },
   {
     city: "Jabalpur",
@@ -68,7 +69,7 @@ export const officeLocations: OfficeLocation[] = [
     address: "In front of Anjani Dham Mandir, Tewar, Jabalpur, Madhya Pradesh",
     state: "Madhya Pradesh",
     mapLink: "https://maps.app.goo.gl/WYaAFuUYnAQmmhyR8",
-    phones: ["+91 903 908 2642", "+91 903 908 2643"],
+    phones: ["+91 903 908 26 42", "+91 903 908 26 43"],
   },
   {
     city: "Nagpur",
@@ -77,7 +78,7 @@ export const officeLocations: OfficeLocation[] = [
     address: "Opp. Hardik Lawn, Wardhaman Nagar, Nagpur- 440008",
     state: "Maharashtra",
     mapLink: "https://maps.app.goo.gl/6Yhk7sanvakUVZhu8",
-    phones: ["+91 922 604 3176", "+91 902 210 3081", "+91 724 724 8181"],
+    phones: ["+91 922 604 31 76", "+91 902 210 30 81", "+91 724 724 81 81"],
     facebook: "https://www.facebook.com/profile.php?id=61576801516516",
     instagram:
       "https://www.instagram.com/one_click_tiles_nagpur?igsh=MTdocTN3endwZ3Fvag==",
@@ -92,7 +93,7 @@ export const officeLocations: OfficeLocation[] = [
       "In Front of 5 No Naka Bhandewadi, Beside Anshul Trading Company, Bhandara, Nagpur- 440008",
     state: "Maharashtra",
     mapLink: "https://maps.app.goo.gl/6Yhk7sanvakUVZhu8",
-    phones: ["+91 976 660 5324"],
+    phones: ["+91 976 660 53 24"],
   },
   {
     city: "Indore",
@@ -103,10 +104,10 @@ export const officeLocations: OfficeLocation[] = [
     state: "Madhya Pradesh",
     mapLink: "https://maps.app.goo.gl/AGnfZJgCknwc2TJ37",
     phones: [
-      "+91 910 910 1296",
-      "+91 910 910 1297",
-      "+91 910 910 1298",
-      "+91 910 910 1299",
+      "+91 910 910 12 96",
+      "+91 910 910 12 97",
+      "+91 910 910 12 98",
+      "+91 910 910 12 99",
     ],
     facebook: "https://www.facebook.com/enterprisesoneclick",
     instagram:
@@ -121,11 +122,11 @@ export const officeLocations: OfficeLocation[] = [
     address: "Arsenaalstraat 9, Hoef en Haag, 4125XP, The Netherlands",
     state: "Netherlands",
     mapLink: "https://share.google/R8l8TdpvDB8PRYVSC",
-    phones: ["+31 6 382 894 21", "+31 6 833 954 81"],
-    facebook: "https://www.facebook.com/enterprisesoneclick",
+    phones: ["+31 6 382 89 421", "+31 6 833 95 481"],
+    // facebook: "https://www.facebook.com/enterprisesoneclick",
     instagram:
-      "https://www.instagram.com/one.click.enterprises?igsh=bzg4ZnVkMWV1aHhm",
-    youtube: "https://youtube.com/@oneclickenterprise?si=hvxOhz382CSLgWRk",
+      "https://www.instagram.com/one_click_international?dlrf=MXh6OWI4YjdkOXVidA==",
+    // youtube: "https://youtube.com/@oneclickenterprise?si=hvxOhz382CSLgWRk",
     email: "Satwik.Chaudhary@gmail.com",
   },
 ];
