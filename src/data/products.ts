@@ -39,7 +39,7 @@ export const products: Product[] = [
     pdfs: [
       {
         name: "Bathroom Tiles Catalogue",
-        file: "/pdfs/bathroom-tiles.pdf.pdf",
+        file: "/pdfs/bathroom-tiles.pdf",
       },
     ],
   },
@@ -62,7 +62,7 @@ export const products: Product[] = [
   },
   {
     id: "floor-tiles",
-    name: "Floor Tiles",
+    name: "Floor / Wall Tiles",
     category: "Tiles",
     icon: "Grid3x3",
     sizes: ["600x600", "600x1200", "800x800", "800x1600", "1200x1800"],
@@ -72,11 +72,11 @@ export const products: Product[] = [
       "High-quality floor tiles available in porcelain, GVT, PGVT, and double charge variants for lasting beauty and strength.",
     pdfs: [
       {
-        name: "Floor Tiles Glossy",
+        name: "Floor / Wall Tiles Glossy",
         file: "/pdfs/floor-tiles-glossy.pdf",
       },
       {
-        name: "Floor Tiles Spectra",
+        name: "Floor / Wall Tiles Spectra",
         file: "/pdfs/floor-tiles-spectra.pdf",
       },
     ],
@@ -306,12 +306,16 @@ export const products: Product[] = [
       "Complete sanitary ware collection including wash basins, one-piece suites, rimless toilets, and smart sanitary fixtures.",
     pdfs: [
       {
-        name: "Sanitary Ware Catalogue 1",
+        name: "Wash basin",
         file: "/pdfs/sanitary-ware-catalog-final.pdf",
       },
       {
-        name: "Wash basin",
+        name: "Sanitary Ware Catalogue",
         file: "/pdfs/sanitary-ware-catalogue-updated.pdf",
+      },
+      {
+        name: "Sanitary Ware Catalogue 2",
+        file: "/pdfs/sanitary-ware-catalogue.pdf",
       },
     ],
   },
@@ -352,8 +356,7 @@ export const products: Product[] = [
     icon: "Lock",
     sizes: [],
     variants: [],
-    image:
-      "https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    image: "/images/digital-lock.jpeg",
     description:
       "Advanced digital smart locks for homes, hotels, and offices — featuring AI-powered, palm recognition, and glass door compatible models.",
     pdfs: [
@@ -378,7 +381,8 @@ export const products: Product[] = [
       {
         name: "Granite",
         file: "/pdfs/oce-granite.pdf",
-      },{
+      },
+      {
         name: "Granite Door Frames Catalog",
         file: "/pdfs/granite-door-frames-catalog.pdf",
       },
@@ -394,13 +398,17 @@ export const products: Product[] = [
     category: "Stones",
     icon: "Mountain",
     sizes: [],
-    image: "/images/stone.jpeg",
+    image: "/images/stone-photo.jpeg",
     description:
       "Premium pebble stones, cobbles, and more — sourced from the finest quarries.",
     pdfs: [
       // {
       //   name: "Quartz",
       //   file: "/pdfs/quartz.pdf",
+      // },
+      // {
+      //   name: "Pebble Stones",
+      //   file: "/pdfs/pebble-stones.pdf",
       // },
       {
         name: "Pebble Stones",
@@ -525,6 +533,14 @@ export const products: Product[] = [
         name: "Carpet Tiles Catalog",
         file: "/pdfs/carpet-tiles-catalog.pdf",
       },
+      {
+        name: "Tiles Skirting",
+        file: "/pdfs/tiles-skirting.pdf",
+      },
+      {
+        name: "Ceramic Pencil Border Tiles",
+        file: "/pdfs/ceramic-pencil-border.pdf",
+      },
     ],
     subProducts: [
       {
@@ -610,7 +626,7 @@ export const products: Product[] = [
     variants: [],
     image: "/images/vanity.jpeg",
     description:
-      "Elegant Vanity Fixtures & Fitting in wall-hung and floor-standing designs, available in 16x20, 18x24, and 18x32 sizes.",
+      "Discover elegant bathroom fixtures and fittings designed to elevate modern bathrooms with a perfect balance of style, comfort, and functionality. Our collection features contemporary vanity units, wall-mounted and floor-standing designs, and premium bathroom solutions that complement a variety of interior styles.",
     pdfs: [
       {
         name: "Vanity Catalogue",
@@ -619,6 +635,10 @@ export const products: Product[] = [
       {
         name: "Shower Panels Catalogue",
         file: "/pdfs/shower-panels-catalog.pdf",
+      },
+      {
+        name: "Bathroom Catalogue",
+        file: "/pdfs/bathroom-catalogue.pdf",
       },
     ],
   },
