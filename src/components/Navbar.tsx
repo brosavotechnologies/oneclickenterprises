@@ -74,14 +74,14 @@ export function Navbar() {
                 className="w-9 h-9 sm:w-14 sm:h-14 rounded-full object-cover overflow-hidden group-hover:scale-105 transition-transform"
               />
 
-              <div className="text-left">
+              {/* <div className="text-left">
                 <span className="block text-white font-bold text-sm sm:text-lg leading-tight tracking-wider">
                   Hilton
                 </span>
                 <span className="hidden sm:block text-amber-400 text-[10px] lg:text-xs leading-tight mt-1">
                   Premium Steel Doors
                 </span>
-              </div>
+              </div> */}
             </button>
           </div>
 
