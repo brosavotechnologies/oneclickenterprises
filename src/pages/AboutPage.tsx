@@ -57,6 +57,11 @@ const milestones = [
     desc: "Expanded to Indore with One Click Enterprises Pvt. Ltd.",
   },
   {
+    year: "Growth",
+    title: "Jabalpur Exclusive",
+    desc: "Expanded to Jabalpur Exclusive with One Click Exclusive Pvt. Ltd.",
+  },
+  {
     year: "International",
     title: "Netherlands Presence",
     desc: "Expanded our presence internationally with operations and business reach in the Netherlands.",

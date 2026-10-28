@@ -30,7 +30,7 @@ type ProductCard = {
 const productCards: ProductCard[] = [
   { label: "Tiles", category: "Tiles" },
   { label: "Granite", productId: "granite" },
-  { label: "Kota Stone", productId: "stones" },
+  { label: "Stones", productId: "stones" },
   { label: "Quartz Stone", productId: "kitchen-slabs" },
   { label: "Breeze-Block", productId: "terracotta" },
   { label: "Sanitary Ware", productId: "sanitary-ware" },
@@ -38,7 +38,6 @@ const productCards: ProductCard[] = [
   { label: "Steel Doors", productId: "hilton-doors" },
   { label: "Smart Locks", productId: "digital-locks" },
   { label: "Decorative Items", productId: "decorative-tiles" },
-  // { label: "Other Products" },
 ];
 
 // Used by the enquiry form dropdown (same labels)
@@ -130,10 +129,10 @@ const certifications = [
     preview: "/pdfs/previews/fieo-certificate.webp",
   },
   {
-    title: "CAPEXIL Certificate",
-    description: "Registration-cum-Membership Certificate",
-    file: "/pdfs/capexil-certificate.pdf",
-    preview: "/pdfs/previews/capexil-certificate.webp",
+    title: "LMPC Certificate",
+    description: "Legal Metrology Packaged Commodities Certificate",
+    file: "/pdfs/lmpc-certificate.pdf",
+    preview: "/pdfs/previews/lmpc-certificate.webp",
   },
 ];
 
@@ -180,7 +179,7 @@ export function ExportPage() {
       form.message,
     ].join("\n");
 
-    const whatsappUrl = `https://wa.me/31683395481?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/919303303909?text=${encodeURIComponent(
       message,
     )}`;
 
@@ -239,7 +238,7 @@ export function ExportPage() {
             <p className="mt-4 leading-8 text-stone-300">
               From{" "}
               <strong className="text-white">
-                Tiles, Granite, Kota Stone, Quartz Stone, Breeze-Block, Sanitary
+                Tiles, Granite, Stones, Quartz Stone, Breeze-Block, Sanitary
                 Ware, Bathroom Fixtures and Fittings, Steel Doors and Smart
                 Locks
               </strong>

@@ -41,10 +41,11 @@ export const officeLocations: OfficeLocation[] = [
     state: "Madhya Pradesh",
     mapLink: "https://share.google/ZPFdihzNwAcCPnThz",
     phones: [
-      "+91 898 989 99 19",
+      
       "+91 910 910 12 93",
       "+91 910 910 12 94",
       "+91 910 910 12 95",
+      "+91 898 989 99 19",
     ],
     facebook: "https://www.facebook.com/enterprisesoneclick",
     instagram:
@@ -53,7 +54,7 @@ export const officeLocations: OfficeLocation[] = [
     email: "kshitiz22@yahoo.com",
   },
   {
-    city: "Jabalpur",
+    city: "Exclusive Jabalpur",
     branchType: "Office",
     firmName: "One Click Exclusive",
     address:

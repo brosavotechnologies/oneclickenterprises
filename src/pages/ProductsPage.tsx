@@ -548,8 +548,12 @@ function SubProductSection({
           {subProduct.name}
         </h4>
         <span className="text-xs text-stone-400">
-          {subProduct.variants.length} variet
-          {subProduct.variants.length === 1 ? "y" : "ies"}
+          {subProduct.variants.length > 0 && (
+            <>
+              {subProduct.variants.length} variet
+              {subProduct.variants.length === 1 ? "y" : "ies"}
+            </>
+          )}
         </span>
       </div>
       {subProduct.description && (

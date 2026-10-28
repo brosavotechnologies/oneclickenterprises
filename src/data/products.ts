@@ -446,16 +446,16 @@ export const products: Product[] = [
       //   description:
       //     "Natural marble in elegant finishes for floors, walls, and countertops.",
       //   variants: [],
+      // // },
+      // {
+      //   id: "limestone",
+      //   name: "Limestone",
+      //   image:
+      //     "https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      //   description:
+      //     "Durable limestone in single and double polished finishes.",
+      //   variants: [],
       // },
-      {
-        id: "limestone",
-        name: "Limestone",
-        image:
-          "https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        description:
-          "Durable limestone in single and double polished finishes.",
-        variants: [],
-      },
       // {
       //   id: "quartz",
       //   name: "Quartz",
@@ -507,6 +507,22 @@ export const products: Product[] = [
     ],
   },
   {
+    id: "limestone",
+    name: "Limestone",
+    category: "Stones",
+    icon: "Mountain",
+    sizes: ["All Sizes Available"],
+    image: "/images/limestone-photo.jpeg",
+    description:
+      "Premium natural limestone with elegant textures and finishes for flooring, wall cladding, facades, and landscaping.",
+    pdfs: [
+      {
+        name: "Limestone",
+        file: "/pdfs/limestone.pdf",
+      },
+    ],
+  },
+  {
     id: "decorative-tiles",
     name: "Decorative Items",
     category: "Decorative",
@@ -540,6 +556,10 @@ export const products: Product[] = [
       {
         name: "Ceramic Pencil Border Tiles",
         file: "/pdfs/ceramic-pencil-border.pdf",
+      },
+      {
+        name: "Marble border",
+        file: "/pdfs/marble-border.pdf",
       },
     ],
     subProducts: [
@@ -577,6 +597,15 @@ export const products: Product[] = [
         image: "/images/carpet-tiles.jpeg",
         description:
           "Stylish carpet tiles offering a decorative flooring solution for offices, commercial spaces, and modern interiors.",
+        variants: [],
+      },
+      {
+        id: "marble-border-strips",
+        name: "Marble Border Strips",
+        sizes: ["Multiple Sizes Available"],
+        image: "/images/marble-border.jpeg",
+        description:
+          "Elegant marble border strips designed to add a premium decorative finish to walls, floors, and tiled surfaces. Ideal for enhancing interiors with stylish marble detailing.",
         variants: [],
       },
     ],
