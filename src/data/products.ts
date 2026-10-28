@@ -527,11 +527,11 @@ export const products: Product[] = [
       },
       {
         name: "Gods Poster 600x600",
-        file: "/pdfs/gods-poster-collection.pdf",
+        file: "/pdfs/gods-poster-collection-18.pdf",
       },
       {
         name: "Carpet Tiles Catalog",
-        file: "/pdfs/carpet-tiles-catalog.pdf",
+        file: "/pdfs/complete-carpet-tiles-catalog.pdf",
       },
       {
         name: "Tiles Skirting",
@@ -630,7 +630,7 @@ export const products: Product[] = [
     pdfs: [
       {
         name: "Vanity Catalogue",
-        file: "/pdfs/bathroom-fixtures-and-fitting.pdf",
+        file: "/pdfs/vanity-units.pdf",
       },
       {
         name: "Shower Panels Catalogue",
