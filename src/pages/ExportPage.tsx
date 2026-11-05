@@ -620,7 +620,7 @@ export function ExportPage() {
                   </div>
                 </div>
 
-                {/* Netherlands Export Enquiries */}
+                {/* The Netherlands Export Enquiries */}
                 <div className="rounded-xl border border-stone-200 bg-stone-50 p-5">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-700">
@@ -628,7 +628,7 @@ export function ExportPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-stone-900">
-                        Netherlands Export Enquiries
+                        The Netherlands Export Enquiries
                       </h4>
                       <p className="text-sm text-stone-500">
                         International sales, shipping and quotations
@@ -650,7 +650,7 @@ export function ExportPage() {
                       className="inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-green-700"
                     >
                       <Send className="h-4 w-4" />
-                      WhatsApp Netherlands
+                      WhatsApp The Netherlands
                     </a>
                   </div>
                 </div>

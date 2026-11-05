@@ -429,15 +429,13 @@ export const products: Product[] = [
       },
       {
         id: "limestone",
-        name: "Limestone",
+        name: "Limestone (Kota Stone)",
         image:
           "https://images.pexels.com/photos/29252363/pexels-photo-29252363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         description:
-          "Durable limestone in single and double polished finishes.",
-        variants: [
-          { name: "Black Limestone — Single Polished" },
-          { name: "Black Limestone — Double Polished" },
-        ],
+          "Kota Stone (Limestone), available in Single Polished and Double Polished finishes. Known for its durability, low water absorption, and elegant natural look. Ideal for homes, offices, corridors, parking areas, and commercial spaces.",
+        sizes: ["559x559 mm", "584x584 mm", "600x1200 mm"],
+        variants: [{ name: "Single Polished" }, { name: "Double Polished" }],
       },
       {
         id: "quartz",

@@ -154,7 +154,7 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 flex-shrink-0 text-amber-500 mt-0.5" />
                 <span className="text-stone-400">
-                  Offices in Delhi NCR, Jabalpur, Nagpur, Indore & Netherlands
+                  Offices in Delhi NCR, Jabalpur, Nagpur, Indore & The Netherlands
                 </span>
               </div>
             </div>

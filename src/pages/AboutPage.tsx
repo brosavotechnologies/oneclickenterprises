@@ -58,18 +58,18 @@ const milestones = [
   },
   {
     year: "Growth",
-    title: "Jabalpur Exclusive",
-    desc: "Expanded to Jabalpur Exclusive with One Click Exclusive Pvt. Ltd.",
+    title: "Jabalpur Xclusive",
+    desc: "Expanded to Jabalpur Xclusive with One Click Exclusive Pvt. Ltd.",
   },
   {
     year: "International",
-    title: "Netherlands Presence",
-    desc: "Expanded our presence internationally with operations and business reach in the Netherlands.",
+    title: "The Netherlands Presence",
+    desc: "Expanded our presence internationally with operations and business reach in The Netherlands.",
   },
   {
     year: "Today",
     title: "Pan-India & International Presence",
-    desc: "Serving customers across India with offices in Delhi NCR, Jabalpur, Nagpur & Indore, along with an international presence in the Netherlands.",
+    desc: "Serving customers across India with offices in Delhi NCR, Jabalpur, Nagpur & Indore, along with an international presence in the The Netherlands.",
   },
 ];
 
@@ -103,7 +103,7 @@ export function AboutPage() {
               international markets worldwide.
               <br /> <br />
               With offices in Delhi NCR, Nagpur, Jabalpur, Indore, and
-              Netherlands, we are committed to delivering quality products,
+              The Netherlands, we are committed to delivering quality products,
               competitive pricing, and reliable service to our customers across
               the globe.
             </p>
@@ -144,7 +144,7 @@ export function AboutPage() {
                 Over the years, we have grown from our roots in Jabalpur, Madhya
                 Pradesh into a growing multi-city and international business,
                 with our presence in Delhi NCR, Jabalpur, Nagpur, Indore, and
-                Netherland.
+                The Netherland.
               </p>
               <p>
                 Our product portfolio includes Tiles, Granite, Kota , Stone,

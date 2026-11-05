@@ -57,7 +57,7 @@ const featureItems = [
   {
     icon: MapPin,
     title: "5 Branch Offices",
-    desc: "Delhi NCR, Jabalpur, Nagpur, Indore and Netherlands.",
+    desc: "Delhi NCR, Jabalpur, Nagpur, Indore and The Netherlands.",
   },
 ];
 

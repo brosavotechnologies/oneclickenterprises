@@ -546,19 +546,19 @@ export const products: Product[] = [
         file: "/pdfs/gods-poster-collection-18.pdf",
       },
       {
-        name: "Carpet Tiles Catalog",
+        name: "Gods Carpet Tiles Catalog",
         file: "/pdfs/complete-carpet-tiles-catalog.pdf",
       },
       {
-        name: "Tiles Skirting",
+        name: "Gods Tiles Skirting",
         file: "/pdfs/tiles-skirting.pdf",
       },
       {
-        name: "Ceramic Pencil Border Tiles",
+        name: "Gods Ceramic Pencil Border Tiles",
         file: "/pdfs/ceramic-pencil-border.pdf",
       },
       {
-        name: "Marble border",
+        name: "Gods Marble border",
         file: "/pdfs/marble-border.pdf",
       },
     ],
