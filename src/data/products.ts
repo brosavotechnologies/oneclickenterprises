@@ -531,34 +531,34 @@ export const products: Product[] = [
     variants: [],
     image: "/images/decorative.jpeg",
     description:
-      "Explore our decorative collection featuring ceramic pencil border tiles, tile skirting, God poster tiles, and carpet tiles.",
+      "Explore our decorative collection featuring ceramic pencil border tiles, tile skirting, God's poster tiles, and carpet tiles.",
     pdfs: [
       {
-        name: "God Poster 600x1200",
+        name: "God's Poster 600x1200",
         file: "/pdfs/god-poster-600x1200-with-g816.pdf",
       },
       {
-        name: "Gods Poster Catalog 300x450",
+        name: "God's Poster Catalog 300x450",
         file: "/pdfs/gods-poster-catalog-full.pdf",
       },
       {
-        name: "Gods Poster 600x600",
+        name: "God's Poster 600x600",
         file: "/pdfs/gods-poster-collection-18.pdf",
       },
       {
-        name: "Gods Carpet Tiles Catalog",
+        name: "Carpet Tiles Catalog",
         file: "/pdfs/complete-carpet-tiles-catalog.pdf",
       },
       {
-        name: "Gods Tiles Skirting",
+        name: "Tiles Skirting",
         file: "/pdfs/tiles-skirting.pdf",
       },
       {
-        name: "Gods Ceramic Pencil Border Tiles",
+        name: "Ceramic Pencil Border Tiles",
         file: "/pdfs/ceramic-pencil-border.pdf",
       },
       {
-        name: "Gods Marble border",
+        name: "Marble border",
         file: "/pdfs/marble-border.pdf",
       },
     ],

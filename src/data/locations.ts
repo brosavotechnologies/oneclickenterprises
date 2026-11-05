@@ -54,9 +54,9 @@ export const officeLocations: OfficeLocation[] = [
     email: "kshitiz22@yahoo.com",
   },
   {
-    city: "Exclusive Jabalpur",
+    city: "Xclusive Jabalpur",
     branchType: "Office",
-    firmName: "One Click Exclusive",
+    firmName: "One Click Xclusive",
     address:
       "Boulevard Tower 434, Awadhpuri Colony, Gwarighat, Jabalpur, Madhya Pradesh 482008",
     state: "Madhya Pradesh",

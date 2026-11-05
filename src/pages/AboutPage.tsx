@@ -59,7 +59,7 @@ const milestones = [
   {
     year: "Growth",
     title: "Jabalpur Xclusive",
-    desc: "Expanded to Jabalpur Xclusive with One Click Exclusive Pvt. Ltd.",
+    desc: "Expanded to Jabalpur Xclusive with One Click Xclusive",
   },
   {
     year: "International",

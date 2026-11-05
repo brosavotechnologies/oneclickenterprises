@@ -129,6 +129,12 @@ const certifications = [
     preview: "/pdfs/previews/fieo-certificate.webp",
   },
   {
+    title: "CAPEXIL Certificate",
+    description: "CAPEXIL Registration Certificate",
+    file: "/pdfs/capexil-certificate.pdf",
+    preview: "/pdfs/previews/capexil-certificate.webp",
+  },
+  {
     title: "LMPC Certificate",
     description: "Legal Metrology Packaged Commodities Certificate",
     file: "/pdfs/lmpc-certificate.pdf",

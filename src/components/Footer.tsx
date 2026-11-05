@@ -116,7 +116,7 @@ export function Footer() {
 
             <ul className="space-y-2 text-sm text-stone-400">
               <li>Ceramic and Vitrified & Floor Tiles</li>
-              <li>Terracotta Jali & Bricks</li>
+              <li>Terracotta Jali (Breeze Block) & Bricks</li>
               <li>Sanitary Ware</li>
               <li>Granite & Marble</li>
               <li>Hilton Steel Doors</li>
