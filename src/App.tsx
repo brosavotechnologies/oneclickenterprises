@@ -37,7 +37,7 @@ function App() {
         <Footer />
 
         {/* Website Under Construction Watermark */}
-        <div className="pointer-events-none fixed inset-0 z-[9999] flex items-center justify-center select-none">
+        {/* <div className="pointer-events-none fixed inset-0 z-[9999] flex items-center justify-center select-none">
           <div className="-rotate-12 text-center opacity-50">
             <div className="border-4 border-red-600 px-10 py-5">
               <div className="text-5xl font-black tracking-widest text-red-600 sm:text-6xl">
@@ -53,7 +53,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </RouterProvider>
   );
